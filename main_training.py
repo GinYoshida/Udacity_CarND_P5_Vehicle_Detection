@@ -14,8 +14,8 @@ from skimage.feature import hog
 from functionset import *
 # NOTE: the next import is only valid for scikit-learn version <= 0.17
 # for scikit-learn >= 0.18 use:
-from sklearn.model_selection import train_test_split
-# from sklearn.cross_validation import train_test_split
+# from sklearn.model_selection import train_test_split
+from sklearn.cross_validation import train_test_split
 
 def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True,
                             sample_size=1000, color_space = 'RGB',
@@ -120,9 +120,9 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
 
 if __name__ == "__main__":
     # execute only if run as a script
-    import os
-    os.chdir("C:/Users/hitoshi/AppData/Local/Programs/Python/" +
-             "Python35/Scripts/Udacity/Udacity_CarND_P5_Vehicle_Detection")
+    #import os
+    #os.chdir("C:/Users/hitoshi/AppData/Local/Programs/Python/" +
+    #         "Python35/Scripts/Udacity/Udacity_CarND_P5_Vehicle_Detection")
     # Parameter study
     results = []
     # results.append(feature_vector_creation(
@@ -148,5 +148,5 @@ if __name__ == "__main__":
     #     for x in results:
     #         f.write(str(x) + "\n")
     results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=4000, color_space = 'RGB',
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=6000, color_space = 'RGB',
         model_name = "best_condition.pickle"))
