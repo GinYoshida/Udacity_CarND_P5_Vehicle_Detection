@@ -63,14 +63,12 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     hist_bins = 16  # Number of histogram bins
     y_start_stop = [None, None]  # Min and max in y to search in slide_window()
 
-    print("Car_features creation: start")
     car_features = extract_features(cars, color_space=color_space,
                                     spatial_size=spatial_size, hist_bins=hist_bins,
                                     orient=orient, pix_per_cell=pix_per_cell,
                                     cell_per_block=cell_per_block,
                                     hog_channel=hog_channel, spatial_feat=spatial_feat,
                                     hist_feat=hist_feat, hog_feat=hog_feat)
-    print("Car_features creation: end")
 
     notcar_features = extract_features(notcars, color_space=color_space,
                                        spatial_size=spatial_size, hist_bins=hist_bins,
@@ -113,7 +111,7 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     score_model = round(svc.score(X_test, y_test),4)
     print('Test Accuracy of SVC = ', score_model)
     with open(model_name, 'wb') as handle:
-        pickle.dump(svc, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump({'model':svc,'Scolor':X_scaler}, handle, protocol=pickle.HIGHEST_PROTOCOL)
     # Check the prediction time for a single sample
     t = time.time()
     return score_model
