@@ -110,8 +110,12 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     svc.fit(X_train, y_train)
     score_model = round(svc.score(X_test, y_test),4)
     print('Test Accuracy of SVC = ', score_model)
+
+    output_sum = {'model':svc,'scaler':X_scaler,'orient':9,'pix_per_cell':8,
+                  'cell_per_block':2,'hog_channel':0,'spatial_size':(16, 16),'hist_bins':16}
+
     with open(model_name, 'wb') as handle:
-        pickle.dump({'model':svc,'Scolor':X_scaler}, handle, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump(output_sum, handle, protocol=pickle.HIGHEST_PROTOCOL)
     # Check the prediction time for a single sample
     t = time.time()
     return score_model
