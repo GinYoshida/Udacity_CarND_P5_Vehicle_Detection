@@ -59,6 +59,7 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
                      hist_bins=32, orient=9,
                      pix_per_cell=8, cell_per_block=2, hog_channel=0,
                      spatial_feat=True, hist_feat=True, hog_feat=True):
+
     # Create a list to append feature vectors to
     features = []
     # Iterate through the list of images
@@ -69,21 +70,29 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
             pass
         file_features = []
         # Read in each one by one
-        image = mpimg.imread(file)
+        image = cv2.imread(file)
+        image_original = np.copy(image)
         # apply color conversion if other than 'RGB'
-        if color_space != 'RGB':
+        if color_space != 'BGR':
             if color_space == 'HSV':
-                feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2HSV)
+                feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
             elif color_space == 'LUV':
-                feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2LUV)
+                feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2LUV)
+            elif color_space == 'RBG':
+                feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             elif color_space == 'HLS':
-                feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2HLS)
+                feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
             elif color_space == 'YUV':
-                feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2YUV)
+                feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
             elif color_space == 'YCrCb':
                 feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2YCrCb)
         else:
             feature_image = np.copy(image)
+
+        channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
+        channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
+        channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
+        feature_image = cv2.merge((channel_1,channel_2,channel_3))
 
         if spatial_feat == True:
             spatial_features = bin_spatial(feature_image, size=spatial_size)
