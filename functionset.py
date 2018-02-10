@@ -78,7 +78,7 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
                 feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
             elif color_space == 'LUV':
                 feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2LUV)
-            elif color_space == 'RBG':
+            elif color_space == 'RGB':
                 feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
             elif color_space == 'HLS':
                 feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
