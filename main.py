@@ -19,7 +19,8 @@ hist_bins = trained_data['hist_bins']
 file_path = './test_images/test1.jpg'
 
 arget_img = cv2.imread(file_path)
-res = myfc.find_cars(arget_img,200,600,1,svc,X_scale,orient,pix_per_cell,cell_per_block,spatial_size,hist_bins)
+res = myfc.find_cars(arget_img,'RGB',
+                     200,600,1,svc,X_scale,orient,pix_per_cell,cell_per_block,spatial_size,hist_bins)
 
 plt.imshow(res)
 plt.show()
