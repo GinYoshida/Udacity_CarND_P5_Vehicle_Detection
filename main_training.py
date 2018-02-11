@@ -59,8 +59,8 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     pix_per_cell = 8  # HOG pixels per cell
     cell_per_block = 2  # HOG cells per block
     hog_channel = "ALL"  # Can be 0, 1, 2, or "ALL"
-    spatial_size = (16, 16)  # Spatial binning dimensions
-    hist_bins = 16  # Number of histogram bins
+    spatial_size = (32, 32)  # Spatial binning dimensions
+    hist_bins = 32  # Number of histogram bins
     y_start_stop = [None, None]  # Min and max in y to search in slide_window()
 
     car_features = extract_features(cars, color_space=color_space,
@@ -121,30 +121,30 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     return score_model
 
 if __name__ == "__main__":
-    # execute only if run as a script
+    #Only for local windows machine
     #import os
     #os.chdir("C:/Users/hitoshi/AppData/Local/Programs/Python/" +
     #         "Python35/Scripts/Udacity/Udacity_CarND_P5_Vehicle_Detection")
     # Parameter study
     results = []
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'RGB',
-    #     model_name = "condition_1.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
-    #     model_name = "condition_2.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
-    #     model_name = "condition_3.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'HLS',
-    #     model_name = "condition_4.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
-    #     model_name = "condition_5.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
-    #     model_name = "condition_6.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'RGB',
+        model_name = "condition_1.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
+        model_name = "condition_2.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
+        model_name = "condition_3.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'HLS',
+        model_name = "condition_4.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
+        model_name = "condition_5.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
+        model_name = "condition_6.pickle"))
     with open('result.txt', 'w') as f:
         for x in results:
             f.write(str(x) + "\n")
