@@ -18,7 +18,51 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-89.38 Seconds to train SVC...
+112.36 Seconds to train SVC...
+Test Accuracy of SVC =  0.9625
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+102.62 Seconds to train SVC...
+Test Accuracy of SVC =  0.9625
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+85.25 Seconds to train SVC...
 Test Accuracy of SVC =  0.9525
 extraction was done 0 / 1000
 extraction was done 100 / 1000
@@ -40,51 +84,7 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-89.1 Seconds to train SVC...
-Test Accuracy of SVC =  0.97
-extraction was done 0 / 1000
-extraction was done 100 / 1000
-extraction was done 200 / 1000
-extraction was done 300 / 1000
-extraction was done 400 / 1000
-extraction was done 500 / 1000
-extraction was done 600 / 1000
-extraction was done 700 / 1000
-extraction was done 800 / 1000
-extraction was done 900 / 1000
-extraction was done 0 / 1000
-extraction was done 100 / 1000
-extraction was done 200 / 1000
-extraction was done 300 / 1000
-extraction was done 400 / 1000
-extraction was done 500 / 1000
-extraction was done 600 / 1000
-extraction was done 700 / 1000
-extraction was done 800 / 1000
-extraction was done 900 / 1000
-85.02 Seconds to train SVC...
-Test Accuracy of SVC =  0.945
-extraction was done 0 / 1000
-extraction was done 100 / 1000
-extraction was done 200 / 1000
-extraction was done 300 / 1000
-extraction was done 400 / 1000
-extraction was done 500 / 1000
-extraction was done 600 / 1000
-extraction was done 700 / 1000
-extraction was done 800 / 1000
-extraction was done 900 / 1000
-extraction was done 0 / 1000
-extraction was done 100 / 1000
-extraction was done 200 / 1000
-extraction was done 300 / 1000
-extraction was done 400 / 1000
-extraction was done 500 / 1000
-extraction was done 600 / 1000
-extraction was done 700 / 1000
-extraction was done 800 / 1000
-extraction was done 900 / 1000
-99.77 Seconds to train SVC...
+138.3 Seconds to train SVC...
 Test Accuracy of SVC =  0.9875
 extraction was done 0 / 1000
 extraction was done 100 / 1000
@@ -106,8 +106,8 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-103.35 Seconds to train SVC...
-Test Accuracy of SVC =  0.9875
+127.91 Seconds to train SVC...
+Test Accuracy of SVC =  0.995
 extraction was done 0 / 1000
 extraction was done 100 / 1000
 extraction was done 200 / 1000
@@ -128,9 +128,8 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-94.67 Seconds to train SVC...
-Test Accuracy of SVC =  0.985
-[0.9525, 0.97, 0.945, 0.9875, 0.9875, 0.985]
+81.44 Seconds to train SVC...
+Test Accuracy of SVC =  0.9675
 extraction was done 0 / 2826
 extraction was done 0 / 6000
 extraction was done 600 / 6000
@@ -142,5 +141,5 @@ extraction was done 3600 / 6000
 extraction was done 4200 / 6000
 extraction was done 4800 / 6000
 extraction was done 5400 / 6000
-809.36 Seconds to train SVC...
-Test Accuracy of SVC =  0.9819
+1196.4 Seconds to train SVC...
+Test Accuracy of SVC =  0.979
