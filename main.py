@@ -10,4 +10,4 @@ from collections import Counter
 #           'test8','test9','test10','test11','test12','test13','test14','test15','test16']
 # myfc.image_converter(images,svm_mode='best_condition.pickle')
 
-myfc.video_creation('project_video.mp4','project_video_w_pipline.avi','best_condition.pickle',43,40,False)
+myfc.video_creation('project_video.mp4','project_video_w_pipline.avi','best_condition.pickle',50,0,True)
