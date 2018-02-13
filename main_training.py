@@ -112,7 +112,7 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     print('Test Accuracy of SVC = ', score_model)
 
     output_sum = {'model':svc,'color_space':color_space,'scaler':X_scaler,'orient':9,'pix_per_cell':8,
-                  'cell_per_block':2,'hog_channel':0,'spatial_size':(16, 16),'hist_bins':16}
+                  'cell_per_block':2,'hog_channel':hog_channel,'spatial_size':spatial_size,'hist_bins':hist_bins}
 
     with open(model_name, 'wb') as handle:
         pickle.dump(output_sum, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -128,27 +128,27 @@ if __name__ == "__main__":
     # Parameter study
     results = []
     results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'RGB',
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=20, color_space = 'RGB',
         model_name = "condition_1.pickle"))
-    results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
-        model_name = "condition_2.pickle"))
-    results.append(feature_vector_creation(
-        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
-        model_name = "condition_3.pickle"))
-    results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'HLS',
-        model_name = "condition_4.pickle"))
-    results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
-        model_name = "condition_5.pickle"))
-    results.append(feature_vector_creation(
-        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
-        model_name = "condition_6.pickle"))
-    with open('result.txt', 'w') as f:
-        for x in results:
-            f.write(str(x) + "\n")
+    # results.append(feature_vector_creation(
+    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
+    #     model_name = "condition_2.pickle"))
+    # results.append(feature_vector_creation(
+    #     spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
+    #     model_name = "condition_3.pickle"))
+    # results.append(feature_vector_creation(
+    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'HLS',
+    #     model_name = "condition_4.pickle"))
+    # results.append(feature_vector_creation(
+    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
+    #     model_name = "condition_5.pickle"))
+    # results.append(feature_vector_creation(
+    #     spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
+    #     model_name = "condition_6.pickle"))
+    # with open('result.txt', 'w') as f:
+    #     for x in results:
+    #         f.write(str(x) + "\n")
 
-    results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=6000, color_space = 'HLS',
-        model_name = "best_condition.pickle"))
+    # results.append(feature_vector_creation(
+    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=6000, color_space = 'HLS',
+    #     model_name = "best_condition.pickle"))
