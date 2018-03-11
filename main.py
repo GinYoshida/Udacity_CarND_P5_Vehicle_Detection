@@ -12,4 +12,4 @@ from collections import Counter
 # myfc.image_converter(images,svm_mode='best_condition.pickle')
 
 """for video creation, please activate the following lines"""
-myfc.video_creation('project_video.mp4','project_video_w_pipline.avi','best_condition.pickle',0.5,0,False)
+myfc.video_creation('project_video.mp4','project_video_w_pipline.avi','best_condition.pickle',50,0,True)
