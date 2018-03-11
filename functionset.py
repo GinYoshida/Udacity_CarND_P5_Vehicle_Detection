@@ -5,6 +5,7 @@ import numpy as np
 import cv2
 from skimage.feature import hog
 
+#Function to convert image color
 def convert_color(img, conv='RGB2YCrCb'):
     if conv == 'RGB2YCrCb':
         return cv2.cvtColor(img, cv2.COLOR_RGB2YCrCb)
@@ -16,6 +17,15 @@ def convert_color(img, conv='RGB2YCrCb'):
 # Define a function to return HOG features and visualization
 def get_hog_features(img, orient, pix_per_cell, cell_per_block,
                      vis=False, feature_vec=True):
+    '''
+    :param img: target image to convert
+    :param orient: orient for HOG transformation
+    :param pix_per_cell: pixel for cell of HOG transformation
+    :param cell_per_block: number of cell in block
+    :param vis: Key to use visualization or not
+    :param feature_vec: Key to use feature vector
+    :return: HOG future
+    '''
     vis = True
     # Call with two outputs if vis==True
     if vis == True:
@@ -24,10 +34,6 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
                                   cells_per_block=(cell_per_block, cell_per_block),
                                   transform_sqrt=True,
                                   visualise=vis, feature_vector=feature_vec)
-        # plt.imshow(img)
-        # plt.show()
-        # plt.imshow(hog_image)
-        # plt.show()
         return features
     # Otherwise call with one output
     else:
@@ -36,7 +42,6 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
                        cells_per_block=(cell_per_block, cell_per_block),
                        transform_sqrt=True,
                        visualise=vis, feature_vector=feature_vec)
-
         return features
 
 
@@ -46,7 +51,6 @@ def bin_spatial(img, size=(32, 32)):
     features = cv2.resize(img, size).ravel()
     # Return the feature vector
     return features
-
 
 # Define a function to compute color histogram features
 # NEED TO CHANGE bins_range if reading .png files with mpimg!
@@ -59,7 +63,6 @@ def color_hist(img, nbins=32, bins_range=(0, 256)):
     hist_features = np.concatenate((channel1_hist[0], channel2_hist[0], channel3_hist[0]))
     # Return the individual histograms, bin_centers and feature vector
     return hist_features
-
 
 # Define a function to extract features from a list of images
 # Have this function call bin_spatial() and color_hist()
@@ -102,9 +105,6 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
         channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
         feature_image = cv2.merge((channel_1,channel_2,channel_3))
 
-        # plt.imshow(image)
-        # plt.show()
-
         if spatial_feat == True:
             spatial_features = bin_spatial(feature_image, size=spatial_size)
             file_features.append(spatial_features)
@@ -122,9 +122,6 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
                                                          vis=False, feature_vec=True))
                     f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
                                                      vis=True, feature_vec=True)
-
-                    # plt.imshow(image_tosho)
-                    # plt.show()
                 hog_features = np.ravel(hog_features)
             else:
                 hog_features = get_hog_features(feature_image[:, :, hog_channel], orient,
@@ -136,113 +133,61 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
     # Return list of feature vectors
     return features
 
-# Define a function to extract features from a list of images
-# Have this function call bin_spatial() and color_hist()
-# def extract_features_single_img(image, color_space='RGB', spatial_size=(32, 32),
-#                                 hist_bins=32, orient=9,
-#                                 pix_per_cell=8, cell_per_block=2, hog_channel='ALL',
-#                                 spatial_feat=True, hist_feat=True, hog_feat=True):
-#
-#     # Create a list to append feature vectors to
-#     features = []
-#     # Iterate through the list of images
-#     file_features = []
-#     # apply color conversion if other than 'RGB'
-#     if color_space != 'BGR':
-#         if color_space == 'HSV':
-#             feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
-#         elif color_space == 'LUV':
-#             feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2LUV)
-#         elif color_space == 'RGB':
-#             feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-#         elif color_space == 'HLS':
-#             feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
-#         elif color_space == 'YUV':
-#             feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
-#         elif color_space == 'YCrCb':
-#             feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2YCrCb)
-#     else:
-#         feature_image = np.copy(image)
-#
-#     channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
-#     channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
-#     channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
-#     feature_image = cv2.merge((channel_1,channel_2,channel_3))
-#
-#     if spatial_feat == True:
-#         spatial_features = bin_spatial(feature_image, size=spatial_size)
-#         file_features.append(spatial_features)
-#     if hist_feat == True:
-#         # Apply color_hist()
-#         hist_features = color_hist(feature_image, nbins=hist_bins)
-#         file_features.append(hist_features)
-#     if hog_feat == True:
-#         # Call get_hog_features() with vis=False, feature_vec=True
-#         if hog_channel == 'ALL':
-#             hog_features = []
-#             for channel in range(feature_image.shape[2]):
-#                 hog_features.append(get_hog_features(feature_image[:, :, channel],
-#                                                      orient, pix_per_cell, cell_per_block,
-#                                                      vis=False, feature_vec=True))
-#             hog_features = np.ravel(hog_features)
-#         else:
-#             hog_features = get_hog_features(feature_image[:, :, hog_channel], orient,
-#                                             pix_per_cell, cell_per_block, vis=False, feature_vec=True)
-#         # Append the new feature vector to the features list
-#         file_features.append(hog_features)
-#     temp_result = np.concatenate(file_features)
-#     features.append(np.concatenate(file_features))
-#     # Return list of feature vectors
-#     return features
-
 # Define a function that takes an image,
 # start and stop positions in both x and y,
 # window size (x and y dimensions),
 # and overlap fraction (for both x and y)
-def slide_window(img, x_start_stop=[None, None], y_start_stop=[None, None],
-                 xy_window=(64, 64), xy_overlap=(0.5, 0.5)):
-    # If x and/or y start/stop positions not defined, set to image size
-    if x_start_stop[0] == None:
-        x_start_stop[0] = 0
-    if x_start_stop[1] == None:
-        x_start_stop[1] = img.shape[1]
-    if y_start_stop[0] == None:
-        y_start_stop[0] = 0
-    if y_start_stop[1] == None:
-        y_start_stop[1] = img.shape[0]
-    # Compute the span of the region to be searched
-    xspan = x_start_stop[1] - x_start_stop[0]
-    yspan = y_start_stop[1] - y_start_stop[0]
-    # Compute the number of pixels per step in x/y
-    nx_pix_per_step = np.int(xy_window[0] * (1 - xy_overlap[0]))
-    ny_pix_per_step = np.int(xy_window[1] * (1 - xy_overlap[1]))
-    # Compute the number of windows in x/y
-    nx_buffer = np.int(xy_window[0] * (xy_overlap[0]))
-    ny_buffer = np.int(xy_window[1] * (xy_overlap[1]))
-    nx_windows = np.int((xspan - nx_buffer) / nx_pix_per_step)
-    ny_windows = np.int((yspan - ny_buffer) / ny_pix_per_step)
-    # Initialize a list to append window positions to
-    window_list = []
-    # Loop through finding x and y window positions
-    # Note: you could vectorize this step, but in practice
-    # you'll be considering windows one by one with your
-    # classifier, so looping makes sense
-    for ys in range(ny_windows):
-        for xs in range(nx_windows):
-            # Calculate window position
-            startx = xs * nx_pix_per_step + x_start_stop[0]
-            endx = startx + xy_window[0]
-            starty = ys * ny_pix_per_step + y_start_stop[0]
-            endy = starty + xy_window[1]
-
-            # Append window position to list
-            window_list.append(((startx, starty), (endx, endy)))
-    # Return the list of windows
-    return window_list
+# def slide_window(img, x_start_stop=[None, None], y_start_stop=[None, None],
+#                  xy_window=(64, 64), xy_overlap=(0.5, 0.5)):
+#     # If x and/or y start/stop positions not defined, set to image size
+#     if x_start_stop[0] == None:
+#         x_start_stop[0] = 0
+#     if x_start_stop[1] == None:
+#         x_start_stop[1] = img.shape[1]
+#     if y_start_stop[0] == None:
+#         y_start_stop[0] = 0
+#     if y_start_stop[1] == None:
+#         y_start_stop[1] = img.shape[0]
+#     # Compute the span of the region to be searched
+#     xspan = x_start_stop[1] - x_start_stop[0]
+#     yspan = y_start_stop[1] - y_start_stop[0]
+#     # Compute the number of pixels per step in x/y
+#     nx_pix_per_step = np.int(xy_window[0] * (1 - xy_overlap[0]))
+#     ny_pix_per_step = np.int(xy_window[1] * (1 - xy_overlap[1]))
+#     # Compute the number of windows in x/y
+#     nx_buffer = np.int(xy_window[0] * (xy_overlap[0]))
+#     ny_buffer = np.int(xy_window[1] * (xy_overlap[1]))
+#     nx_windows = np.int((xspan - nx_buffer) / nx_pix_per_step)
+#     ny_windows = np.int((yspan - ny_buffer) / ny_pix_per_step)
+#     # Initialize a list to append window positions to
+#     window_list = []
+#     # Loop through finding x and y window positions
+#     # Note: you could vectorize this step, but in practice
+#     # you'll be considering windows one by one with your
+#     # classifier, so looping makes sense
+#     for ys in range(ny_windows):
+#         for xs in range(nx_windows):
+#             # Calculate window position
+#             startx = xs * nx_pix_per_step + x_start_stop[0]
+#             endx = startx + xy_window[0]
+#             starty = ys * ny_pix_per_step + y_start_stop[0]
+#             endy = starty + xy_window[1]
+#
+#             # Append window position to list
+#             window_list.append(((startx, starty), (endx, endy)))
+#     # Return the list of windows
+#     return window_list
 
 
 # Define a function to draw bounding boxes
 def draw_boxes(img, bboxes, color=(0, 0, 255), thick=6):
+    '''
+    :param img: Target image to draw box
+    :param bboxes: coordinate information to draw box
+    :param color: color of box
+    :param thick: thickness of line of box
+    :return: image with box
+    '''
     # Make a copy of the image
     imcopy = np.copy(img)
     # Iterate through the bounding boxes
@@ -254,6 +199,25 @@ def draw_boxes(img, bboxes, color=(0, 0, 255), thick=6):
 
 def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix_per_cell, cell_per_block,
               spatial_size, hist_bins,hog_channel,spatial_feat=True,hist_feat=True,hog_feat=True):
+    '''
+    :param img: Target image
+    :param color_space: color space to use
+    :param ystart: coordinate
+    :param ystop:
+    :param scale:
+    :param svc:
+    :param X_scaler:
+    :param orient:
+    :param pix_per_cell:
+    :param cell_per_block:
+    :param spatial_size:
+    :param hist_bins:
+    :param hog_channel:
+    :param spatial_feat:
+    :param hist_feat:
+    :param hog_feat:
+    :return:
+    '''
 
     if color_space != 'BGR':
         if color_space == 'HSV':
@@ -387,6 +351,26 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
 
     return heat_map
 
+def box_judege(prev_bbox,bbox,tolerance):
+    print(prev_bbox)
+    print(bbox)
+    judge_key = False
+    bbox_x = (bbox[1][0] + bbox[0][0])/2
+    bbox_y = (bbox[1][1] + bbox[0][1])/2
+    if type(prev_bbox) == type(None):
+        print("type_none")
+        judge_key = True
+    else:
+        for b in prev_bbox:
+            if bbox_x - tolerance < (b[1][0] + b[0][0])/2 and (b[1][0] + b[0][0])/2 < bbox_x + tolerance:
+                if bbox_y - tolerance < (b[1][1] + b[0][1]) / 2 and (b[1][1] + b[0][1]) / 2 < bbox_y + tolerance:
+                    judge_key = True
+                else:
+                    pass
+            else:
+                pass
+    return judge_key
+
 # def add_heat(heatmap, bbox_list):
 #     # Iterate through list of bboxes
 #     for box in bbox_list:
@@ -397,7 +381,7 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
 #     # Return updated heatmap
 #     return heatmap
 
-def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=False, previou_heatmap=None):
+def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=False, previou_heatmap=None, previous_bbox=None):
     svc = trained_data['model']
     color_space = trained_data['color_space']
     X_scale = trained_data['scaler']
@@ -425,9 +409,7 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
 
     mode_cal = res.flatten()
     mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
-
     thread = mode_cal.mean() * 1.5
-
     print("thread_mean:", thread)
 
     if thread < 8:
@@ -436,7 +418,6 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
         pass
 
     print(thread)
-
     res[res <= thread] = 0
 
     from scipy.ndimage.measurements import label
@@ -458,21 +439,28 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
         # print(box_height*box_width)
         center_x = (np.max(nonzerox) + np.min(nonzerox))/2
         center_y = (np.max(nonzeroy) - np.min(nonzeroy))/2
+        print("region thread", mode_cal.mean() * 2.5)
+
+        print("bbox_ju:",box_judege(previous_bbox,bbox,100))
 
         if box_height/box_width >= 3 or box_width/box_height >= 3 or box_height*box_width <= 150:
             pass
-        elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= mode_cal.mean() * 3:
+        elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= mode_cal.mean() * 6:
             print("NOK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
-
+        elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= 30 and\
+                usage_previous_frames == True:
+            print("NOK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
+        elif box_judege(previous_bbox,bbox,20) == False:
+            print("Bbox judge was NOK")
+            bbox_output.append(bbox)
         else:
             print("OK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
             cv2.rectangle(img, bbox[0], bbox[1], (0, 0, 255), 6)
             bbox_output.append(bbox)
-
     if exprt_heatmap == False:
         return img, bbox
     else:
-        return img, original_res
+        return img, original_res, bbox_output
 
 def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1, start_sec = 0, flg_whole_vide = False):
 
@@ -484,7 +472,6 @@ def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1
     with open(svm_mode, 'rb') as handle:
         trained_data = pickle.load(handle)
 
-
     start_frame = start_sec * fps
     end_frame = end_sec * fps
     if flg_whole_vide == True:
@@ -493,27 +480,51 @@ def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1
     else:
         pass
 
-    previous_res = None
+    previous_1_res = None
+    previous_2_res = None
+    previous_3_res = None
+    add_data = None
     for num_frame in range(0,(int)(end_frame)):
+        print(num_frame)
         if num_frame < start_frame:
             ret, frame = video.read() #pass until start flame
         else:
             print((int)(num_frame - start_frame), "/", (int)(end_frame - start_frame))
             ret, frame = video.read()
             if ret == True:
-                if num_frame == 0:
-                    result_frame, previous_res = video_pipline(frame,trained_data,
-                                                               exprt_heatmap=True,usage_previous_frames=False)
+                if num_frame <= start_frame + 5:
+                    print('here')
+                    result_frame, previous_res, prev_bbox = video_pipline(frame,trained_data,
+                                                                          exprt_heatmap=True,
+                                                                          usage_previous_frames=False)
+                    previous_3_res = previous_2_res
+                    previous_2_res = previous_1_res
+                    previous_1_res = previous_res
+                    # if type(previous_1_res) == type(None) or type(previous_2_res) ==type(None) or type(previous_3_res)== type(None):
+                    #     print(previous_1_res.max(),previous_2_res.max(),previous_3_res.max())
+                    # else:
+                    #     pass
+
                 else:
-                    result_frame, previous_res = video_pipline(frame,trained_data, exprt_heatmap=True,
-                                                               usage_previous_frames=True, previou_heatmap=previous_res)
+                    print(previous_1_res.max(), previous_2_res.max(), previous_3_res.max())
+                    max1 = previous_1_res.max()
+                    max2 = previous_2_res.max()
+                    max3 = previous_3_res.max()
+                    add_data = previous_1_res + previous_2_res + previous_3_res
+                    result_frame, previous_res, prev_bbox = video_pipline(frame,trained_data, exprt_heatmap=True,
+                                                                          usage_previous_frames=True,
+                                                                          previou_heatmap=add_data,
+                                                                          previous_bbox=prev_bbox)
+                    previous_3_res = previous_2_res
+                    previous_2_res = previous_1_res
+                    previous_1_res = previous_res
+                    print(previous_1_res.max(), previous_2_res.max(), previous_3_res.max())
 
                 out.write(result_frame)
 
     video.release()
     out.release()
     cv2.destroyAllWindows()
-
 
 def image_converter(input_file_names,svm_mode):
     with open(svm_mode, 'rb') as handle:
