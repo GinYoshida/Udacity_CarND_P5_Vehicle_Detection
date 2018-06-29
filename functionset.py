@@ -213,7 +213,7 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
     :param spatial_size:
     :param hist_bins:
     :param hog_channel:
-    :param spatial_feat:
+    :param spatial_feat
     :param hist_feat:
     :param hog_feat:
     :return:
@@ -228,15 +228,6 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
             feature_image = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         elif color_space == 'HLS':
             feature_image = cv2.cvtColor(img, cv2.COLOR_BGR2HLS)
-            # temp_img = np.copy(feature_image)
-            # channel_1 = temp_img[:, :, 0]
-            # channel_2 = temp_img[:, :, 1]
-            # channel_3 = temp_img[:, :, 2]
-            #
-            # channel_1[temp_img[:, :, 1] < 40] = 0
-            # channel_3[temp_img[:, :, 1] < 40] = 0
-            # channel_2[temp_img[:, :, 1] < 40] = 0
-            # feature_image = cv2.merge((channel_1, channel_2, channel_3))
         elif color_space == 'YUV':
             feature_image = cv2.cvtColor(img, cv2.COLOR_BGR2YUV)
         elif color_space == 'YCrCb':
@@ -244,27 +235,11 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
     else:
         feature_image = np.copy(img)
 
-    channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
-    channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
-    channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
-
-    shadow_filter = np.zeros_like(channel_2)
-    shadow_filter[(channel_2 <= 20) ] = 1
-
-    channel_3[shadow_filter==1]=channel_3.mean()
-
-    # plt.imshow(channel_3)
-    # plt.show()
-
-    # channel_2[channel_1<20] = channel_2.mean()
+    # channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
+    # channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
+    # channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
     #
-    # channel_3[channel_1<20] = channel_3.mean()
-    #
-    # channel_1[channel_1<20] = channel_1.mean()
-
-
-    img = cv2.merge((channel_1,channel_2,channel_3))
-    #
+    # img = cv2.merge((channel_1,channel_2,channel_3))
     # plt.imshow(channel_1)
     # plt.show()
     # plt.imshow(channel_2)
@@ -272,9 +247,10 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
     # plt.imshow(channel_3)
     # plt.show()
 
-
+    # Crop the unnecessary area from the image
     img_tosearch = img[ystart:ystop,:,:]
     ctrans_tosearch = img_tosearch
+
     # If color conversion is necessary, use the following line
     #ctrans_tosearch = convert_color(img_tosearch, conv='RGB2YCrCb')
 
@@ -352,8 +328,6 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
     return heat_map
 
 def box_judege(prev_bbox,bbox,tolerance):
-    print(prev_bbox)
-    print(bbox)
     judge_key = False
     bbox_x = (bbox[1][0] + bbox[0][0])/2
     bbox_y = (bbox[1][1] + bbox[0][1])/2
@@ -395,12 +369,16 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
     hist_bins = 32
     hog_channel = 'ALL'
 
-    res1 = find_cars(img, color_space, 400,650,1,svc,X_scale,orient,pix_per_cell,cell_per_block,
+    res1 = find_cars(img, color_space, 400,650,2.5,svc,X_scale,orient,pix_per_cell,cell_per_block,
                      spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
-    res2 = find_cars(img, color_space, 400,650,1.5,svc,X_scale,orient,pix_per_cell,cell_per_block,
-                     spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
+    # res2 = find_cars(img, color_space, 400,650,2,svc,X_scale,orient,pix_per_cell,cell_per_block,
+    #                  spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
+    #
+    # # res = res1 + res2
+    res = res1
+    plt.imshow(res)
+    plt.show()
 
-    res = res1 + res2
     original_res = np.copy(res)
     if usage_previous_frames == True and type(previou_heatmap) != type(None):
         res = res + previou_heatmap
@@ -420,6 +398,7 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
     print(thread)
     res[res <= thread] = 0
 
+    # Create label of each area which was surrounded by 0
     from scipy.ndimage.measurements import label
     labels = label(res)
     # plt.imshow(labels[0], cmap='gray')
@@ -441,8 +420,6 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
         center_y = (np.max(nonzeroy) - np.min(nonzeroy))/2
         print("region thread", mode_cal.mean() * 2.5)
 
-        print("bbox_ju:",box_judege(previous_bbox,bbox,100))
-
         if box_height/box_width >= 3 or box_width/box_height >= 3 or box_height*box_width <= 150:
             pass
         elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= mode_cal.mean() * 6:
@@ -457,6 +434,7 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
             print("OK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
             cv2.rectangle(img, bbox[0], bbox[1], (0, 0, 255), 6)
             bbox_output.append(bbox)
+
     if exprt_heatmap == False:
         return img, bbox
     else:
@@ -526,8 +504,8 @@ def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1
     out.release()
     cv2.destroyAllWindows()
 
-def image_converter(input_file_names,svm_mode):
-    with open(svm_mode, 'rb') as handle:
+def image_converter(input_file_names,svm_model_path):
+    with open(svm_model_path, 'rb') as handle:
         trained_data = pickle.load(handle)
 
     for file_name in input_file_names:
@@ -535,7 +513,7 @@ def image_converter(input_file_names,svm_mode):
         file_path = './test_images/' + file_name + '.jpg'
         target_img = cv2.imread(file_path)
 
-        result_img, res = video_pipline(target_img, trained_data, True)
+        result_img, res, heatmap = video_pipline(target_img, trained_data, exprt_heatmap=True)
 
         fig = plt.figure(figsize=(12, 6))
         ax1 = fig.add_subplot(1, 2, 1)

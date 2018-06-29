@@ -17,6 +17,26 @@ from functionset import *
 # from sklearn.model_selection import train_test_split
 from sklearn.cross_validation import train_test_split
 
+def data_list_creator():
+    # Read in cars and notcars
+    images_car_far = glob.glob('./training_data/vehicles/vehicles/GTI_Far/*.png')
+    images_car_left = glob.glob('./training_data/vehicles/vehicles/GTI_Left/*.png')
+    images_car_MiddleClose = glob.glob('./training_data/vehicles/vehicles/GTI_MiddleClose/*.png')
+    images_car_right = glob.glob('./training_data/vehicles/vehicles/GTI_Right/*.png')
+    images_car_KITTI_extracted = glob.glob('./training_data/vehicles/vehicles\KITTI_extracted/*.png')
+    images_noncar_Extras = glob.glob('./training_data/non-vehicles/non-vehicles/Extras/*.png')
+    images_noncar_GIT = glob.glob('./training_data/non-vehicles/non-vehicles/GTI/*.png')
+
+    cars = images_car_far + images_car_left + images_car_MiddleClose + images_car_right + images_car_KITTI_extracted
+    # + images_car_right + images_car_KITTI_extracted
+    notcars = images_noncar_Extras + images_noncar_GIT
+
+    # Shuffle original data
+    random.shuffle(cars)  # length is 8792
+    random.shuffle(notcars)  # length is 8968
+
+    return cars,notcars
+
 def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True,
                             sample_size=1000, color_space = 'RGB',
                             model_name = "trained.pickle", ):
@@ -34,21 +54,7 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     :return: verification score of model
     '''
 
-    # Read in cars and notcars
-    images_car_far = glob.glob('./training_data/vehicles/vehicles/GTI_Far/*.png')
-    images_car_left = glob.glob('./training_data/vehicles/vehicles/GTI_Left/*.png')
-    images_car_MiddleClose = glob.glob('./training_data/vehicles/vehicles/GTI_MiddleClose/*.png')
-    images_car_right = glob.glob('./training_data/vehicles/vehicles/GTI_Right/*.png')
-    images_car_KITTI_extracted = glob.glob('./training_data/vehicles/vehicles\KITTI_extracted/*.png')
-    images_noncar_Extras = glob.glob('./training_data/non-vehicles/non-vehicles/Extras/*.png')
-    images_noncar_GIT = glob.glob('./training_data/non-vehicles/non-vehicles/GTI/*.png')
-    cars = images_car_far + images_car_left  + images_car_MiddleClose + images_car_right + images_car_KITTI_extracted
-           # + images_car_right + images_car_KITTI_extracted
-    notcars = images_noncar_Extras + images_noncar_GIT
-
-    #Shuffle original data
-    random.shuffle(cars) # length is 8792
-    random.shuffle(notcars)  #length is 8968
+    cars,notcars = data_list_creator()
 
     # Reduce the sample size
     cars = cars[0:sample_size]
@@ -127,9 +133,9 @@ if __name__ == "__main__":
     #         "Python35/Scripts/Udacity/Udacity_CarND_P5_Vehicle_Detection")
     # Parameter study
     results = []
-    results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=20, color_space = 'RGB',
-        model_name = "condition_1.pickle"))
+    # results.append(feature_vector_creation(
+    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=20, color_space = 'RGB',
+    #     model_name = "condition_1.pickle"))
     # results.append(feature_vector_creation(
     #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
     #     model_name = "condition_2.pickle"))
@@ -149,6 +155,6 @@ if __name__ == "__main__":
     #     for x in results:
     #         f.write(str(x) + "\n")
 
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=6000, color_space = 'HLS',
-    #     model_name = "best_condition.pickle"))
+    results.append(feature_vector_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=6000, color_space = 'HLS',
+        model_name = "best_condition.pickle"))
