@@ -170,73 +170,62 @@ def basic_env_set():
             except:
                 logger.debug(traceback.print_exc())
 
-    for url in TARGETFILES[2:3]:
-        if os.path.exists(os.path.join(IMAGE_DATA_PATH,'object-dataset')):
-            logger.info('File should be unpacked. Please check the directory')
-        else:
-            try:
-                message = uncompress(url)
-                logger.info(message)
-            except:
-                logger.debug(traceback.print_exc())
-
-    od_crop_dir = os.path.join(IMAGE_DATA_PATH, 'object-dataset')
-    od_file_path = os.path.join(IMAGE_DATA_PATH, 'object-dataset\labels.csv')
-
-    if os.path.exists(os.path.join(IMAGE_DATA_PATH,'od_crop')):
-        logger.info('object-dataset file sorting was already done.')
-        pass
-    else:
-        os.mkdir(os.path.join(IMAGE_DATA_PATH,'od_crop'))
-        od_panda_data = pd.read_csv(od_file_path, sep=' ',
-                                    names=('file_name', 'xmin', 'ymin', 'xmax', 'ymax', 'label', 'sublabel'))
-        od_label,od_file_paths = np.vectorize(od_crop)(
-            od_panda_data.file_name.values,
-            od_panda_data.xmin.values.astype('int'),
-            od_panda_data.xmax.values.astype('int'),
-            od_panda_data.ymin.values.astype('int'),
-            od_panda_data.ymax.values.astype('int'),
-            od_panda_data.sublabel.values
-        )
-
-        od_crop_dir = os.path.join(IMAGE_DATA_PATH, 'object-dataset')
-        od_file_path = os.path.join(IMAGE_DATA_PATH, 'object-dataset\labels.csv')
-
-        # Save_as_csv_files
-        od_panda_data = pd.DataFrame(np.vstack((od_label, od_file_paths)).transpose(), columns=['label', 'path'])
-        od_panda_data[~(od_panda_data['path'] == 'nan')].to_csv(os.path.join(IMAGE_DATA_PATH, 'od_data.csv'))
-
-    odc_crop_dir = os.path.join(IMAGE_DATA_PATH, 'object-detection-crowdai')
-    odc_file_path = os.path.join(IMAGE_DATA_PATH, 'object-detection-crowdai\labels.csv')
-
-    if os.path.exists(os.path.join(IMAGE_DATA_PATH,'odc_crop')):
-        logger.info('oject-dataset-crowdai file sorting was already done.')
-        pass
-    else:
-        os.mkdir(os.path.join(IMAGE_DATA_PATH,'odc_crop'))
-        odc_panda_data = pd.read_csv(odc_file_path)
-        odc_label,odc_file_paths = np.vectorize(odc_crop)(
-            odc_panda_data.Frame,
-            odc_panda_data.xmin,
-            odc_panda_data.ymin,
-            odc_panda_data.xmax,
-            odc_panda_data.ymax,
-            odc_panda_data.Label,
-        )
-        odc_panda_data = pd.DataFrame(np.vstack((odc_label, odc_file_paths )).transpose(), columns=['label', 'path'])
-        odc_panda_data[~(odc_panda_data['path'] == 'nan')].to_csv(os.path.join(IMAGE_DATA_PATH, 'odc_data.csv'))
-
-def training_list_creator():
-    od_data = pd.read_csv(os.path.join(IMAGE_DATA_PATH,'od_data.csv'))
-    odc_data = pd.read_csv(os.path.join(IMAGE_DATA_PATH,'odc_data.csv'))
-
-    car_label = pd.concat([od_data[od_data.label == 'car'].path, odc_data[odc_data.label == 'Car'].path])
-    non_car_label = pd.concat([od_data[(od_data.label == 'trafficLight') &
-                                       (od_data.label == 'pedestrian') &
-                                       (od_data.label == 'biker')].path,
-                               odc_data[odc_data.label == 'Pedestrian'].path])
+    # for url in TARGETFILES[2:3]:
+    #     if os.path.exists(os.path.join(IMAGE_DATA_PATH,'object-dataset')):
+    #         logger.info('File should be unpacked. Please check the directory')
+    #     else:
+    #         try:
+    #             message = uncompress(url)
+    #             logger.info(message)
+    #         except:
+    #             logger.debug(traceback.print_exc())
+    #
+    # od_crop_dir = os.path.join(IMAGE_DATA_PATH, 'object-dataset')
+    # od_file_path = os.path.join(IMAGE_DATA_PATH, 'object-dataset\labels.csv')
+    #
+    # if os.path.exists(os.path.join(IMAGE_DATA_PATH,'od_crop')):
+    #     logger.info('object-dataset file sorting was already done.')
+    #     pass
+    # else:
+    #     os.mkdir(os.path.join(IMAGE_DATA_PATH,'od_crop'))
+    #     od_panda_data = pd.read_csv(od_file_path, sep=' ',
+    #                                 names=('file_name', 'xmin', 'ymin', 'xmax', 'ymax', 'label', 'sublabel'))
+    #     od_label,od_file_paths = np.vectorize(od_crop)(
+    #         od_panda_data.file_name.values,
+    #         od_panda_data.xmin.values.astype('int'),
+    #         od_panda_data.xmax.values.astype('int'),
+    #         od_panda_data.ymin.values.astype('int'),
+    #         od_panda_data.ymax.values.astype('int'),
+    #         od_panda_data.sublabel.values
+    #     )
+    #
+    #     od_crop_dir = os.path.join(IMAGE_DATA_PATH, 'object-dataset')
+    #     od_file_path = os.path.join(IMAGE_DATA_PATH, 'object-dataset\labels.csv')
+    #
+    #     # Save_as_csv_files
+    #     od_panda_data = pd.DataFrame(np.vstack((od_label, od_file_paths)).transpose(), columns=['label', 'path'])
+    #     od_panda_data[~(od_panda_data['path'] == 'nan')].to_csv(os.path.join(IMAGE_DATA_PATH, 'od_data.csv'))
+    #
+    # odc_crop_dir = os.path.join(IMAGE_DATA_PATH, 'object-detection-crowdai')
+    # odc_file_path = os.path.join(IMAGE_DATA_PATH, 'object-detection-crowdai\labels.csv')
+    #
+    # if os.path.exists(os.path.join(IMAGE_DATA_PATH,'odc_crop')):
+    #     logger.info('oject-dataset-crowdai file sorting was already done.')
+    #     pass
+    # else:
+    #     os.mkdir(os.path.join(IMAGE_DATA_PATH,'odc_crop'))
+    #     odc_panda_data = pd.read_csv(odc_file_path)
+    #     odc_label,odc_file_paths = np.vectorize(odc_crop)(
+    #         odc_panda_data.Frame,
+    #         odc_panda_data.xmin,
+    #         odc_panda_data.ymin,
+    #         odc_panda_data.xmax,
+    #         odc_panda_data.ymax,
+    #         odc_panda_data.Label,
+    #     )
+    #     odc_panda_data = pd.DataFrame(np.vstack((odc_label, odc_file_paths )).transpose(), columns=['label', 'path'])
+    #     odc_panda_data[~(odc_panda_data['path'] == 'nan')].to_csv(os.path.join(IMAGE_DATA_PATH, 'odc_data.csv'))
 
 logger.info("Start of enviroment setup".center(70,'-'))
-# basic_env_set()
-
+basic_env_set()
 logger.info("End of enviroment setup".center(70,'-'))

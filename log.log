@@ -332,3 +332,6 @@
 2018-06-21 11:57:56,917:enviroment_setup.py:basic_env_set:INFO:object-dataset file sorting was already done.
 2018-06-21 11:57:56,918:enviroment_setup.py:basic_env_set:INFO:oject-dataset-crowdai file sorting was already done.
 2018-06-21 11:57:56,918:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-06-29 23:16:16,042:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-06-29 23:16:16,043:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-06-29 23:18:00,249:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------

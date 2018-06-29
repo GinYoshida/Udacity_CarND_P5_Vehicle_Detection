@@ -120,8 +120,8 @@ def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
                     hog_features.append(get_hog_features(feature_image[:, :, channel],
                                                          orient, pix_per_cell, cell_per_block,
                                                          vis=False, feature_vec=True))
-                    f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
-                                                     vis=True, feature_vec=True)
+                    # f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
+                    #                                  vis=True, feature_vec=True)
                 hog_features = np.ravel(hog_features)
             else:
                 hog_features = get_hog_features(feature_image[:, :, hog_channel], orient,
