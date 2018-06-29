@@ -129,13 +129,10 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
 
 if __name__ == "__main__":
     #Only for local windows machine
-    # import os
-    # os.chdir("C:/Users/hitoshi/AppData/Local/Programs/Python/" +
-    #         "Python35/Scripts/Udacity/Udacity_CarND_P5_Vehicle_Detection")
     # Parameter study
     results = []
-    results.append(feature_vector_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=20, color_space = 'RGB'))
+#     results.append(feature_vector_creation(
+#         spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=20, color_space = 'RGB'))
 
         # ,
         # model_name = "condition_1.pickle"))
@@ -158,6 +155,6 @@ if __name__ == "__main__":
     #     for x in results:
     #         f.write(str(x) + "\n")
 
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=6000, color_space = 'HLS',
-    #     model_name = "best_condition.pickle"))
+    feature_vector_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=6000, color_space = 'HLS',
+        model_name = "best_condition.pickle"))
