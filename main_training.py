@@ -157,4 +157,4 @@ if __name__ == "__main__":
 
     feature_vector_creation(
         spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=6000, color_space = 'HLS',
-        model_name = "best_condition.pickle"))
+        model_name = "best_condition.pickle")
