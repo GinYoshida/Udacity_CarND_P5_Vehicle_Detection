@@ -66,17 +66,17 @@ def color_hist(img, nbins=32, bins_range=(0, 256)):
 
 # Define a function to extract features from a list of images
 # Have this function call bin_spatial() and color_hist()
-def extract_features(imgs, color_space='RGB', spatial_size=(32, 32),
+def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
                      hist_bins=32, orient=9,
                      pix_per_cell=8, cell_per_block=2, hog_channel=0,
                      spatial_feat=True, hist_feat=True, hog_feat=True):
 
-    # Create a list to append feature vectors to
-    features = []
+
     # Iterate through the list of images
-    for count,file in enumerate(imgs):
-        if count % (len(imgs)/10)==0:
-            print("extraction was done",count,"/",len(imgs))
+    features = []
+    for count,file in enumerate(img_paths):
+        if count % (len(img_paths)/10)==0:
+            print("extraction was done",count,"/",len(img_paths))
         else:
             pass
         file_features = []
@@ -308,9 +308,16 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
             #                                             hist_feat=True,hog_feat=True)
             # test_features = test_features
             # test_features = X_scaler.transform(test_features[0][0],test_features[1],test_features[2][0])
-            # Scale features and make a prediction
-            test_features = X_scaler.transform(np.hstack((spatial_features, hist_features, hog_features)).reshape(1, -1))
-            #test_features = X_scaler.transform(np.hstack((shape_feat, hist_feat)).reshape(1, -1))
+            # # Scale features and make a prediction
+            if spatial_feat == True & hist_feat == True:
+                test_features = X_scaler.transform(np.hstack((spatial_features, hist_features, hog_features)).reshape(1, -1))
+            elif spatial_feat == True & hist_feat == False:
+                test_features = X_scaler.transform(np.hstack((spatial_features, hog_features)).reshape(1, -1))
+            elif spatial_feat == False & hist_feat == True:
+                test_features = X_scaler.transform(np.hstack((hist_feat, hog_features)).reshape(1, -1))
+            else:
+                test_features = X_scaler.transform(np.hstack((hog_features)).reshape(1, -1))
+
             test_prediction = svc.predict(test_features)
 
             if test_prediction == 1:
@@ -365,12 +372,15 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
     spatial_size = trained_data['spatial_size']
     hist_bins = trained_data['hist_bins']
     hog_channel = trained_data['hog_channel']
-    spatial_size = (32, 32)
-    hist_bins = 32
-    hog_channel = 'ALL'
+    spatial_size = trained_data['spatial_size']
+    hist_bins = trained_data['hist_bins']
+    hog_channel = trained_data['hog_channel']
+    spatial_feat = trained_data['spatial_feat']
+    hist_feat = trained_data['hist_feat']
+    hog_feat = trained_data['hog_feat']
 
     res1 = find_cars(img, color_space, 400,650,2.5,svc,X_scale,orient,pix_per_cell,cell_per_block,
-                     spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
+                     spatial_size,hist_bins,hog_channel,spatial_feat,hist_feat,hog_feat)
     # res2 = find_cars(img, color_space, 400,650,2,svc,X_scale,orient,pix_per_cell,cell_per_block,
     #                  spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
     #

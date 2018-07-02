@@ -38,9 +38,12 @@ def data_list_creator():
 
     return cars,notcars
 
-def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True,
-                            sample_size=1000, color_space = 'RGB',
-                            model_name = "trained.pickle"):
+def training_mode_creation(
+        spatial_feat=True, hist_feat = True, hog_feat = True,
+        sample_size=1000, color_space = 'RGB',
+        model_name = "trained.pickle",
+        train_test_split_rate = 0.2
+):
     '''
     Create svm model to detect car and non-car images.
     sample size and method to create feature vector from color space are optional.
@@ -57,9 +60,20 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
 
     cars,notcars = data_list_creator()
 
+    # Create an array stack of feature vectors
+    X = np.hstack((cars, notcars))
+
+    # Define the labels vector
+    y = np.hstack((np.ones(len(cars)), np.zeros(len(notcars))))
+
+    # Split up data into randomized training and test sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=train_test_split_rate, random_state=1)
     # Reduce the sample size
-    cars = cars[0:sample_size]
-    notcars = notcars[0:sample_size]
+    if sample_size == None:
+        pass
+    else:
+        X_train = X_train[0:sample_size]
+        y_train = y_train[0:sample_size]
 
     # Define input vector
     orient = 9  # HOG orientations
@@ -70,30 +84,23 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     hist_bins = 32  # Number of histogram bins
     y_start_stop = [None, None]  # Min and max in y to search in slide_window()
 
-    car_features = extract_features(cars, color_space=color_space,
-                                    spatial_size=spatial_size, hist_bins=hist_bins,
-                                    orient=orient, pix_per_cell=pix_per_cell,
-                                    cell_per_block=cell_per_block,
-                                    hog_channel=hog_channel, spatial_feat=spatial_feat,
-                                    hist_feat=hist_feat, hog_feat=hog_feat)
+    X_train = extract_features(
+        X_train, color_space=color_space,
+        spatial_size=spatial_size, hist_bins=hist_bins,
+        orient=orient, pix_per_cell=pix_per_cell,
+        cell_per_block=cell_per_block,
+        hog_channel=hog_channel, spatial_feat=spatial_feat,
+        hist_feat=hist_feat, hog_feat=hog_feat
+    )
 
-    notcar_features = extract_features(notcars, color_space=color_space,
-                                       spatial_size=spatial_size, hist_bins=hist_bins,
-                                       orient=orient, pix_per_cell=pix_per_cell,
-                                       cell_per_block=cell_per_block,
-                                       hog_channel=hog_channel, spatial_feat=spatial_feat,
-                                       hist_feat=hist_feat, hog_feat=hog_feat)
-
-    # Create an array stack of feature vectors
-    X = np.vstack((car_features, notcar_features)).astype(np.float64)
-
-    # Define the labels vector
-    y = np.hstack((np.ones(len(car_features)), np.zeros(len(notcar_features))))
-
-    # Split up data into randomized training and test sets
-    rand_state = np.random.randint(0, 100)
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=rand_state)
+    X_test = extract_features(
+        X_test, color_space=color_space,
+        spatial_size=spatial_size, hist_bins=hist_bins,
+        orient=orient, pix_per_cell=pix_per_cell,
+        cell_per_block=cell_per_block,
+        hog_channel=hog_channel, spatial_feat=spatial_feat,
+        hist_feat=hist_feat, hog_feat=hog_feat
+    )
 
     # Fit a per-column scaler
     X_scaler = StandardScaler().fit(X_train)
@@ -116,10 +123,13 @@ def feature_vector_creation(spatial_feat=True, hist_feat = True, hog_feat = True
     svc = LinearSVC(C=clf.best_params_['C'])
     svc.fit(X_train, y_train)
     score_model = round(svc.score(X_test, y_test),4)
-    print('Test Accuracy of SVC = ', score_model)
+    print('Test Accuracy of {} is {} '.format(model_name,score_model))
 
-    output_sum = {'model':svc,'color_space':color_space,'scaler':X_scaler,'orient':9,'pix_per_cell':8,
-                  'cell_per_block':2,'hog_channel':hog_channel,'spatial_size':spatial_size,'hist_bins':hist_bins}
+    output_sum = {
+        'model':svc,'color_space':color_space,'scaler':X_scaler,'orient':9,'pix_per_cell':8,
+        'cell_per_block':2,'hog_channel':hog_channel,'spatial_size':spatial_size,'hist_bins':hist_bins,
+        'spatial_feat': True, 'hist_feat': True, 'hog_feat': True,
+    }
 
     with open(model_name, 'wb') as handle:
         pickle.dump(output_sum, handle, protocol=pickle.HIGHEST_PROTOCOL)
@@ -131,30 +141,36 @@ if __name__ == "__main__":
     #Only for local windows machine
     # Parameter study
     results = []
-#     results.append(feature_vector_creation(
-#         spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=20, color_space = 'RGB'))
+    training_mode_creation(
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'RGB',
+        model_name = "condition_1.pickle", train_test_split_rate= 1000
+    )
 
-        # ,
-        # model_name = "condition_1.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
-    #     model_name = "condition_2.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'RGB',
-    #     model_name = "condition_3.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=1000, color_space = 'HLS',
-    #     model_name = "condition_4.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
-    #     model_name = "condition_5.pickle"))
-    # results.append(feature_vector_creation(
-    #     spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=1000, color_space = 'HLS',
-    #     model_name = "condition_6.pickle"))
-    # with open('result.txt', 'w') as f:
-    #     for x in results:
-    #         f.write(str(x) + "\n")
+    training_mode_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=3000, color_space = 'RGB',
+        model_name = "condition_2.pickle", train_test_split_rate= 1000
+    )
 
-    feature_vector_creation(
-        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=6000, color_space = 'HLS',
-        model_name = "best_condition.pickle")
+    training_mode_creation(
+        spatial_feat=False, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'RGB',
+        model_name = "condition_3.pickle", train_test_split_rate= 1000
+    )
+
+    training_mode_creation(
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'HLS',
+        model_name = "condition_4.pickle", train_test_split_rate= 1000
+    )
+
+    training_mode_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=3000, color_space = 'HLS',
+        model_name = "condition_5.pickle", train_test_split_rate= 1000
+    )
+
+    training_mode_creation(
+        spatial_feat=False, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'HLS',
+        model_name = "condition_6.pickle", train_test_split_rate= 1000
+    )
+
+    training_mode_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'HLS',
+        model_name="Full_w-o_hist_feat", train_test_split_rate=0.1)
