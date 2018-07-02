@@ -4263,4 +4263,44 @@ thread_mean: 20.641019589332075
 OK_max: 59
 NOK_max: 34
 954 / 1259
-thread_mean:
+thread_mean:/usr/local/lib/python3.5/dist-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+/usr/local/lib/python3.5/dist-packages/sklearn/grid_search.py:42: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. This module will be removed in 0.20.
+  DeprecationWarning)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 6000
+extraction was done 600 / 6000
+extraction was done 1200 / 6000
+extraction was done 1800 / 6000
+extraction was done 2400 / 6000
+extraction was done 3000 / 6000
+extraction was done 3600 / 6000
+extraction was done 4200 / 6000
+extraction was done 4800 / 6000
+extraction was done 5400 / 6000
+extraction was done 0 / 6000
+extraction was done 600 / 6000
+extraction was done 1200 / 6000
+extraction was done 1800 / 6000
+extraction was done 2400 / 6000
+extraction was done 3000 / 6000
+extraction was done 3600 / 6000
+extraction was done 4200 / 6000
+extraction was done 4800 / 6000
+extraction was done 5400 / 6000
+3815.38 Seconds to train SVC...
+Test Accuracy of SVC =  0.99
+2018-07-02 07:11:28,276:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 07:11:28,276:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-02 07:11:28,277:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+['https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip', 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip']

@@ -335,3 +335,62 @@
 2018-06-29 23:16:16,042:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
 2018-06-29 23:16:16,043:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
 2018-06-29 23:18:00,249:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 05:10:06,873:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 05:10:06,874:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 05:10:06,874:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 05:10:06,874:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 05:10:06,874:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 05:10:06,874:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 05:10:13,387:enviroment_setup.py:basic_env_set:INFO:vehicles.zip was unziped.
+2018-07-02 05:10:13,387:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-02 05:13:14,484:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 05:13:14,484:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 05:13:14,484:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 05:13:14,484:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 05:13:14,484:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 05:13:14,484:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 05:13:16,486:enviroment_setup.py:basic_env_set:INFO:vehicles.zip was unziped.
+2018-07-02 05:13:16,486:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-02 05:14:35,133:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 05:14:35,133:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 05:14:35,133:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 05:14:35,133:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 05:14:35,133:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 05:14:35,134:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 05:14:36,776:enviroment_setup.py:basic_env_set:INFO:vehicles.zip was unziped.
+2018-07-02 05:14:36,776:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-02 05:14:59,502:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 05:14:59,502:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 05:14:59,502:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 05:14:59,502:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 05:14:59,502:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 05:14:59,503:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 05:15:01,134:enviroment_setup.py:basic_env_set:INFO:vehicles.zip was unziped.
+2018-07-02 05:15:01,134:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-02 05:15:21,059:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 05:15:21,059:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 05:15:21,060:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 05:15:21,060:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 05:15:21,060:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 05:15:21,060:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 05:15:22,789:enviroment_setup.py:basic_env_set:INFO:vehicles.zip was unziped.
+2018-07-02 05:15:24,211:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip was unziped.
+2018-07-02 05:15:24,211:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-02 07:11:28,276:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 07:11:28,276:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-02 07:11:28,277:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-02 07:13:44,797:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:Directory of ../image_data_Udacity_CarND_P5 is already existing
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-02 07:13:44,798:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------

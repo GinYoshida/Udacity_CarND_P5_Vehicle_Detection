@@ -96,12 +96,11 @@ def uncompress(url: str):
         extend = filename.split('.')[-1]
         if extend == 'zip':
             with zipfile.ZipFile(file_path, "r") as zip_ref:
-                # zip_ref.extractall(IMAGE_DATA_PATH)
-                print(zip_ref.filelist)
+                zip_ref.extractall(IMAGE_DATA_PATH)
             return '{} was unziped.'.format(filename)
         else:
             with tarfile.open(file_path) as tar:
-                # tar.extractall(path=IMAGE_DATA_PATH)
+                tar.extractall(path=IMAGE_DATA_PATH)
                 print(tar.getmembers())
                 return '{} is tar file and uncompress process was done.'.format(filename)
     else:
@@ -160,12 +159,14 @@ def basic_env_set():
             logger.debug(traceback.print_exc())
 
     #Unpack compressed files
-    for url in TARGETFILES[0:1]:
-        if os.path.exists(os.path.join(IMAGE_DATA_PATH,'vehicles')):
+    print(TARGETFILES[0:2])
+    for url in TARGETFILES[0:2]:
+        if os.path.exists(os.path.join(IMAGE_DATA_PATH,'non-vehicles')):
             logger.info('File should be unpacked. Please check the directory')
         else:
             try:
                 message = uncompress(url)
+                print(message)
                 logger.info(message)
             except:
                 logger.debug(traceback.print_exc())

@@ -19,18 +19,18 @@ from sklearn.cross_validation import train_test_split
 
 def data_list_creator():
     # Read in cars and notcars
-    images_car_far = glob.glob('../image_data_Udacity_CarND_P5/vehicles/vehicles/GTI_Far/*.png')
+    images_car_far = glob.glob('../image_data_Udacity_CarND_P5/vehicles/GTI_Far/*.png')
     images_car_left = glob.glob('../image_data_Udacity_CarND_P5/vehicles/GTI_Left/*.png')
-    images_car_MiddleClose = glob.glob('../image_data_Udacity_CarND_P5/vehicles/vehicles/GTI_MiddleClose/*.png')
-    images_car_right = glob.glob('../image_data_Udacity_CarND_P5/vehicles/vehicles/GTI_Right/*.png')
-    images_car_KITTI_extracted = glob.glob('../image_data_Udacity_CarND_P5/vehicles/vehicles\KITTI_extracted/*.png')
-    images_noncar_Extras = glob.glob('../image_data_Udacity_CarND_P5/non-vehicles/non-vehicles/Extras/*.png')
-    images_noncar_GIT = glob.glob('../image_data_Udacity_CarND_P5/non-vehicles/non-vehicles/GTI/*.png')
+    images_car_MiddleClose = glob.glob('../image_data_Udacity_CarND_P5/vehicles/GTI_MiddleClose/*.png')
+    images_car_right = glob.glob('../image_data_Udacity_CarND_P5/vehicles/GTI_Right/*.png')
+    images_car_KITTI_extracted = glob.glob('../image_data_Udacity_CarND_P5/vehicles/KITTI_extracted/*.png')
+    images_noncar_Extras = glob.glob('../image_data_Udacity_CarND_P5/non-vehicles/Extras/*.png')
+    images_noncar_GIT = glob.glob('../image_data_Udacity_CarND_P5/non-vehicles/GTI/*.png')
 
     cars = images_car_far + images_car_left + images_car_MiddleClose + images_car_right + images_car_KITTI_extracted
     # + images_car_right + images_car_KITTI_extracted
     notcars = images_noncar_Extras + images_noncar_GIT
-    print(len(cars))
+    print('Number of cars:{}, Number of non-cars: {}'.format(len(cars),len(notcars)))
 
     # Shuffle original data
     random.shuffle(cars)  # length is 8792
