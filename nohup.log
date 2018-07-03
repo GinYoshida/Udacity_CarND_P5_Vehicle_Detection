@@ -6,26 +6,170 @@
   skimage_deprecation)
 /usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
   'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
 Number of cars:8792, Number of non-cars: 8968
-extraction was done 0 / 6000
-extraction was done 600 / 6000
-extraction was done 1200 / 6000
-extraction was done 1800 / 6000
-extraction was done 2400 / 6000
-extraction was done 3000 / 6000
-extraction was done 3600 / 6000
-extraction was done 4200 / 6000
-extraction was done 4800 / 6000
-extraction was done 5400 / 6000
-extraction was done 0 / 6000
-extraction was done 600 / 6000
-extraction was done 1200 / 6000
-extraction was done 1800 / 6000
-extraction was done 2400 / 6000
-extraction was done 3000 / 6000
-extraction was done 3600 / 6000
-extraction was done 4200 / 6000
-extraction was done 4800 / 6000
-extraction was done 5400 / 6000
-3829.85 Seconds to train SVC...
-Test Accuracy of SVC =  0.9912
+extraction was done 0 / 3000
+extraction was done 300 / 3000
+extraction was done 600 / 3000
+extraction was done 900 / 3000
+extraction was done 1200 / 3000
+extraction was done 1500 / 3000
+extraction was done 1800 / 3000
+extraction was done 2100 / 3000
+extraction was done 2400 / 3000
+extraction was done 2700 / 3000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+594.94 Seconds to train SVC...
+Test Accuracy of condition_1.pickle is 0.976 
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 3000
+extraction was done 300 / 3000
+extraction was done 600 / 3000
+extraction was done 900 / 3000
+extraction was done 1200 / 3000
+extraction was done 1500 / 3000
+extraction was done 1800 / 3000
+extraction was done 2100 / 3000
+extraction was done 2400 / 3000
+extraction was done 2700 / 3000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+591.41 Seconds to train SVC...
+Test Accuracy of condition_2.pickle is 0.978 
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 3000
+extraction was done 300 / 3000
+extraction was done 600 / 3000
+extraction was done 900 / 3000
+extraction was done 1200 / 3000
+extraction was done 1500 / 3000
+extraction was done 1800 / 3000
+extraction was done 2100 / 3000
+extraction was done 2400 / 3000
+extraction was done 2700 / 3000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+306.52 Seconds to train SVC...
+Test Accuracy of condition_3.pickle is 0.961 
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 3000
+extraction was done 300 / 3000
+extraction was done 600 / 3000
+extraction was done 900 / 3000
+extraction was done 1200 / 3000
+extraction was done 1500 / 3000
+extraction was done 1800 / 3000
+extraction was done 2100 / 3000
+extraction was done 2400 / 3000
+extraction was done 2700 / 3000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+444.46 Seconds to train SVC...
+Test Accuracy of condition_4.pickle is 0.985 
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 3000
+extraction was done 300 / 3000
+extraction was done 600 / 3000
+extraction was done 900 / 3000
+extraction was done 1200 / 3000
+extraction was done 1500 / 3000
+extraction was done 1800 / 3000
+extraction was done 2100 / 3000
+extraction was done 2400 / 3000
+extraction was done 2700 / 3000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+473.87 Seconds to train SVC...
+Test Accuracy of condition_5.pickle is 0.991 
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 3000
+extraction was done 300 / 3000
+extraction was done 600 / 3000
+extraction was done 900 / 3000
+extraction was done 1200 / 3000
+extraction was done 1500 / 3000
+extraction was done 1800 / 3000
+extraction was done 2100 / 3000
+extraction was done 2400 / 3000
+extraction was done 2700 / 3000
+extraction was done 0 / 1000
+extraction was done 100 / 1000
+extraction was done 200 / 1000
+extraction was done 300 / 1000
+extraction was done 400 / 1000
+extraction was done 500 / 1000
+extraction was done 600 / 1000
+extraction was done 700 / 1000
+extraction was done 800 / 1000
+extraction was done 900 / 1000
+307.39 Seconds to train SVC...
+Test Accuracy of condition_6.pickle is 0.982 
+Number of cars:8792, Number of non-cars: 8968
+extraction was done 0 / 15984
+extraction was done 0 / 1776
+6130.83 Seconds to train SVC...
+Test Accuracy of Full_w-o_hist_feat is 0.9927 
