@@ -39,10 +39,9 @@ def data_list_creator():
     return cars,notcars
 
 def training_mode_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True,
-        sample_size=1000, color_space = 'RGB',
-        model_name = "trained.pickle",
-        train_test_split_rate = 0.2
+        spatial_feat, hist_feat, hog_feat,
+        sample_size, color_space,
+        model_name, train_test_split_rate
 ):
     '''
     Create svm model to detect car and non-car images.
@@ -128,7 +127,7 @@ def training_mode_creation(
     output_sum = {
         'model':svc,'color_space':color_space,'scaler':X_scaler,'orient':9,'pix_per_cell':8,
         'cell_per_block':2,'hog_channel':hog_channel,'spatial_size':spatial_size,'hist_bins':hist_bins,
-        'spatial_feat': True, 'hist_feat': True, 'hog_feat': True,
+        'spatial_feat': spatial_feat, 'hist_feat': hist_feat, 'hog_feat': hog_feat,
     }
 
     with open(model_name, 'wb') as handle:
@@ -173,4 +172,4 @@ if __name__ == "__main__":
 
     training_mode_creation(
         spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'HLS',
-        model_name="Full_w-o_hist_feat", train_test_split_rate=0.1)
+        model_name="Full_w-o_hist_feat", train_test_split_rate=0.01)

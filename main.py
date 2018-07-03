@@ -13,7 +13,7 @@ images = ['test1','test2','test3','test4','test5','test6','test7',
 
 """for image creation, please activate the following lines"""
 images = ['test1','test2','test3','test4']
-myfc.image_converter(images,svm_model_path='condition_1.pickle')
+myfc.image_converter(images,svm_model_path='Full_w-o_hist_feat')
 
 """for video creation, please activate the following lines"""
 # myfc.video_creation('project_video.mp4','project_video_w_pipline.avi','best_condition.pickle',50,0,True)

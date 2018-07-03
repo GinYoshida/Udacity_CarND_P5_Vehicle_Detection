@@ -26,7 +26,6 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
     :param feature_vec: Key to use feature vector
     :return: HOG future
     '''
-    vis = True
     # Call with two outputs if vis==True
     if vis == True:
         features, hog_image = hog(img, orientations=orient,
@@ -34,7 +33,7 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
                                   cells_per_block=(cell_per_block, cell_per_block),
                                   transform_sqrt=True,
                                   visualise=vis, feature_vector=feature_vec)
-        return features
+        return features, hog_image
     # Otherwise call with one output
     else:
         features = hog(img, orientations=orient,
@@ -122,14 +121,14 @@ def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
                                                          vis=False, feature_vec=True))
                     # f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
                     #                                  vis=True, feature_vec=True)
-                hog_features = np.ravel(hog_features)
+                hog_features_flat = np.ravel(hog_features)
             else:
-                hog_features = get_hog_features(feature_image[:, :, hog_channel], orient,
-                                                pix_per_cell, cell_per_block, vis=False, feature_vec=True)
+                hog_features_flat = get_hog_features(feature_image[:, :, hog_channel], orient,
+                                                     pix_per_cell, cell_per_block, vis=False, feature_vec=True)
             # Append the new feature vector to the features list
-            file_features.append(hog_features)
+            file_features.append(hog_features_flat)
             temp_result = np.concatenate(file_features)
-        features.append(np.concatenate(file_features))
+        features.append(temp_result)
     # Return list of feature vectors
     return features
 
@@ -197,8 +196,8 @@ def draw_boxes(img, bboxes, color=(0, 0, 255), thick=6):
     # Return the image copy with boxes drawn
     return imcopy
 
-def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix_per_cell, cell_per_block,
-              spatial_size, hist_bins,hog_channel,spatial_feat=True,hist_feat=True,hog_feat=True):
+def find_cars(img, ystart, ystop, scale, svm_model_path):
+
     '''
     :param img: Target image
     :param color_space: color space to use
@@ -218,6 +217,26 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
     :param hog_feat:
     :return:
     '''
+    with open(svm_model_path, 'rb') as handle:
+        trained_data = pickle.load(handle)
+
+    svc = trained_data['model']
+    color_space = trained_data['color_space']
+    X_scaler = trained_data['scaler']
+    orient = trained_data['orient']
+    pix_per_cell = trained_data['pix_per_cell']
+    cell_per_block = trained_data['cell_per_block']
+    spatial_size = trained_data['spatial_size']
+    hist_bins = trained_data['hist_bins']
+    hog_channel = trained_data['hog_channel']
+    hist_bins = trained_data['hist_bins']
+    hog_channel = trained_data['hog_channel']
+    spatial_feat = trained_data['spatial_feat']
+    hist_feat = trained_data['hist_feat']
+    hog_feat = trained_data['hog_feat']
+
+    print('Please_delet!!!!!!')
+    hist_feat = False
 
     if color_space != 'BGR':
         if color_space == 'HSV':
@@ -309,11 +328,11 @@ def find_cars(img, color_space, ystart, ystop, scale, svc, X_scaler, orient, pix
             # test_features = test_features
             # test_features = X_scaler.transform(test_features[0][0],test_features[1],test_features[2][0])
             # # Scale features and make a prediction
-            if spatial_feat == True & hist_feat == True:
+            if (spatial_feat == True) & (hist_feat == True):
                 test_features = X_scaler.transform(np.hstack((spatial_features, hist_features, hog_features)).reshape(1, -1))
-            elif spatial_feat == True & hist_feat == False:
+            elif (spatial_feat == True) & (hist_feat == False):
                 test_features = X_scaler.transform(np.hstack((spatial_features, hog_features)).reshape(1, -1))
-            elif spatial_feat == False & hist_feat == True:
+            elif (spatial_feat == False) & (hist_feat == True):
                 test_features = X_scaler.transform(np.hstack((hist_feat, hog_features)).reshape(1, -1))
             else:
                 test_features = X_scaler.transform(np.hstack((hog_features)).reshape(1, -1))
@@ -362,25 +381,9 @@ def box_judege(prev_bbox,bbox,tolerance):
 #     # Return updated heatmap
 #     return heatmap
 
-def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=False, previou_heatmap=None, previous_bbox=None):
-    svc = trained_data['model']
-    color_space = trained_data['color_space']
-    X_scale = trained_data['scaler']
-    orient = trained_data['orient']
-    pix_per_cell = trained_data['pix_per_cell']
-    cell_per_block = trained_data['cell_per_block']
-    spatial_size = trained_data['spatial_size']
-    hist_bins = trained_data['hist_bins']
-    hog_channel = trained_data['hog_channel']
-    spatial_size = trained_data['spatial_size']
-    hist_bins = trained_data['hist_bins']
-    hog_channel = trained_data['hog_channel']
-    spatial_feat = trained_data['spatial_feat']
-    hist_feat = trained_data['hist_feat']
-    hog_feat = trained_data['hog_feat']
+def video_pipline(img,svm_model_path, exprt_heatmap=False, usage_previous_frames=False, previou_heatmap=None, previous_bbox=None):
 
-    res1 = find_cars(img, color_space, 400,650,2.5,svc,X_scale,orient,pix_per_cell,cell_per_block,
-                     spatial_size,hist_bins,hog_channel,spatial_feat,hist_feat,hog_feat)
+    res1 = find_cars(img, 400,650,2.5,svm_model_path)
     # res2 = find_cars(img, color_space, 400,650,2,svc,X_scale,orient,pix_per_cell,cell_per_block,
     #                  spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
     #
@@ -450,15 +453,13 @@ def video_pipline(img,trained_data, exprt_heatmap=False, usage_previous_frames=F
     else:
         return img, original_res, bbox_output
 
-def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1, start_sec = 0, flg_whole_vide = False):
+def video_creation(original_video_name, output_video_name, svm_model_path, end_sec = 1, start_sec = 0, flg_whole_vide = False):
 
     video = cv2.VideoCapture(original_video_name)
     total_num_frame = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     fps = video.get(cv2.CAP_PROP_FPS)
     fourcc = cv2.VideoWriter_fourcc(*'DIVX')
     out = cv2.VideoWriter(output_video_name, fourcc, fps, (1280, 720))
-    with open(svm_mode, 'rb') as handle:
-        trained_data = pickle.load(handle)
 
     start_frame = start_sec * fps
     end_frame = end_sec * fps
@@ -482,7 +483,7 @@ def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1
             if ret == True:
                 if num_frame <= start_frame + 5:
                     print('here')
-                    result_frame, previous_res, prev_bbox = video_pipline(frame,trained_data,
+                    result_frame, previous_res, prev_bbox = video_pipline(frame,svm_model_path,
                                                                           exprt_heatmap=True,
                                                                           usage_previous_frames=False)
                     previous_3_res = previous_2_res
@@ -499,7 +500,7 @@ def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1
                     max2 = previous_2_res.max()
                     max3 = previous_3_res.max()
                     add_data = previous_1_res + previous_2_res + previous_3_res
-                    result_frame, previous_res, prev_bbox = video_pipline(frame,trained_data, exprt_heatmap=True,
+                    result_frame, previous_res, prev_bbox = video_pipline(frame,svm_model_path, exprt_heatmap=True,
                                                                           usage_previous_frames=True,
                                                                           previou_heatmap=add_data,
                                                                           previous_bbox=prev_bbox)
@@ -515,15 +516,13 @@ def video_creation(original_video_name, output_video_name, svm_mode, end_sec = 1
     cv2.destroyAllWindows()
 
 def image_converter(input_file_names,svm_model_path):
-    with open(svm_model_path, 'rb') as handle:
-        trained_data = pickle.load(handle)
 
     for file_name in input_file_names:
         print(file_name)
         file_path = './test_images/' + file_name + '.jpg'
         target_img = cv2.imread(file_path)
 
-        result_img, res, heatmap = video_pipline(target_img, trained_data, exprt_heatmap=True)
+        result_img, res, heatmap = video_pipline(target_img, svm_model_path, exprt_heatmap=True)
 
         fig = plt.figure(figsize=(12, 6))
         ax1 = fig.add_subplot(1, 2, 1)
