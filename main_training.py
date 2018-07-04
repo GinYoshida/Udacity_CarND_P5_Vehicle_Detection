@@ -142,7 +142,7 @@ if __name__ == "__main__":
     results = []
     training_mode_creation(
         spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'RGB',
-        model_name = "condition_1.pickle", train_test_split_rate= 1000
+        model_name = "condition_1.pickle", train_test_split_rate= 100
     )
 
     training_mode_creation(
