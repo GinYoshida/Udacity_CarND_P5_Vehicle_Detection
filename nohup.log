@@ -41,18 +41,18 @@ extraction was done 1800 / 3000
 extraction was done 2100 / 3000
 extraction was done 2400 / 3000
 extraction was done 2700 / 3000
-extraction was done 0 / 1000
-extraction was done 100 / 1000
-extraction was done 200 / 1000
-extraction was done 300 / 1000
-extraction was done 400 / 1000
-extraction was done 500 / 1000
-extraction was done 600 / 1000
-extraction was done 700 / 1000
-extraction was done 800 / 1000
-extraction was done 900 / 1000
-594.94 Seconds to train SVC...
-Test Accuracy of condition_1.pickle is 0.976 
+extraction was done 0 / 100
+extraction was done 10 / 100
+extraction was done 20 / 100
+extraction was done 30 / 100
+extraction was done 40 / 100
+extraction was done 50 / 100
+extraction was done 60 / 100
+extraction was done 70 / 100
+extraction was done 80 / 100
+extraction was done 90 / 100
+574.2 Seconds to train SVC...
+Test Accuracy of condition_1.pickle is 0.99 
 Number of cars:8792, Number of non-cars: 8968
 extraction was done 0 / 3000
 extraction was done 300 / 3000
@@ -74,8 +74,8 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-591.41 Seconds to train SVC...
-Test Accuracy of condition_2.pickle is 0.978 
+548.21 Seconds to train SVC...
+Test Accuracy of condition_2.pickle is 0.974 
 Number of cars:8792, Number of non-cars: 8968
 extraction was done 0 / 3000
 extraction was done 300 / 3000
@@ -97,8 +97,8 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-306.52 Seconds to train SVC...
-Test Accuracy of condition_3.pickle is 0.961 
+301.94 Seconds to train SVC...
+Test Accuracy of condition_3.pickle is 0.963 
 Number of cars:8792, Number of non-cars: 8968
 extraction was done 0 / 3000
 extraction was done 300 / 3000
@@ -120,8 +120,8 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-444.46 Seconds to train SVC...
-Test Accuracy of condition_4.pickle is 0.985 
+478.16 Seconds to train SVC...
+Test Accuracy of condition_4.pickle is 0.988 
 Number of cars:8792, Number of non-cars: 8968
 extraction was done 0 / 3000
 extraction was done 300 / 3000
@@ -143,8 +143,8 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-473.87 Seconds to train SVC...
-Test Accuracy of condition_5.pickle is 0.991 
+426.29 Seconds to train SVC...
+Test Accuracy of condition_5.pickle is 0.977 
 Number of cars:8792, Number of non-cars: 8968
 extraction was done 0 / 3000
 extraction was done 300 / 3000
@@ -166,10 +166,10 @@ extraction was done 600 / 1000
 extraction was done 700 / 1000
 extraction was done 800 / 1000
 extraction was done 900 / 1000
-307.39 Seconds to train SVC...
-Test Accuracy of condition_6.pickle is 0.982 
+277.62 Seconds to train SVC...
+Test Accuracy of condition_6.pickle is 0.984 
 Number of cars:8792, Number of non-cars: 8968
-extraction was done 0 / 15984
-extraction was done 0 / 1776
-6130.83 Seconds to train SVC...
-Test Accuracy of Full_w-o_hist_feat is 0.9927 
+extraction was done 0 / 17582
+extraction was done 0 / 178
+7590.48 Seconds to train SVC...
+Test Accuracy of Full_w-o_hist_feat is 0.9888 
