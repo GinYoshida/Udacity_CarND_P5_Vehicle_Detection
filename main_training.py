@@ -171,5 +171,5 @@ if __name__ == "__main__":
     )
 
     training_mode_creation(
-        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'HLS',
-        model_name="Full_w-o_hist_feat", train_test_split_rate=0.01)
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=None, color_space = 'RGB',
+        model_name="Full_w_all_feat", train_test_split_rate=0.01)
