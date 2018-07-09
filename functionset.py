@@ -70,7 +70,6 @@ def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
                      pix_per_cell=8, cell_per_block=2, hog_channel=0,
                      spatial_feat=True, hist_feat=True, hog_feat=True):
 
-
     # Iterate through the list of images
     features = []
     for count,file in enumerate(img_paths):
@@ -129,6 +128,131 @@ def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
             file_features.append(hog_features_flat)
             temp_result = np.concatenate(file_features)
         features.append(temp_result)
+    # Return list of feature vectors
+    return features
+
+def extract_features_with_img(image, color_space='RGB', spatial_size=(32, 32),
+                     hist_bins=32, orient=9,
+                     pix_per_cell=8, cell_per_block=2, hog_channel=0,
+                     spatial_feat=True, hist_feat=True, hog_feat=True):
+
+    # Iterate through the list of images
+    features = []
+    file_features = []
+
+    # apply color conversion if other than 'RGB'
+    if color_space != 'BGR':
+        if color_space == 'HSV':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+        elif color_space == 'LUV':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2LUV)
+        elif color_space == 'RGB':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        elif color_space == 'HLS':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
+        elif color_space == 'YUV':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+        elif color_space == 'YCrCb':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2YCrCb)
+    else:
+        feature_image = np.copy(image)
+
+    channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
+    channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
+    channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
+    feature_image = cv2.merge((channel_1,channel_2,channel_3))
+
+    if spatial_feat == True:
+        spatial_features = bin_spatial(feature_image, size=spatial_size)
+        file_features.append(spatial_features)
+    if hist_feat == True:
+        # Apply color_hist()
+        hist_features = color_hist(feature_image, nbins=hist_bins)
+        file_features.append(hist_features)
+    if hog_feat == True:
+        # Call get_hog_features() with vis=False, feature_vec=True
+        if hog_channel == 'ALL':
+            hog_features = []
+            for channel in range(feature_image.shape[2]):
+                hog_features.append(get_hog_features(feature_image[:, :, channel],
+                                                     orient, pix_per_cell, cell_per_block,
+                                                     vis=False, feature_vec=True))
+                # f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
+                #                                  vis=True, feature_vec=True)
+            hog_features_flat = np.ravel(hog_features)
+        else:
+            hog_features_flat = get_hog_features(feature_image[:, :, hog_channel], orient,
+                                                 pix_per_cell, cell_per_block, vis=False, feature_vec=True)
+        # Append the new feature vector to the features list
+        file_features.append(hog_features_flat)
+        temp_result = np.concatenate(file_features)
+    features.append(temp_result)
+    # Return list of feature vectors
+    return features
+
+def extract_features_f_pip_line(
+        img_data,hog_features,
+        color_space='RGB', spatial_size=(32, 32),
+        hist_bins=32, orient=9,
+        pix_per_cell=8, cell_per_block=2, hog_channel=0,
+        spatial_feat=True, hist_feat=True):
+
+
+    # Iterate through the list of images
+    features = []
+    file_features = []
+    # Read in each one by one
+    image = img_data
+    image_original = np.copy(image)
+    # apply color conversion if other than 'RGB'
+    if color_space != 'BGR':
+        if color_space == 'HSV':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
+        elif color_space == 'LUV':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2LUV)
+        elif color_space == 'RGB':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+        elif color_space == 'HLS':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2HLS)
+        elif color_space == 'YUV':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_BGR2YUV)
+        elif color_space == 'YCrCb':
+            feature_image = cv2.cvtColor(image, cv2.COLOR_RGB2YCrCb)
+    else:
+        feature_image = np.copy(image)
+
+    channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
+    channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
+    channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
+    feature_image = cv2.merge((channel_1,channel_2,channel_3))
+
+    if spatial_feat == True:
+        spatial_features = bin_spatial(feature_image, size=spatial_size)
+        file_features.append(spatial_features)
+    if hist_feat == True:
+        # Apply color_hist()
+        hist_features = color_hist(feature_image, nbins=hist_bins)
+        file_features.append(hist_features)
+
+    file_features.append(hog_features)
+    # if hog_feat == True:
+    #     # Call get_hog_features() with vis=False, feature_vec=True
+    #     if hog_channel == 'ALL':
+    #         hog_features = []
+    #         for channel in range(feature_image.shape[2]):
+    #             hog_features.append(get_hog_features(feature_image[:, :, channel],
+    #                                                  orient, pix_per_cell, cell_per_block,
+    #                                                  vis=False, feature_vec=True))
+    #             # f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
+    #             #                                  vis=True, feature_vec=True)
+    #         hog_features_flat = np.ravel(hog_features)
+    #     else:
+    #         hog_features_flat = get_hog_features(feature_image[:, :, hog_channel], orient,
+    #                                              pix_per_cell, cell_per_block, vis=False, feature_vec=True)
+        # Append the new feature vector to the features list
+        # file_features.append(hog_features_flat)
+    temp_result = np.concatenate(file_features)
+    features.append(temp_result)
     # Return list of feature vectors
     return features
 
@@ -196,27 +320,19 @@ def draw_boxes(img, bboxes, color=(0, 0, 255), thick=6):
     # Return the image copy with boxes drawn
     return imcopy
 
-def find_cars(img, ystart, ystop, scale, svm_model_path):
-
+def find_cars(img, xstart,xstop, ystart, ystop, scale, svm_model_path):
     '''
-    :param img: Target image
-    :param color_space: color space to use
-    :param ystart: coordinate
+
+    :param img:
+    :param xstart:
+    :param xstop:
+    :param ystart:
     :param ystop:
     :param scale:
-    :param svc:
-    :param X_scaler:
-    :param orient:
-    :param pix_per_cell:
-    :param cell_per_block:
-    :param spatial_size:
-    :param hist_bins:
-    :param hog_channel:
-    :param spatial_feat
-    :param hist_feat:
-    :param hog_feat:
+    :param svm_model_path:
     :return:
     '''
+
     with open(svm_model_path, 'rb') as handle:
         trained_data = pickle.load(handle)
 
@@ -235,9 +351,6 @@ def find_cars(img, ystart, ystop, scale, svm_model_path):
     hist_feat = trained_data['hist_feat']
     hog_feat = trained_data['hog_feat']
 
-    print('Please_delet!!!!!!')
-    hist_feat = False
-
     if color_space != 'BGR':
         if color_space == 'HSV':
             feature_image = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -254,6 +367,7 @@ def find_cars(img, ystart, ystop, scale, svm_model_path):
     else:
         feature_image = np.copy(img)
 
+
     # channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
     # channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
     # channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
@@ -267,7 +381,7 @@ def find_cars(img, ystart, ystop, scale, svm_model_path):
     # plt.show()
 
     # Crop the unnecessary area from the image
-    img_tosearch = img[ystart:ystop,:,:]
+    img_tosearch = img[ystart:ystop,xstart:xstop,:]
     ctrans_tosearch = img_tosearch
 
     # If color conversion is necessary, use the following line
@@ -308,6 +422,7 @@ def find_cars(img, ystart, ystop, scale, svm_model_path):
             hog_feat1 = hog1[ypos:ypos+nblocks_per_window, xpos:xpos+nblocks_per_window].ravel()
             hog_feat2 = hog2[ypos:ypos+nblocks_per_window, xpos:xpos+nblocks_per_window].ravel()
             hog_feat3 = hog3[ypos:ypos+nblocks_per_window, xpos:xpos+nblocks_per_window].ravel()
+            # hog_features =
             hog_features = np.hstack((hog_feat1, hog_feat2, hog_feat3))
 
             xleft = xpos * pix_per_cell
@@ -316,37 +431,63 @@ def find_cars(img, ystart, ystop, scale, svm_model_path):
             # Extract the image patch
             subimg = cv2.resize(ctrans_tosearch[ytop:ytop + window, xleft:xleft + window], (64, 64))
 
-            if spatial_feat == True:
-                spatial_features = bin_spatial(subimg, size=spatial_size)
-            if hist_feat == True:
-                # Apply color_hist()
-                hist_features = color_hist(subimg, nbins=hist_bins)
-
+            # if spatial_feat == True:
+            #     spatial_features = bin_spatial(subimg, size=spatial_size)
+            # if hist_feat == True:
+            #     # Apply color_hist()
+            #     hist_features = color_hist(subimg, nbins=hist_bins)
+            test_features = extract_features_with_img(
+                subimg,
+                color_space, spatial_size, hist_bins, orient,
+                pix_per_cell,cell_per_block, hog_channel, spatial_feat, hist_feat
+            )
             # test_features = extract_features_single_img(subimg,color_space,spatial_size,hist_bins,orient,pix_per_cell,
             #                                             cell_per_block, hog_channel='ALL',spatial_feat=True,
             #                                             hist_feat=True,hog_feat=True)
             # test_features = test_features
             # test_features = X_scaler.transform(test_features[0][0],test_features[1],test_features[2][0])
             # # Scale features and make a prediction
-            if (spatial_feat == True) & (hist_feat == True):
-                test_features = X_scaler.transform(np.hstack((spatial_features, hist_features, hog_features)).reshape(1, -1))
-            elif (spatial_feat == True) & (hist_feat == False):
-                test_features = X_scaler.transform(np.hstack((spatial_features, hog_features)).reshape(1, -1))
-            elif (spatial_feat == False) & (hist_feat == True):
-                test_features = X_scaler.transform(np.hstack((hist_feat, hog_features)).reshape(1, -1))
-            else:
-                test_features = X_scaler.transform(np.hstack((hog_features)).reshape(1, -1))
+
+
+            # if (spatial_feat == True) & (hist_feat == True):
+            #     temp_feat = np.concatenate((spatial_features, hist_features, hog_features))
+            #     test_features = X_scaler.transform(temp_feat)
+            # elif (spatial_feat == True) & (hist_feat == False):
+            #     temp_feat = np.concatenate((spatial_features, hog_features))
+            #     test_features = X_scaler.transform([temp_feat])
+            # elif (spatial_feat == False) & (hist_feat == True):
+            #     test_temp = np.concatenate((hist_feat, hog_features))
+            #     test_features = X_scaler.transform([temp_feat])
+            # else:
+            #     test_temp = np.concatenate((hog_features))
+            #     test_features = X_scaler.transform([temp_feat])
+
+            test_features = X_scaler.transform(test_features)
+            # plt.plot(test_features[0])
+            # plt.show()
+
+            # test_features=extract_features_new(
+            #     subimg, color_space=color_space,
+            #         spatial_size=spatial_size, hist_bins=hist_bins,
+            #         orient=orient, pix_per_cell=pix_per_cell,
+            #         cell_per_block=cell_per_block,
+            #         hog_channel=hog_channel, spatial_feat=spatial_feat,
+            #         hist_feat=hist_feat, hog_feat=hog_feat
+            #     )
+            #
+            # test_features = X_scaler.transform(test_features)
+            # plt.plot(test_features[0])
+            # plt.show()
 
             test_prediction = svc.predict(test_features)
-
+            # print(test_prediction)
             if test_prediction == 1:
                 xbox_left = np.int(xleft*scale)
                 ytop_draw = np.int(ytop*scale)
                 win_draw = np.int(window*scale)
 
-                heatbox.append([[xbox_left, ytop_draw+ystart],[xbox_left+win_draw,ytop_draw+win_draw+ystart]])
-
-
+                heatbox.append([[xbox_left+xstart, ytop_draw+ystart],
+                                [xbox_left+win_draw+xstart,ytop_draw+win_draw+ystart]])
     heat_map = np.zeros_like(img[:,:,1])
     for box in heatbox:
         heat_map[box[0][1]:box[1][1], box[0][0]:box[1][0]]+=1
@@ -383,33 +524,54 @@ def box_judege(prev_bbox,bbox,tolerance):
 
 def video_pipline(img,svm_model_path, exprt_heatmap=False, usage_previous_frames=False, previou_heatmap=None, previous_bbox=None):
 
-    res1 = find_cars(img, 400,650,2.5,svm_model_path)
-    # res2 = find_cars(img, color_space, 400,650,2,svc,X_scale,orient,pix_per_cell,cell_per_block,
-    #                  spatial_size,hist_bins,hog_channel='ALL',spatial_feat=True,hist_feat=True,hog_feat=True)
-    #
-    # # res = res1 + res2
-    res = res1
+    res1 = find_cars(img,400,880, 350,450,1.0,svm_model_path)
+    plt.imshow(res1)
+    plt.show()
+    print('Done_1')
+    res2 = find_cars(img,0,1280, 400,600,1.5,svm_model_path)
+    plt.imshow(res2)
+    plt.show()
+    print('Done_2')
+    # res3 = find_cars(img,0,1280, 450,650,2.3,svm_model_path)
+    # plt.imshow(res3)
+    # plt.show()
+    # print('Done_3')
+
+
+    res = res2 + res1
+
     plt.imshow(res)
     plt.show()
 
+
     original_res = np.copy(res)
-    if usage_previous_frames == True and type(previou_heatmap) != type(None):
-        res = res + previou_heatmap
-    else:
-        pass
+    # if usage_previous_frames == True and type(previou_heatmap) != type(None):
+    #     res = res + previou_heatmap
+    # else:
+    #     pass
 
     mode_cal = res.flatten()
     mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
-    thread = mode_cal.mean() * 1.5
-    print("thread_mean:", thread)
-
-    if thread < 8:
-        thread = 8
+    if len(mode_cal) == 0:
+        res = 0
+        print("Mode was empty")
+    elif mode_cal.mean() < 1:
+        res[res <= 1] = 0
+        print("Mode was less than 1")
     else:
-        pass
+        thread = mode_cal.mean()
+        res[res < thread] = 0
+        print("thread is {}".format(thread))
 
-    print(thread)
-    res[res <= thread] = 0
+    # if thread < 8:
+    #     thread = 8
+    # else:
+    #     pass
+
+    # res[res <= thread] = 0
+    # plt.imshow(res)
+    # plt.show()
+    print('Threading_done')
 
     # Create label of each area which was surrounded by 0
     from scipy.ndimage.measurements import label
@@ -431,22 +593,25 @@ def video_pipline(img,svm_model_path, exprt_heatmap=False, usage_previous_frames
         # print(box_height*box_width)
         center_x = (np.max(nonzerox) + np.min(nonzerox))/2
         center_y = (np.max(nonzeroy) - np.min(nonzeroy))/2
-        print("region thread", mode_cal.mean() * 2.5)
+        # print("region thread", mode_cal.mean() * 2.5)
 
         if box_height/box_width >= 3 or box_width/box_height >= 3 or box_height*box_width <= 150:
             pass
-        elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= mode_cal.mean() * 6:
-            print("NOK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
-        elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= 30 and\
-                usage_previous_frames == True:
-            print("NOK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
-        elif box_judege(previous_bbox,bbox,20) == False:
-            print("Bbox judge was NOK")
-            bbox_output.append(bbox)
+        # elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= mode_cal.mean() *1.5:
+        #     print("NOK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
+        # elif res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max() <= 30 and\
+        #         usage_previous_frames == True:
+        #     print("NOK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
+        # elif box_judege(previous_bbox,bbox,20) == False:
+        #     print("Bbox judge was NOK")
+        #     bbox_output.append(bbox)
         else:
             print("OK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
+
             cv2.rectangle(img, bbox[0], bbox[1], (0, 0, 255), 6)
             bbox_output.append(bbox)
+    plt.imshow(img)
+    plt.show()
 
     if exprt_heatmap == False:
         return img, bbox
@@ -536,6 +701,5 @@ def image_converter(input_file_names,svm_model_path):
         plt.subplots_adjust(left=0.05, right=0.9, top=0.9, bottom=0.1, wspace=0.2, hspace=0.2)
         output_path = './output_images/' + file_name + '.png'
         plt.savefig(output_path)
-
         output_path = './output_images/' + file_name + '.png'
         plt.savefig(output_path)

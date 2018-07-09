@@ -12,7 +12,7 @@ images = ['test1','test2','test3','test4','test5','test6','test7',
 """
 
 """for image creation, please activate the following lines"""
-images = ['test1','test2','test3','test4']
+images = ['test10']
 myfc.image_converter(images,svm_model_path='Full_w-o_hist_feat')
 
 """for video creation, please activate the following lines"""

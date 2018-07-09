@@ -141,35 +141,39 @@ if __name__ == "__main__":
     # Parameter study
     results = []
     training_mode_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'RGB',
-        model_name = "condition_1.pickle", train_test_split_rate= 100
-    )
-
-    training_mode_creation(
-        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=3000, color_space = 'RGB',
-        model_name = "condition_2.pickle", train_test_split_rate= 1000
-    )
-
-    training_mode_creation(
-        spatial_feat=False, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'RGB',
-        model_name = "condition_3.pickle", train_test_split_rate= 1000
-    )
-
-    training_mode_creation(
-        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'HLS',
-        model_name = "condition_4.pickle", train_test_split_rate= 1000
-    )
-
-    training_mode_creation(
-        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=3000, color_space = 'HLS',
-        model_name = "condition_5.pickle", train_test_split_rate= 1000
-    )
-
-    training_mode_creation(
-        spatial_feat=False, hist_feat = True, hog_feat = True, sample_size=3000, color_space = 'HLS',
-        model_name = "condition_6.pickle", train_test_split_rate= 1000
-    )
-
-    training_mode_creation(
         spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=None, color_space = 'RGB',
-        model_name="Full_w_all_feat", train_test_split_rate=0.01)
+        model_name = "condition_1.pickle", train_test_split_rate= 0.01
+    )
+
+    training_mode_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'RGB',
+        model_name = "condition_2.pickle", train_test_split_rate= 0.01
+    )
+
+    training_mode_creation(
+        spatial_feat=False, hist_feat = True, hog_feat = True, sample_size=None, color_space = 'RGB',
+        model_name = "condition_3.pickle", train_test_split_rate= 0.01
+    )
+
+    training_mode_creation(
+        spatial_feat=True, hist_feat = True, hog_feat = True, sample_size=None, color_space = 'HLS',
+        model_name = "condition_4.pickle", train_test_split_rate= 0.01
+    )
+
+    training_mode_creation(
+        spatial_feat=True, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'HLS',
+        model_name = "condition_5.pickle", train_test_split_rate= 0.01
+    )
+
+    training_mode_creation(
+        spatial_feat=False, hist_feat = True, hog_feat = True, sample_size=None, color_space = 'HLS',
+        model_name = "condition_6.pickle", train_test_split_rate= 0.01
+    )
+
+    training_mode_creation(
+        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'RGB',
+        model_name="condition_7.pickle", train_test_split_rate=0.01)
+
+    training_mode_creation(
+        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'HLS',
+        model_name="condition_8.pickle", train_test_split_rate=0.01)
