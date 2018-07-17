@@ -394,3 +394,20 @@
 2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
 2018-07-02 07:13:44,797:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
 2018-07-02 07:13:44,798:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
+2018-07-16 23:04:31,184:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-16 23:04:31,184:enviroment_setup.py:basic_env_set:INFO:Directory of ..\image_data_Udacity_CarND_P5 is already existing
+2018-07-16 23:04:31,200:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-16 23:04:31,216:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-16 23:04:31,216:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-16 23:04:31,263:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-16 23:04:31,263:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-16 23:04:31,263:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-16 23:06:05,643:enviroment_setup.py:<module>:INFO:----------------------Start of enviroment setup-----------------------
+2018-07-16 23:06:05,643:enviroment_setup.py:basic_env_set:INFO:Directory of ..\image_data_Udacity_CarND_P5 is already existing
+2018-07-16 23:06:05,643:enviroment_setup.py:basic_env_set:INFO:vehicles.zip is already existinng.
+2018-07-16 23:06:05,643:enviroment_setup.py:basic_env_set:INFO:non-vehicles.zip is already existinng.
+2018-07-16 23:06:05,658:enviroment_setup.py:basic_env_set:INFO:udacity-annoations-crowdai is already existinng.
+2018-07-16 23:06:05,658:enviroment_setup.py:basic_env_set:INFO:udacity-annotations-autti is already existinng.
+2018-07-16 23:06:05,658:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-16 23:06:05,658:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
+2018-07-16 23:06:11,042:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------

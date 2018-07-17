@@ -28,11 +28,13 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
     '''
     # Call with two outputs if vis==True
     if vis == True:
-        features, hog_image = hog(img, orientations=orient,
-                                  pixels_per_cell=(pix_per_cell, pix_per_cell),
-                                  cells_per_block=(cell_per_block, cell_per_block),
-                                  transform_sqrt=True,
-                                  visualise=vis, feature_vector=feature_vec)
+        features, hog_image = hog(
+            img, orientations=orient,
+            pixels_per_cell=(pix_per_cell, pix_per_cell),
+            cells_per_block=(cell_per_block, cell_per_block),
+            transform_sqrt=True,
+            visualise=vis, feature_vector=feature_vec,
+        )
         return features, hog_image
     # Otherwise call with one output
     else:
@@ -45,15 +47,15 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
 
 
 # Define a function to compute binned color features
-def bin_spatial(img, size=(32, 32)):
+def bin_spatial(img, size):
     # Use cv2.resize().ravel() to create the feature vector
-    features = cv2.resize(img, size).ravel()
+    features = cv2.resize(img, size).ravel()/256
     # Return the feature vector
     return features
 
 # Define a function to compute color histogram features
 # NEED TO CHANGE bins_range if reading .png files with mpimg!
-def color_hist(img, nbins=32, bins_range=(0, 256)):
+def color_hist(img, nbins, bins_range=(0, 256)):
     # Compute the histogram of the color channels separately
     channel1_hist = np.histogram(img[:, :, 0], bins=nbins, range=bins_range)
     channel2_hist = np.histogram(img[:, :, 1], bins=nbins, range=bins_range)
@@ -111,30 +113,21 @@ def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
             hist_features = color_hist(feature_image, nbins=hist_bins)
             file_features.append(hist_features)
         if hog_feat == True:
-            # Call get_hog_features() with vis=False, feature_vec=True
-            if hog_channel == 'ALL':
-                hog_features = []
-                for channel in range(feature_image.shape[2]):
-                    hog_features.append(get_hog_features(feature_image[:, :, channel],
-                                                         orient, pix_per_cell, cell_per_block,
-                                                         vis=False, feature_vec=True))
-                    # f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
-                    #                                  vis=True, feature_vec=True)
-                hog_features_flat = np.ravel(hog_features)
-            else:
-                hog_features_flat = get_hog_features(feature_image[:, :, hog_channel], orient,
-                                                     pix_per_cell, cell_per_block, vis=False, feature_vec=True)
+            img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+            hog_features = get_hog_features(
+                img_gray, orient, pix_per_cell, cell_per_block, vis = False, feature_vec=True
+            )
             # Append the new feature vector to the features list
-            file_features.append(hog_features_flat)
+            file_features.append(hog_features)
             temp_result = np.concatenate(file_features)
         features.append(temp_result)
     # Return list of feature vectors
     return features
 
-def extract_features_with_img(image, color_space='RGB', spatial_size=(32, 32),
-                     hist_bins=32, orient=9,
-                     pix_per_cell=8, cell_per_block=2, hog_channel=0,
-                     spatial_feat=True, hist_feat=True, hog_feat=True):
+def extract_features_with_img(image, color_space, spatial_size,
+                     hist_bins, orient,
+                     pix_per_cell, cell_per_block, hog_channel,
+                     spatial_feat, hist_feat, hog_feat):
 
     # Iterate through the list of images
     features = []
@@ -192,9 +185,9 @@ def extract_features_with_img(image, color_space='RGB', spatial_size=(32, 32),
 
 def extract_features_f_pip_line(
         img_data,hog_features,
-        color_space='RGB', spatial_size=(32, 32),
-        hist_bins=32, orient=9,
-        pix_per_cell=8, cell_per_block=2, hog_channel=0,
+        color_space, spatial_size,
+        hist_bins, orient,
+        pix_per_cell, cell_per_block,
         spatial_feat=True, hist_feat=True):
 
 

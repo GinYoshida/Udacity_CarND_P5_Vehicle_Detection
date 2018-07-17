@@ -14,6 +14,7 @@ import logging
 import os
 import pandas as pd
 import requests
+import shutil
 import tarfile
 import traceback
 import zipfile
@@ -144,6 +145,15 @@ def odc_crop(file_name,xmin,xmax,ymin,ymax,label):
         logger.debug(traceback.print_exc())
         print(traceback.print_exc())
 
+def clearn_data():
+    file_path = os.path.join(IMAGE_DATA_PATH,'non-vehicles','Extras')
+    target_file_name = [
+
+
+    ]
+
+
+
 def basic_env_set():
     '''
     :return:
@@ -227,6 +237,70 @@ def basic_env_set():
     #     odc_panda_data = pd.DataFrame(np.vstack((odc_label, odc_file_paths )).transpose(), columns=['label', 'path'])
     #     odc_panda_data[~(odc_panda_data['path'] == 'nan')].to_csv(os.path.join(IMAGE_DATA_PATH, 'odc_data.csv'))
 
+def data_clearning():
+    rm_target_list = pd.read_csv('./RM_files_non-vehicle.csv').iloc[:, 1]
+
+    if os.path.exists(os.path.join(IMAGE_DATA_PATH, 'RM')):
+        #     logger.info('RM folder was already created.')
+        pass
+    else:
+        os.mkdir(os.path.join(IMAGE_DATA_PATH, 'RM'))
+
+    for i in rm_target_list:
+        target_path_from = os.path.join(IMAGE_DATA_PATH, 'non-vehicles/Extras', i)
+        target_path_to = os.path.join(IMAGE_DATA_PATH, 'RM', i)
+        try:
+            shutil.move(target_path_from, target_path_to)
+        except:
+            pass
+
+def data_argment():
+    ag_target_list = pd.read_csv('./non-vehicle_Arg.csv').iloc[:, 1]
+
+    if os.path.exists(os.path.join(IMAGE_DATA_PATH, 'AG')):
+        #     logger.info('RM folder was already created.')
+        pass
+    else:
+        os.mkdir(os.path.join(IMAGE_DATA_PATH, 'AG'))
+
+    for i in ag_target_list:
+        target_path_from = os.path.join(IMAGE_DATA_PATH, 'non-vehicles/Extras', i)
+        target_path_to = os.path.join(IMAGE_DATA_PATH, 'AG', i)
+        try:
+            shutil.copy(target_path_from, target_path_to)
+        except:
+            pass
+
+    for count in range(2):
+        for i, x in enumerate(ag_target_list):
+            file_path = os.path.join(IMAGE_DATA_PATH, 'AG', x)
+            x = cv2.imread(file_path)
+
+            rows = x.shape[0]
+            cols = x.shape[1]
+            shift_img = np.random.randint(-5, 5)
+
+            M = np.float32([[1, 0, shift_img], [0, 1, 0]])
+            x = cv2.warpAffine(x, M, (cols, rows))
+
+            if shift_img == 0:
+                pass
+            elif shift_img < 0:
+                for row in range(64):
+                    for col in range((64 - abs(shift_img)), 64, 1):
+                        x[row, col, :] = x[row, (63 - abs(shift_img)), :]
+            elif shift_img > 0:
+                for row in range(64):
+                    for col in range(0, shift_img, 1):
+                        x[row, col, :] = x[row, shift_img + 1, :]
+            else:
+                pass
+
+            temp_path = '../image_data_Udacity_CarND_P5/non-vehicles/Extras/' + 'new' + file_path.split('/')[-1][3:]
+            cv2.imwrite(temp_path, x)
+
 logger.info("Start of enviroment setup".center(70,'-'))
 basic_env_set()
+data_clearning()
+data_argment()
 logger.info("End of enviroment setup".center(70,'-'))

@@ -75,12 +75,12 @@ def training_mode_creation(
         y_train = y_train[0:sample_size]
 
     # Define input vector
-    orient = 9  # HOG orientations
+    orient = 12  # HOG orientations
     pix_per_cell = 8  # HOG pixels per cell
     cell_per_block = 2  # HOG cells per block
     hog_channel = "ALL"  # Can be 0, 1, 2, or "ALL"
-    spatial_size = (32, 32)  # Spatial binning dimensions
-    hist_bins = 32  # Number of histogram bins
+    spatial_size = (16, 16)  # Spatial binning dimensions
+    hist_bins = 16  # Number of histogram bins
     y_start_stop = [None, None]  # Min and max in y to search in slide_window()
 
     X_train = extract_features(
@@ -88,7 +88,7 @@ def training_mode_creation(
         spatial_size=spatial_size, hist_bins=hist_bins,
         orient=orient, pix_per_cell=pix_per_cell,
         cell_per_block=cell_per_block,
-        hog_channel=hog_channel, spatial_feat=spatial_feat,
+        spatial_feat=spatial_feat,
         hist_feat=hist_feat, hog_feat=hog_feat
     )
 
@@ -97,7 +97,7 @@ def training_mode_creation(
         spatial_size=spatial_size, hist_bins=hist_bins,
         orient=orient, pix_per_cell=pix_per_cell,
         cell_per_block=cell_per_block,
-        hog_channel=hog_channel, spatial_feat=spatial_feat,
+        spatial_feat=spatial_feat,
         hist_feat=hist_feat, hog_feat=hog_feat
     )
 
@@ -173,7 +173,3 @@ if __name__ == "__main__":
     training_mode_creation(
         spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'RGB',
         model_name="condition_7.pickle", train_test_split_rate=0.01)
-
-    training_mode_creation(
-        spatial_feat=False, hist_feat = False, hog_feat = True, sample_size=None, color_space = 'HLS',
-        model_name="condition_8.pickle", train_test_split_rate=0.01)
