@@ -50,6 +50,7 @@ def get_hog_features(img, orient, pix_per_cell, cell_per_block,
 def bin_spatial(img, size):
     # Use cv2.resize().ravel() to create the feature vector
     features = cv2.resize(img, size).ravel()/256
+    features = features/features.max()
     # Return the feature vector
     return features
 

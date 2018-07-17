@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/functionset.py" afterPath="$PROJECT_DIR$/functionset.py" />
       <change beforePath="$PROJECT_DIR$/log.log" afterPath="$PROJECT_DIR$/log.log" />
       <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change beforePath="$PROJECT_DIR$/main_training.py" afterPath="$PROJECT_DIR$/main_training.py" />
       <change beforePath="$PROJECT_DIR$/output_images/test6.png" afterPath="$PROJECT_DIR$/output_images/test6.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +23,8 @@
       <file leaf-file-name="functionset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functionset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+            <state relative-caret-position="220">
+              <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -34,8 +33,8 @@
       <file leaf-file-name="main_training.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main_training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="141" column="16" lean-forward="true" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
+            <state relative-caret-position="71">
+              <caret line="143" column="78" lean-forward="false" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
               <folding />
             </state>
           </provider>
@@ -731,16 +730,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functionset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        <state relative-caret-position="220">
+          <caret line="52" column="37" lean-forward="false" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main_training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="141" column="16" lean-forward="true" selection-start-line="141" selection-start-column="16" selection-end-line="141" selection-end-column="16" />
+        <state relative-caret-position="71">
+          <caret line="143" column="78" lean-forward="false" selection-start-line="143" selection-start-column="78" selection-end-line="143" selection-end-column="78" />
           <folding />
         </state>
       </provider>
