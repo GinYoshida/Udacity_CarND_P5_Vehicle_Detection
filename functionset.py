@@ -63,14 +63,15 @@ def color_hist(img, nbins, bins_range=(0, 256)):
     channel3_hist = np.histogram(img[:, :, 2], bins=nbins, range=bins_range)
     # Concatenate the histograms into a single feature vector
     hist_features = np.concatenate((channel1_hist[0], channel2_hist[0], channel3_hist[0]))
+    hist_features = hist_features / hist_features.max()
     # Return the individual histograms, bin_centers and feature vector
     return hist_features
 
 # Define a function to extract features from a list of images
 # Have this function call bin_spatial() and color_hist()
-def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
-                     hist_bins=32, orient=9,
-                     pix_per_cell=8, cell_per_block=2, hog_channel=0,
+def extract_features(img_paths, color_space, spatial_size,
+                     hist_bins, orient,
+                     pix_per_cell, cell_per_block,
                      spatial_feat=True, hist_feat=True, hog_feat=True):
 
     # Iterate through the list of images
@@ -101,11 +102,6 @@ def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
         else:
             feature_image = np.copy(image)
 
-        channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
-        channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
-        channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
-        feature_image = cv2.merge((channel_1,channel_2,channel_3))
-
         if spatial_feat == True:
             spatial_features = bin_spatial(feature_image, size=spatial_size)
             file_features.append(spatial_features)
@@ -125,10 +121,10 @@ def extract_features(img_paths, color_space='RGB', spatial_size=(32, 32),
     # Return list of feature vectors
     return features
 
-def extract_features_with_img(image, color_space, spatial_size,
-                     hist_bins, orient,
-                     pix_per_cell, cell_per_block, hog_channel,
-                     spatial_feat, hist_feat, hog_feat):
+def extract_features_with_img(
+        image, color_space, spatial_size, hist_bins, orient,
+        pix_per_cell, cell_per_block, spatial_feat, hist_feat, hog_feat
+):
 
     # Iterate through the list of images
     features = []
@@ -151,11 +147,6 @@ def extract_features_with_img(image, color_space, spatial_size,
     else:
         feature_image = np.copy(image)
 
-    channel_1 = cv2.equalizeHist(feature_image[:, :, 0])
-    channel_2 = cv2.equalizeHist(feature_image[:, :, 1])
-    channel_3 = cv2.equalizeHist(feature_image[:, :, 2])
-    feature_image = cv2.merge((channel_1,channel_2,channel_3))
-
     if spatial_feat == True:
         spatial_features = bin_spatial(feature_image, size=spatial_size)
         file_features.append(spatial_features)
@@ -164,21 +155,12 @@ def extract_features_with_img(image, color_space, spatial_size,
         hist_features = color_hist(feature_image, nbins=hist_bins)
         file_features.append(hist_features)
     if hog_feat == True:
-        # Call get_hog_features() with vis=False, feature_vec=True
-        if hog_channel == 'ALL':
-            hog_features = []
-            for channel in range(feature_image.shape[2]):
-                hog_features.append(get_hog_features(feature_image[:, :, channel],
-                                                     orient, pix_per_cell, cell_per_block,
-                                                     vis=False, feature_vec=True))
-                # f,image_tosho = get_hog_features(feature_image[:, :, channel],orient, pix_per_cell, cell_per_block,
-                #                                  vis=True, feature_vec=True)
-            hog_features_flat = np.ravel(hog_features)
-        else:
-            hog_features_flat = get_hog_features(feature_image[:, :, hog_channel], orient,
-                                                 pix_per_cell, cell_per_block, vis=False, feature_vec=True)
+        img_gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+        hog_features = get_hog_features(
+            img_gray, orient, pix_per_cell, cell_per_block, vis = False, feature_vec=True
+        )
         # Append the new feature vector to the features list
-        file_features.append(hog_features_flat)
+        file_features.append(hog_features)
         temp_result = np.concatenate(file_features)
     features.append(temp_result)
     # Return list of feature vectors
@@ -334,13 +316,12 @@ def find_cars(img, xstart,xstop, ystart, ystop, scale, svm_model_path):
     color_space = trained_data['color_space']
     X_scaler = trained_data['scaler']
     orient = trained_data['orient']
+    # orient = 12
     pix_per_cell = trained_data['pix_per_cell']
     cell_per_block = trained_data['cell_per_block']
     spatial_size = trained_data['spatial_size']
     hist_bins = trained_data['hist_bins']
-    hog_channel = trained_data['hog_channel']
     hist_bins = trained_data['hist_bins']
-    hog_channel = trained_data['hog_channel']
     spatial_feat = trained_data['spatial_feat']
     hist_feat = trained_data['hist_feat']
     hog_feat = trained_data['hog_feat']
@@ -432,9 +413,10 @@ def find_cars(img, xstart,xstop, ystart, ystop, scale, svm_model_path):
             #     hist_features = color_hist(subimg, nbins=hist_bins)
             test_features = extract_features_with_img(
                 subimg,
-                color_space, spatial_size, hist_bins, orient,
-                pix_per_cell,cell_per_block, hog_channel, spatial_feat, hist_feat
+                color_space, spatial_size, hist_bins, orient, pix_per_cell,cell_per_block,
+                spatial_feat, hist_feat, hog_feat
             )
+
             # test_features = extract_features_single_img(subimg,color_space,spatial_size,hist_bins,orient,pix_per_cell,
             #                                             cell_per_block, hog_channel='ALL',spatial_feat=True,
             #                                             hist_feat=True,hog_feat=True)
@@ -483,6 +465,8 @@ def find_cars(img, xstart,xstop, ystart, ystop, scale, svm_model_path):
                 heatbox.append([[xbox_left+xstart, ytop_draw+ystart],
                                 [xbox_left+win_draw+xstart,ytop_draw+win_draw+ystart]])
     heat_map = np.zeros_like(img[:,:,1])
+    plt.imshow(heat_map)
+    plt.show()
     for box in heatbox:
         heat_map[box[0][1]:box[1][1], box[0][0]:box[1][0]]+=1
 

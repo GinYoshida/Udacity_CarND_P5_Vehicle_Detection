@@ -75,9 +75,9 @@ def training_mode_creation(
         y_train = y_train[0:sample_size]
 
     # Define input vector
-    orient = 12  # HOG orientations
-    pix_per_cell = 8  # HOG pixels per cell
-    cell_per_block = 2  # HOG cells per block
+    orient = 9  # HOG orientations
+    pix_per_cell = 5  # HOG pixels per cell
+    cell_per_block = 3  # HOG cells per block
     hog_channel = "ALL"  # Can be 0, 1, 2, or "ALL"
     spatial_size = (16, 16)  # Spatial binning dimensions
     hist_bins = 16  # Number of histogram bins
@@ -125,8 +125,8 @@ def training_mode_creation(
     print('Test Accuracy of {} is {} '.format(model_name,score_model))
 
     output_sum = {
-        'model':svc,'color_space':color_space,'scaler':X_scaler,'orient':9,'pix_per_cell':8,
-        'cell_per_block':2,'hog_channel':hog_channel,'spatial_size':spatial_size,'hist_bins':hist_bins,
+        'model':svc,'color_space':color_space,'scaler':X_scaler,'orient':orient,'pix_per_cell':pix_per_cell,
+        'cell_per_block':cell_per_block,'spatial_size':spatial_size,'hist_bins':hist_bins,
         'spatial_feat': spatial_feat, 'hist_feat': hist_feat, 'hog_feat': hog_feat,
     }
 
