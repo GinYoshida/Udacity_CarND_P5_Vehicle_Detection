@@ -4304,3 +4304,133 @@ Test Accuracy of SVC =  0.99
 2018-07-02 07:11:28,277:enviroment_setup.py:basic_env_set:INFO:File should be unpacked. Please check the directory
 2018-07-02 07:11:28,277:enviroment_setup.py:<module>:INFO:-----------------------End of enviroment setup------------------------
 ['https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip', 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip']
+/usr/local/lib/python3.5/dist-packages/sklearn/cross_validation.py:41: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. Also note that the interface of the new CV iterators are different from that of this module. This module will be removed in 0.20.
+  "This module will be removed in 0.20.", DeprecationWarning)
+/usr/local/lib/python3.5/dist-packages/sklearn/grid_search.py:42: DeprecationWarning: This module was deprecated in version 0.18 in favor of the model_selection module into which all the refactored classes and functions are moved. This module will be removed in 0.20.
+  DeprecationWarning)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+15061.01 Seconds to train SVC...
+Test Accuracy of condition_1.pickle is 0.9831 
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+15429.36 Seconds to train SVC...
+Test Accuracy of condition_2.pickle is 0.9774 
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+11998.93 Seconds to train SVC...
+Test Accuracy of condition_3.pickle is 0.9661 
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+11084.06 Seconds to train SVC...
+Test Accuracy of condition_4.pickle is 0.9661 
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+11770.83 Seconds to train SVC...
+Test Accuracy of condition_5.pickle is 0.9831 
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+11707.71 Seconds to train SVC...
+Test Accuracy of condition_6.pickle is 0.9718 
+Number of cars:8792, Number of non-cars: 8875
+extraction was done 0 / 17490
+extraction was done 1749 / 17490
+extraction was done 3498 / 17490
+extraction was done 5247 / 17490
+extraction was done 6996 / 17490
+extraction was done 8745 / 17490
+extraction was done 10494 / 17490
+extraction was done 12243 / 17490
+extraction was done 13992 / 17490
+extraction was done 15741 / 17490
+extraction was done 0 / 177
+12389.17 Seconds to train SVC...
+Test Accuracy of condition_7.pickle is 0.9435 
