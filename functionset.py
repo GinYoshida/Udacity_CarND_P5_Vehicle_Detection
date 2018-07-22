@@ -399,7 +399,7 @@ def find_cars(img, xstart,xstop, ystart, ystop, scale, svm_model_path):
             #     color_space, spatial_size, hist_bins, orient, pix_per_cell,cell_per_block,
             #     spatial_feat, hist_feat, hog_feat
             # )
-
+            test_features[0][(np.isnan(test_features[0])) | (test_features[0]==float("inf")) | (test_features[0]==float("-inf"))] = 0.0
             test_features = X_scaler.transform(test_features)
             test_prediction = svc.predict(test_features)
             if test_prediction == 1:
@@ -446,27 +446,43 @@ def video_pipline(img,svm_model_path, exprt_heatmap=False, usage_previous_frames
 
     res = find_cars(img,0,1280, 350,600,1.5,svm_model_path)
     original_res = np.copy(res)
-    # if usage_previous_frames == True and type(previou_heatmap) != type(None):
-    #     res = res + previou_heatmap
-    # else:
-    #     pass
 
-    mode_cal = res.flatten()
-    mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
-    if len(mode_cal) == 0:
-        res = 0
-        print("Mode was empty")
-    else:
-        thread = mode_cal.max()/3
-        print(thread)
-        if thread < 10:
-            thread=10
+    if usage_previous_frames == True and type(previou_heatmap) != type(None):
+        res = res + previou_heatmap
+        mode_cal = res.flatten()
+        mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
+        if len(mode_cal) == 0:
+            res = 0
+            print("Mode was empty")
         else:
-            pass
-        res[res < thread] = 0
-        print("thread is {}".format(thread))
+            thread = mode_cal.max() / 3
+            print(thread)
+            if thread < 65:
+                thread = 65
+            else:
+                pass
+            res[res < thread] = 0
+            print("thread is {}".format(thread))
 
-    print('Threading_done')
+        print('Threading_done')
+
+    else:
+        mode_cal = res.flatten()
+        mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
+        if len(mode_cal) == 0:
+            res = 0
+            print("Mode was empty")
+        else:
+            thread = mode_cal.max()/3
+            print(thread)
+            if thread < 10:
+                thread=10
+            else:
+                pass
+            res[res < thread] = 0
+            print("thread is {}".format(thread))
+
+        print('Threading_done')
 
     # Create label of each area which was surrounded by 0
     from scipy.ndimage.measurements import label
@@ -507,7 +523,7 @@ def video_pipline(img,svm_model_path, exprt_heatmap=False, usage_previous_frames
             bbox_output.append(bbox)
 
     if exprt_heatmap == False:
-        return img, bbox
+        return img
     else:
         return img, original_res, bbox_output
 
@@ -539,6 +555,12 @@ def video_creation(original_video_name, output_video_name, svm_model_path, end_s
             print((int)(num_frame - start_frame), "/", (int)(end_frame - start_frame))
             ret, frame = video.read()
             if ret == True:
+                # result_frame = video_pipline(
+                #     frame,svm_model_path,
+                #     exprt_heatmap=False,
+                #     usage_previous_frames=False
+                # )
+
                 if num_frame <= start_frame + 5:
                     print('here')
                     result_frame, previous_res, prev_bbox = video_pipline(frame,svm_model_path,
@@ -547,11 +569,6 @@ def video_creation(original_video_name, output_video_name, svm_model_path, end_s
                     previous_3_res = previous_2_res
                     previous_2_res = previous_1_res
                     previous_1_res = previous_res
-                    # if type(previous_1_res) == type(None) or type(previous_2_res) ==type(None) or type(previous_3_res)== type(None):
-                    #     print(previous_1_res.max(),previous_2_res.max(),previous_3_res.max())
-                    # else:
-                    #     pass
-
                 else:
                     print(previous_1_res.max(), previous_2_res.max(), previous_3_res.max())
                     max1 = previous_1_res.max()
