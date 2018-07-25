@@ -18,9 +18,28 @@ The following resources can be found in this github repository:
 ### Files
 * enviroment_setup.py 
 * main.py
-
+* main_training.py 
+* functionset.py 
+* project_video.mp4 
+* project_video_w_pipline.avi 
 
 ### Directory
+* test_images 
+* training_data 
+
+
+## Details about files in this repository
+### 'enviroment_setup.py'
+
+### 'main.py'
+
+### 'main_training.py'
+
+### 'functionset.py'
+
+### 'project_video.mp4'
+
+### 'project_video_w_pipline.mp4'
 
 Here are links to the labeled data for [vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) examples to train your classifier.  These example images come from a combination of the [GTI vehicle image database](http://www.gti.ssr.upm.es/data/Vehicle_database.html), the [KITTI vision benchmark suite](http://www.cvlibs.net/datasets/kitti/), and examples extracted from the project video itself.   You are welcome and encouraged to take advantage of the recently released [Udacity labeled dataset](https://github.com/udacity/self-driving-car/tree/master/annotations) to augment your training data.  
 
