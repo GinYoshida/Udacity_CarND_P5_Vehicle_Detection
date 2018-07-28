@@ -4,6 +4,9 @@ This .py file will set up the environment of traning data for project.
 Training data will be downloaded. And list of path and data label will be prepared.
 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip',
 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip',
+
+Note: If it is necessary to increase the number of training data, more data available from the following link.
+For this project, it was not necessary. And the data preparation for the following data set was commented out in this file.
 'http://bit.ly/udacity-annoations-crowdai',
 'http://bit.ly/udacity-annotations-autti'
 '''
@@ -59,7 +62,7 @@ def dir_checker(path):
 
 def download_file(url: str):
     '''
-    Function to download the comporessed file of training data from the web.
+    Function to download the compressed file of training data from the web.
     :param url: the url to download
     :return: str message about the operation
     '''
@@ -84,14 +87,16 @@ def download_file(url: str):
 
 def uncompress(url: str):
     '''
-    Function to download the comporessed file of training data from the web.
-    :param url: the url to download
+    Function to uncompress the files.
+    :param url: the url, from which the target data was downloaed
     :return: str message about the operation
     '''
 
+    # Create the file path
     filename =  url.split('/')[-1]
     file_path = os.path.join(IMAGE_DATA_PATH, filename)
 
+    # Uncompress the files. If the file is not zip, it is handled as .tar
     if os.path.exists(file_path):
         filename = url.split('/')[-1]
         extend = filename.split('.')[-1]
@@ -107,57 +112,51 @@ def uncompress(url: str):
     else:
         return '{} is not existing.'.format(filename)
 
-def od_crop(file_name,xmin,xmax,ymin,ymax,label):
-    file_path = os.path.join(IMAGE_DATA_PATH,'object-dataset',file_name)
-    img = cv2.imread(file_path)
-    crop_img = img[ymin:ymax, xmin:xmax]
-    output_file_path = os.path.join(IMAGE_DATA_PATH,'od_crop',str(xmax)+str(ymax)+label+file_name)
-    try:
-        if os.path.exists(output_file_path):
-            return label, output_file_path
-        elif (xmax-xmin)/(ymax-ymin) > 1.5 or (xmax-xmin)/(ymax-ymin) < 0.75:
-            return label, np.nan
-        else:
-            cv2.imwrite(output_file_path,crop_img)
-            return label, output_file_path
-    except:
-        logger.debug(traceback.print_exc())
-        print(traceback.print_exc())
-
-def odc_crop(file_name,xmin,xmax,ymin,ymax,label):
-    file_path = os.path.join(IMAGE_DATA_PATH,'object-detection-crowdai',file_name)
-    img = cv2.imread(file_path)
-    crop_img = img[ymin:ymax, xmin:xmax]
-    output_file_path = os.path.join(IMAGE_DATA_PATH,'odc_crop',str(xmax)+str(ymax)+label+file_name)
-
-    try:
-        if xmax-xmin == 0 or ymax-ymin == 0:
-            return label, output_file_path
-        else:
-            if os.path.exists(output_file_path):
-                return label, output_file_path
-            elif (xmax-xmin)/(ymax-ymin) > 1.5 or (xmax-xmin)/(ymax-ymin) < 0.75:
-                return label, np.nan
-            else:
-                cv2.imwrite(output_file_path,crop_img)
-                return label, output_file_path
-    except:
-        logger.debug(traceback.print_exc())
-        print(traceback.print_exc())
-
-def clearn_data():
-    file_path = os.path.join(IMAGE_DATA_PATH,'non-vehicles','Extras')
-    target_file_name = [
-
-
-    ]
-
-
+# def od_crop(file_name,xmin,xmax,ymin,ymax,label):
+#     file_path = os.path.join(IMAGE_DATA_PATH,'object-dataset',file_name)
+#     img = cv2.imread(file_path)
+#     crop_img = img[ymin:ymax, xmin:xmax]
+#     output_file_path = os.path.join(IMAGE_DATA_PATH,'od_crop',str(xmax)+str(ymax)+label+file_name)
+#     try:
+#         if os.path.exists(output_file_path):
+#             return label, output_file_path
+#         elif (xmax-xmin)/(ymax-ymin) > 1.5 or (xmax-xmin)/(ymax-ymin) < 0.75:
+#             return label, np.nan
+#         else:
+#             cv2.imwrite(output_file_path,crop_img)
+#             return label, output_file_path
+#     except:
+#         logger.debug(traceback.print_exc())
+#         print(traceback.print_exc())
+#
+# def odc_crop(file_name,xmin,xmax,ymin,ymax,label):
+#     file_path = os.path.join(IMAGE_DATA_PATH,'object-detection-crowdai',file_name)
+#     img = cv2.imread(file_path)
+#     crop_img = img[ymin:ymax, xmin:xmax]
+#     output_file_path = os.path.join(IMAGE_DATA_PATH,'odc_crop',str(xmax)+str(ymax)+label+file_name)
+#
+#     try:
+#         if xmax-xmin == 0 or ymax-ymin == 0:
+#             return label, output_file_path
+#         else:
+#             if os.path.exists(output_file_path):
+#                 return label, output_file_path
+#             elif (xmax-xmin)/(ymax-ymin) > 1.5 or (xmax-xmin)/(ymax-ymin) < 0.75:
+#                 return label, np.nan
+#             else:
+#                 cv2.imwrite(output_file_path,crop_img)
+#                 return label, output_file_path
+#     except:
+#         logger.debug(traceback.print_exc())
+#         print(traceback.print_exc())
 
 def basic_env_set():
     '''
-    :return:
+    Function to set the images data into "IMAGE_DATA_PATH"
+    :return: Non
     '''
+
+    # Set logger
     logger.info(dir_checker(IMAGE_DATA_PATH))
 
     # Download compressed files
@@ -238,14 +237,22 @@ def basic_env_set():
     #     odc_panda_data[~(odc_panda_data['path'] == 'nan')].to_csv(os.path.join(IMAGE_DATA_PATH, 'odc_data.csv'))
 
 def data_clearning():
+    '''
+    Function to remove some images including the vehicle partially.
+    The target files to remove are shown in "RM_files_non-vehicle.csv".
+    :return:Non
+    '''
+
+    # Read the list of the target files
     rm_target_list = pd.read_csv('./RM_files_non-vehicle.csv').iloc[:, 1]
 
+    # Check the directory assistance. If there is not the directory, it will be created.
     if os.path.exists(os.path.join(IMAGE_DATA_PATH, 'RM')):
-        #     logger.info('RM folder was already created.')
         pass
     else:
         os.mkdir(os.path.join(IMAGE_DATA_PATH, 'RM'))
 
+    # Mode the target files from the training set to "RM" directory.
     for i in rm_target_list:
         target_path_from = os.path.join(IMAGE_DATA_PATH, 'non-vehicles/Extras', i)
         target_path_to = os.path.join(IMAGE_DATA_PATH, 'RM', i)
@@ -255,14 +262,22 @@ def data_clearning():
             pass
 
 def data_argment():
+    '''
+    Then, non-vehicle data, including the shadows and complicated structure, will be added.
+    The target files to be added with the argumetation are shown in "non-vehicle_Arg.csv"
+    :return: Non
+    '''
+
+    # Read the list of the target files
     ag_target_list = pd.read_csv('./non-vehicle_Arg.csv').iloc[:, 1]
 
+    # Check the directory assistance. If there is not the directory, it will be created.
     if os.path.exists(os.path.join(IMAGE_DATA_PATH, 'AG')):
-        #     logger.info('RM folder was already created.')
         pass
     else:
         os.mkdir(os.path.join(IMAGE_DATA_PATH, 'AG'))
 
+    # Mode the target files from the training set to "AG" directory.
     for i in ag_target_list:
         target_path_from = os.path.join(IMAGE_DATA_PATH, 'non-vehicles/Extras', i)
         target_path_to = os.path.join(IMAGE_DATA_PATH, 'AG', i)
@@ -271,18 +286,23 @@ def data_argment():
         except:
             pass
 
+    # Read the images from "AG" directory and apply the slight shifting.
+    # Then, save them into the original directory, which includes other training sets.
     for count in range(2):
         for i, x in enumerate(ag_target_list):
             file_path = os.path.join(IMAGE_DATA_PATH, 'AG', x)
             x = cv2.imread(file_path)
-
             rows = x.shape[0]
             cols = x.shape[1]
+
+            # Compute the range of shift
             shift_img = np.random.randint(-5, 5)
 
+            # Shift the image
             M = np.float32([[1, 0, shift_img], [0, 1, 0]])
             x = cv2.warpAffine(x, M, (cols, rows))
 
+            # Fill the 0 area with the color information on the border.
             if shift_img == 0:
                 pass
             elif shift_img < 0:
@@ -296,6 +316,7 @@ def data_argment():
             else:
                 pass
 
+            # Save the new image into the directory, which includes other image sets
             temp_path = '../image_data_Udacity_CarND_P5/non-vehicles/Extras/' + 'new' + file_path.split('/')[-1][3:]
             cv2.imwrite(temp_path, x)
 

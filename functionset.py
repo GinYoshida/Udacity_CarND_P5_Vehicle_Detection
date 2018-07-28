@@ -1,8 +1,9 @@
+import cv2
 import pickle
 import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2
+from mpl_toolkits.axes_grid1 import make_axes_locatable
 from skimage.feature import hog
 
 def conv_color_space(img, color_space):
@@ -301,8 +302,7 @@ def find_cars(img, xstart,xstop, ystart, ystop, scale, svm_model_path):
     return heat_map
 
 def video_pipline(
-        img,svm_model_path, exprt_heatmap=False, usage_previous_frames=False,
-        previou_heatmap=None, previous_bbox=None
+        img,svm_model_path, exprt_heatmap=False, usage_previous_frames=False,previou_heatmap=None
 ):
     '''
     Function to draw the rectangle into each video frame or the image.
@@ -317,13 +317,13 @@ def video_pipline(
      which randomly occurs in the image.
 
     :param img: The target image or the frame from the video
-    :param svm_model_path: svm model_path to judge the image as the vehicle or not
+    :param svm_model_path: The path to the SVM model file to judge the image as the vehicle or not
     :param exprt_heatmap:
-    If true, the function will return the heat map result in the addition to the image with the rectangle    :param usage_previous_frames:
+    If true, the function will return the heat map result in the addition to the image with the rectangle
+    :param usage_previous_frames:
+    If true, the heat map result from the previous frames will be used.
     :param previou_heatmap:
     the heat map results from the previous few frames
-    :param previous_bbox:
-    the heat map result of the previous frame
     :return:
     The image with the rectangles.
     If the exprt_heatmap is true, the original image and heat map result are returned as well.
@@ -336,25 +336,31 @@ def video_pipline(
     original_res = np.copy(res)
 
     # Compute the false positive area based on the threshold.
+    # Threshold for the video frames.
     if usage_previous_frames == True and type(previou_heatmap) != type(None):
+        # Add the heat map results from the previous few frames.
         res = res + previou_heatmap
         mode_cal = res.flatten()
         mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
+        # If the heat map is empty, the result is 0.
         if len(mode_cal) == 0:
             res = 0
             print("Mode was empty")
+        # If the heat map
         else:
             thread = mode_cal.max() / 3
             print(thread)
             if thread < 65:
+                # Threshold for very low value.
+                # If the iamge doesn't include any vehicle image, this threshold will be applied.
                 thread = 65
             else:
                 pass
             res[res < thread] = 0
             print("thread is {}".format(thread))
-
         print('Threading_done')
 
+    # Threshold for the single image.
     else:
         mode_cal = res.flatten()
         mode_cal = np.delete(mode_cal, np.where(mode_cal == 0))
@@ -376,7 +382,8 @@ def video_pipline(
     # Create label of each area which was surrounded by 0
     from scipy.ndimage.measurements import label
     labels = label(res)
-    # plt.imshow(labels[0], cmap='gray')
+
+    # Compute the coordinate of each labeled area
     bbox_output = []
     for car_number in range(1, labels[1] + 1):
         # Find pixels with each car_number label value
@@ -390,32 +397,48 @@ def video_pipline(
         box_width = np.max(nonzerox)-np.min(nonzerox)
         # Draw the box on the image
         # Exclude box showng too bit aspect ratio
-        # print(box_height*box_width)
-        center_x = (np.max(nonzerox) + np.min(nonzerox))/2
-        center_y = (np.max(nonzeroy) - np.min(nonzeroy))/2
-        # print("region thread", mode_cal.mean() * 2.5)
 
+        # If the rectangle aspect ratio is less than 3 or the area is less than 150 pixels,
+        #  the box is not applied to draw the rectangle.
         if box_height/box_width >= 3 or box_width/box_height >= 3 or box_height*box_width <= 150:
             pass
         else:
+            # Draw the box into the image.
             print("OK_max:",res[np.min(nonzeroy):np.max(nonzeroy),np.min(nonzerox):np.max(nonzerox)].max())
-
             cv2.rectangle(img, bbox[0], bbox[1], (0, 0, 255), 6)
             bbox_output.append(bbox)
 
     if exprt_heatmap == False:
         return img
     else:
-        return img, original_res, bbox_output
+        return img, original_res, res
 
-def video_creation(original_video_name, output_video_name, svm_model_path, end_sec = 1, start_sec = 0, flg_whole_vide = False):
+def video_creation(
+        original_video_name, output_video_name, svm_model_path, end_sec = 1, start_sec = 0, flg_whole_vide = False
+):
+    '''
+    Function to draw the rectangle into the area, which is judged as "vehicle", of each frame from the original video.
+    To apply the function to a part of the target video, start_sec and end_sec are set.
 
+    :param original_video_name: Target video
+    :param output_video_name: File name of the converted video file
+    :param svm_model_path: The path to the SVM model file to judge the image as the vehicle or not
+    :param end_sec: The end of the target frame. This is defined as [sec].
+    :param start_sec: The start of the target frame. This is defined as [sec].
+    :param flg_whole_vide:
+    If ture, the function is applied on the whole frame of the target video,
+    regardless of the contents of start_sec and end_sec.
+    :return: Non
+    '''
+
+    # Read the video
     video = cv2.VideoCapture(original_video_name)
+
+    # Extract the frames, defined by start_sec and end_sec.
     total_num_frame = int(video.get(cv2.CAP_PROP_FRAME_COUNT))
     fps = video.get(cv2.CAP_PROP_FPS)
     fourcc = cv2.VideoWriter_fourcc(*'DIVX')
     out = cv2.VideoWriter(output_video_name, fourcc, fps, (1280, 720))
-
     start_frame = start_sec * fps
     end_frame = end_sec * fps
     if flg_whole_vide == True:
@@ -423,6 +446,9 @@ def video_creation(original_video_name, output_video_name, svm_model_path, end_s
         end_frame = total_num_frame
     else:
         pass
+
+    # Convert the each frame.
+    # Previous 3 frames are added into the result to reduce the false positive area, which randomly occurs in the image.
 
     previous_1_res = None
     previous_2_res = None
@@ -437,11 +463,12 @@ def video_creation(original_video_name, output_video_name, svm_model_path, end_s
             ret, frame = video.read()
             if ret == True:
 
+                # In the first 4 frames, the function to add the previous frame will be skipped.
                 if num_frame <= start_frame + 5:
                     print('here')
-                    result_frame, previous_res, prev_bbox = video_pipline(frame,svm_model_path,
-                                                                          exprt_heatmap=True,
-                                                                          usage_previous_frames=False)
+                    result_frame, previous_res, after_rm_false_posi = video_pipline(
+                        frame,svm_model_path, exprt_heatmap=True, usage_previous_frames=False
+                    )
                     previous_3_res = previous_2_res
                     previous_2_res = previous_1_res
                     previous_1_res = previous_res
@@ -451,15 +478,13 @@ def video_creation(original_video_name, output_video_name, svm_model_path, end_s
                     max2 = previous_2_res.max()
                     max3 = previous_3_res.max()
                     add_data = previous_1_res + previous_2_res + previous_3_res
-                    result_frame, previous_res, prev_bbox = video_pipline(frame,svm_model_path, exprt_heatmap=True,
-                                                                          usage_previous_frames=True,
-                                                                          previou_heatmap=add_data,
-                                                                          previous_bbox=prev_bbox)
+                    result_frame, previous_res,  after_rm_false_posi = video_pipline(
+                        frame,svm_model_path, exprt_heatmap=True, usage_previous_frames=True, previou_heatmap=add_data
+                    )
                     previous_3_res = previous_2_res
                     previous_2_res = previous_1_res
                     previous_1_res = previous_res
                     print(previous_1_res.max(), previous_2_res.max(), previous_3_res.max())
-
                 out.write(result_frame)
 
     video.release()
@@ -467,23 +492,53 @@ def video_creation(original_video_name, output_video_name, svm_model_path, end_s
     cv2.destroyAllWindows()
 
 def image_converter(input_file_names,svm_model_path):
-
+    '''
+    Function to draw the rectangle into the area, which is judged as "vehicle", of each images.
+    The images and heat map data will be stored into the "'./output_images/'" directory.
+    :param input_file_names: list of the file paths of the target images
+    :param svm_model_path: The path to the SVM model file to judge the image as the vehicle or not
+    :return: non
+    '''
     for file_name in input_file_names:
         print(file_name)
         file_path = './test_images/' + file_name + '.jpg'
         target_img = cv2.imread(file_path)
 
-        result_img, res, heatmap = video_pipline(target_img, svm_model_path, exprt_heatmap=True)
+        # Compute the images with the rectangle and the heat map
+        result_img, heat_map, after_rm_false_posi = video_pipline(target_img, svm_model_path, exprt_heatmap=True)
 
-        fig = plt.figure(figsize=(12, 6))
-        ax1 = fig.add_subplot(1, 2, 1)
-        ax1.imshow(res)
-        heatmap = ax1.pcolor(res, cmap=plt.cm.Reds)
-        cbar = plt.colorbar(heatmap)
-        ax1.set_title('Heat map')
-        ax2 = fig.add_subplot(1, 2, 2)
-        ax2.imshow(result_img)
-        ax2.set_title('Result with window image')
+        # Export the images into the direcotry
+        fig = plt.figure(figsize=(12, 12))
+
+        # Draw the original image
+        ax0 = fig.add_subplot(2, 2, 1)
+        ax0.imshow(target_img)
+        ax0.set_title('Original image', fontsize=14)
+
+        # Draw the original heat map
+        ax1 = fig.add_subplot(2, 2, 2)
+        ax1.imshow(heat_map)
+        ax1_bar = ax1.pcolor(heat_map, cmap=plt.cm.Reds)
+        divider = make_axes_locatable(ax1)
+        cax = divider.append_axes("right", size="5%", pad=0.05)
+        fig.colorbar(ax1_bar, cax=cax)
+        ax1.set_title('Heat map', fontsize=14)
+
+        # Draw the heat map after remove the false positive with the threshold.
+        ax2 = fig.add_subplot(2, 2, 3)
+        ax2.imshow(after_rm_false_posi)
+        ax2_bar = ax2.pcolor(after_rm_false_posi, cmap=plt.cm.Reds)
+        divider = make_axes_locatable(ax2)
+        cax = divider.append_axes("right", size="5%", pad=0.05)
+        fig.colorbar(ax2_bar, cax=cax)
+        ax2.set_title('Heat map after threshold', fontsize=14)
+
+        # Draw the image with rectangle.
+        ax3 = fig.add_subplot(2, 2, 4)
+        ax3.imshow(result_img)
+        ax3.set_title('Result with window image', fontsize=14)
+
+        # Export the result into the taget directory.
         plt.subplots_adjust(left=0.05, right=0.9, top=0.9, bottom=0.1, wspace=0.2, hspace=0.2)
         output_path = './output_images/' + file_name + '.png'
         plt.savefig(output_path)
