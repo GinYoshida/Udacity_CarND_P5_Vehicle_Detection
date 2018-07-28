@@ -17,38 +17,81 @@ The goals / steps of this project are the following:
 The following resources can be found in this github repository: 
 ### Files
 * enviroment_setup.py 
-* main.py
 * main_training.py 
+* main.py
 * functionset.py 
 * project_video.mp4 
 * project_video_w_pipline.avi 
+* Code_test.ipynb
+* condition_1.pickle ... condition_7.pickle
+* nohup.out
+* RM_files_non-vehicle.csv
+* non-vehicle_Arg.csv
+* test_video.mp4
+* writeup_report.mp
 
 ### Directory
 * test_images 
-* training_data 
-
+* output_images
+* for_report
 
 ## Details about files in this repository
 ### 'enviroment_setup.py'
-
-### 'main.py'
+ Python file to set up the image datas into "../image_data_Udacity_CarND_P5".
 
 ### 'main_training.py'
-
+ Python file to create the training model to judge whether the images includes the vehicle or not.
+ 7 different models will be calculated for the parameter study.
+ 
+### 'main.py'
+ Python file to apply the pipe-line, which draws the rectangle on the area judged as vehicle, to the following items:
+  * Images files saved into test_images 
+  (For images, the heat maps and original file will be added as diagram.)
+  * "./project_video.mp4"
+ 
 ### 'functionset.py'
+ Python file includes the necessary functions for "main_training.py" and "main.py".
 
 ### 'project_video.mp4'
-
+ This is the Original .mp4 file.
+ The pipeline was applied to this mp4 file and "project_video_w_pipline.mp4" was created.
+ 
 ### 'project_video_w_pipline.mp4'
+ .mp4 file with the rectangle drawn on the area judged as the vehicle.  
+ This is the outcome of the main.py.
 
-Here are links to the labeled data for [vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip) and [non-vehicle](https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip) examples to train your classifier.  These example images come from a combination of the [GTI vehicle image database](http://www.gti.ssr.upm.es/data/Vehicle_database.html), the [KITTI vision benchmark suite](http://www.cvlibs.net/datasets/kitti/), and examples extracted from the project video itself.   You are welcome and encouraged to take advantage of the recently released [Udacity labeled dataset](https://github.com/udacity/self-driving-car/tree/master/annotations) to augment your training data.  
+### 'Code_test.ipynb'
+ Jupyter notebook file.
+ This file was used to create the necessary images for "Writeup_report.md".
 
-Some example images for testing your pipeline on single frames are located in the `test_images` folder.  To help the reviewer examine your work, please save examples of the output from each stage of your pipeline in the folder called `ouput_images`, and include them in your writeup for the project by describing what each image shows.    The video called `project_video.mp4` is the video your pipeline should work well on.  
+### condition_1.pickle ... condition_7.pickle
+ svm model files in each condition.
+ They are the outcome of the 'main_training.py'
 
-**As an optional challenge** Once you have a working pipeline for vehicle detection, add in your lane-finding algorithm from the last project to do simultaneous lane-finding and vehicle detection!
+### nohup.out
+ The record during the execution of 'main.py' and 'main_training.py'.
 
-**If you're feeling ambitious** (also totally optional though), don't stop there!  We encourage you to go out and take video of your own, and show us how you would implement this project on a new video!
+### RM_files_non-vehicle.csv
+ Used for 'enviroment_setup.py'.
+ This file includes the file name, which need be removed from the data set, because it includes the vehicle image partially.
+  
+### non-vehicle_Arg.csv
+ Used for "'enviroment_setup.py'"
+ This file includes the file name of the image, including the shadows and complicated structure.
+ These images will be used to argument non-vehicle data set instead of the removed data. 
 
-## How to write a README
-A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
+### test_video.mp4
+ short mp4 file for trial of the pipeline. 
 
+### writeup_report.mp
+ Writeup report of this project.
+ 
+# Usage of this repository
+ Please execute the following files.
+ * Step1: 'enviroment_setup.py'
+ * Step2: 'main_training.py'
+ * Step3: 'main.py'
+ 
+ Note:  
+  For Code_test.ipynb, please execute the following command to set the proper working directory.   
+  jupyter notebook --notebook-dir= "your working directory" 

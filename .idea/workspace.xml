@@ -3,23 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="68ddc8a0-4e07-47cf-831f-da198206db99" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/enviroment_setup.py" afterPath="$PROJECT_DIR$/enviroment_setup.py" />
-      <change beforePath="$PROJECT_DIR$/functionset.py" afterPath="$PROJECT_DIR$/functionset.py" />
-      <change beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
-      <change beforePath="$PROJECT_DIR$/main_training.py" afterPath="$PROJECT_DIR$/main_training.py" />
-      <change beforePath="$PROJECT_DIR$/output_images/test1.png" afterPath="$PROJECT_DIR$/output_images/test1.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test10.png" afterPath="$PROJECT_DIR$/output_images/test10.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test11.png" afterPath="$PROJECT_DIR$/output_images/test11.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test12.png" afterPath="$PROJECT_DIR$/output_images/test12.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test2.png" afterPath="$PROJECT_DIR$/output_images/test2.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test3.png" afterPath="$PROJECT_DIR$/output_images/test3.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test4.png" afterPath="$PROJECT_DIR$/output_images/test4.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test5.png" afterPath="$PROJECT_DIR$/output_images/test5.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test6.png" afterPath="$PROJECT_DIR$/output_images/test6.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test7.png" afterPath="$PROJECT_DIR$/output_images/test7.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test8.png" afterPath="$PROJECT_DIR$/output_images/test8.png" />
-      <change beforePath="$PROJECT_DIR$/output_images/test9.png" afterPath="$PROJECT_DIR$/output_images/test9.png" />
-      <change beforePath="$PROJECT_DIR$/project_video_w_pipline.avi" afterPath="$PROJECT_DIR$/project_video_w_pipline.avi" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/result.txt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/writeup_template.md" afterPath="$PROJECT_DIR$/writeup_report.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,7 +19,7 @@
       <file leaf-file-name="functionset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functionset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8959">
+            <state relative-caret-position="0">
               <caret line="533" column="49" lean-forward="false" selection-start-line="533" selection-start-column="49" selection-end-line="533" selection-end-column="49" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -66,14 +52,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enviroment_setup.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="enviroment_setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/enviroment_setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="192">
+              <caret line="265" column="76" lean-forward="true" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="76" />
               <folding>
                 <element signature="e#631#641#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="130">
+                <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -89,7 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>extract_fe</find>
       <find>find_car</find>
       <find>extract_features</find>
       <find>show()</find>
@@ -116,9 +114,10 @@
       <find>randomly</find>
       <find>original_res</find>
       <find>prev_bbox</find>
-      <find>previous_bbox</find>
       <find>video_pipline</find>
       <find>Counter</find>
+      <find>non-Ve</find>
+      <find>training_</find>
     </findStrings>
     <replaceStrings>
       <replace>odc_panda_data</replace>
@@ -137,6 +136,7 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/main_training.py" />
         <option value="$PROJECT_DIR$/enviroment_setup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -488,13 +488,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main_training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functionset.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -779,13 +772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/result.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -795,7 +781,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functionset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8959">
+        <state relative-caret-position="0">
           <caret line="533" column="49" lean-forward="false" selection-start-line="533" selection-start-column="49" selection-end-line="533" selection-end-column="49" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -823,13 +809,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/result.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/enviroment_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+        <state relative-caret-position="192">
+          <caret line="265" column="76" lean-forward="true" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="76" />
           <folding>
             <element signature="e#631#641#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="130">
+            <caret line="94" column="8" lean-forward="true" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
