@@ -4434,3 +4434,10301 @@ extraction was done 15741 / 17490
 extraction was done 0 / 177
 12389.17 Seconds to train SVC...
 Test Accuracy of condition_7.pickle is 0.9435 
+0
+1
+0 / 1259
+here
+4.333333333333333
+thread is 10
+Threading_done
+OK_max: 13
+2
+1 / 1259
+here
+5.0
+thread is 10
+Threading_done
+OK_max: 15
+3
+2 / 1259
+here
+3.0
+thread is 10
+Threading_done
+4
+3 / 1259
+here
+4.333333333333333
+thread is 10
+Threading_done
+OK_max: 13
+5
+4 / 1259
+here
+5.333333333333333
+thread is 10
+Threading_done
+OK_max: 16
+6
+5 / 1259
+here
+4.666666666666667
+thread is 10
+Threading_done
+OK_max: 14
+7
+6 / 1259
+14 16 13
+21.666666666666668
+thread is 65
+Threading_done
+OK_max: 65
+22 14 16
+8
+7 / 1259
+22 14 16
+21.0
+thread is 65
+Threading_done
+11 22 14
+9
+8 / 1259
+11 22 14
+20.666666666666668
+thread is 65
+Threading_done
+15 11 22
+10
+9 / 1259
+15 11 22
+19.666666666666668
+thread is 65
+Threading_done
+11 15 11
+11
+10 / 1259
+11 15 11
+16.0
+thread is 65
+Threading_done
+11 11 15
+12
+11 / 1259
+11 11 15
+17.0
+thread is 65
+Threading_done
+14 11 11
+13
+12 / 1259
+14 11 11
+13.666666666666666
+thread is 65
+Threading_done
+5 14 11
+14
+13 / 1259
+5 14 11
+13.666666666666666
+thread is 65
+Threading_done
+11 5 14
+15
+14 / 1259
+11 5 14
+12.333333333333334
+thread is 65
+Threading_done
+8 11 5
+16
+15 / 1259
+8 11 5
+11.0
+thread is 65
+Threading_done
+10 8 11
+17
+16 / 1259
+10 8 11
+11.333333333333334
+thread is 65
+Threading_done
+6 10 8
+18
+17 / 1259
+6 10 8
+9.0
+thread is 65
+Threading_done
+4 6 10
+19
+18 / 1259
+4 6 10
+7.0
+thread is 65
+Threading_done
+4 4 6
+20
+19 / 1259
+4 4 6
+5.666666666666667
+thread is 65
+Threading_done
+6 4 4
+21
+20 / 1259
+6 4 4
+5.0
+thread is 65
+Threading_done
+4 6 4
+22
+21 / 1259
+4 6 4
+6.0
+thread is 65
+Threading_done
+7 4 6
+23
+22 / 1259
+7 4 6
+6.333333333333333
+thread is 65
+Threading_done
+2 7 4
+24
+23 / 1259
+2 7 4
+5.333333333333333
+thread is 65
+Threading_done
+3 2 7
+25
+24 / 1259
+3 2 7
+5.0
+thread is 65
+Threading_done
+3 3 2
+26
+25 / 1259
+3 3 2
+4.666666666666667
+thread is 65
+Threading_done
+6 3 3
+27
+26 / 1259
+6 3 3
+5.666666666666667
+thread is 65
+Threading_done
+5 6 3
+28
+27 / 1259
+5 6 3
+6.0
+thread is 65
+Threading_done
+4 5 6
+29
+28 / 1259
+4 5 6
+6.0
+thread is 65
+Threading_done
+3 4 5
+30
+29 / 1259
+3 4 5
+4.333333333333333
+thread is 65
+Threading_done
+2 3 4
+31
+30 / 1259
+2 3 4
+3.0
+thread is 65
+Threading_done
+2 2 3
+32
+31 / 1259
+2 2 3
+1.6666666666666667
+thread is 65
+Threading_done
+1 2 2
+33
+32 / 1259
+1 2 2
+3.0
+thread is 65
+Threading_done
+7 1 2
+34
+33 / 1259
+7 1 2
+3.3333333333333335
+thread is 65
+Threading_done
+2 7 1
+35
+34 / 1259
+2 7 1
+3.6666666666666665
+thread is 65
+Threading_done
+3 2 7
+36
+35 / 1259
+3 2 7
+5.333333333333333
+thread is 65
+Threading_done
+5 3 2
+37
+36 / 1259
+5 3 2
+5.333333333333333
+thread is 65
+Threading_done
+6 5 3
+38
+37 / 1259
+6 5 3
+6.333333333333333
+thread is 65
+Threading_done
+5 6 5
+39
+38 / 1259
+5 6 5
+6.333333333333333
+thread is 65
+Threading_done
+5 5 6
+40
+39 / 1259
+5 5 6
+6.0
+thread is 65
+Threading_done
+5 5 5
+41
+40 / 1259
+5 5 5
+6.333333333333333
+thread is 65
+Threading_done
+6 5 5
+42
+41 / 1259
+6 5 5
+7.0
+thread is 65
+Threading_done
+6 6 5
+43
+42 / 1259
+6 6 5
+8.333333333333334
+thread is 65
+Threading_done
+9 6 6
+44
+43 / 1259
+9 6 6
+11.0
+thread is 65
+Threading_done
+12 9 6
+45
+44 / 1259
+12 9 6
+13.666666666666666
+thread is 65
+Threading_done
+14 12 9
+46
+45 / 1259
+14 12 9
+17.666666666666668
+thread is 65
+Threading_done
+18 14 12
+47
+46 / 1259
+18 14 12
+18.666666666666668
+thread is 65
+Threading_done
+12 18 14
+48
+47 / 1259
+12 18 14
+17.666666666666668
+thread is 65
+Threading_done
+9 12 18
+49
+48 / 1259
+9 12 18
+18.666666666666668
+thread is 65
+Threading_done
+17 9 12
+50
+49 / 1259
+17 9 12
+16.666666666666668
+thread is 65
+Threading_done
+12 17 9
+51
+50 / 1259
+12 17 9
+16.0
+thread is 65
+Threading_done
+10 12 17
+52
+51 / 1259
+10 12 17
+14.333333333333334
+thread is 65
+Threading_done
+4 10 12
+53
+52 / 1259
+4 10 12
+11.666666666666666
+thread is 65
+Threading_done
+9 4 10
+54
+53 / 1259
+9 4 10
+8.666666666666666
+thread is 65
+Threading_done
+3 9 4
+55
+54 / 1259
+3 9 4
+5.666666666666667
+thread is 65
+Threading_done
+2 3 9
+56
+55 / 1259
+2 3 9
+6.0
+thread is 65
+Threading_done
+5 2 3
+57
+56 / 1259
+5 2 3
+5.666666666666667
+thread is 65
+Threading_done
+8 5 2
+58
+57 / 1259
+8 5 2
+7.0
+thread is 65
+Threading_done
+7 8 5
+59
+58 / 1259
+7 8 5
+8.666666666666666
+thread is 65
+Threading_done
+6 7 8
+60
+59 / 1259
+6 7 8
+8.666666666666666
+thread is 65
+Threading_done
+5 6 7
+61
+60 / 1259
+5 6 7
+7.0
+thread is 65
+Threading_done
+3 5 6
+62
+61 / 1259
+3 5 6
+6.333333333333333
+thread is 65
+Threading_done
+5 3 5
+63
+62 / 1259
+5 3 5
+5.666666666666667
+thread is 65
+Threading_done
+8 5 3
+64
+63 / 1259
+8 5 3
+5.333333333333333
+thread is 65
+Threading_done
+4 8 5
+65
+64 / 1259
+4 8 5
+5.666666666666667
+thread is 65
+Threading_done
+4 4 8
+66
+65 / 1259
+4 4 8
+5.333333333333333
+thread is 65
+Threading_done
+4 4 4
+67
+66 / 1259
+4 4 4
+7.0
+thread is 65
+Threading_done
+9 4 4
+68
+67 / 1259
+9 4 4
+7.0
+thread is 65
+Threading_done
+4 9 4
+69
+68 / 1259
+4 9 4
+7.333333333333333
+thread is 65
+Threading_done
+6 4 9
+70
+69 / 1259
+6 4 9
+6.0
+thread is 65
+Threading_done
+2 6 4
+71
+70 / 1259
+2 6 4
+4.333333333333333
+thread is 65
+Threading_done
+3 2 6
+72
+71 / 1259
+3 2 6
+4.666666666666667
+thread is 65
+Threading_done
+5 3 2
+73
+72 / 1259
+5 3 2
+4.0
+thread is 65
+Threading_done
+5 5 3
+74
+73 / 1259
+5 5 3
+4.333333333333333
+thread is 65
+Threading_done
+3 5 5
+75
+74 / 1259
+3 5 5
+3.6666666666666665
+thread is 65
+Threading_done
+3 3 5
+76
+75 / 1259
+3 3 5
+3.0
+thread is 65
+Threading_done
+3 3 3
+77
+76 / 1259
+3 3 3
+3.6666666666666665
+thread is 65
+Threading_done
+2 3 3
+78
+77 / 1259
+2 3 3
+3.6666666666666665
+thread is 65
+Threading_done
+3 2 3
+79
+78 / 1259
+3 2 3
+3.3333333333333335
+thread is 65
+Threading_done
+3 3 2
+80
+79 / 1259
+3 3 2
+3.0
+thread is 65
+Threading_done
+4 3 3
+81
+80 / 1259
+4 3 3
+5.666666666666667
+thread is 65
+Threading_done
+9 4 3
+82
+81 / 1259
+9 4 3
+7.0
+thread is 65
+Threading_done
+9 9 4
+83
+82 / 1259
+9 9 4
+7.666666666666667
+thread is 65
+Threading_done
+5 9 9
+84
+83 / 1259
+5 9 9
+8.666666666666666
+thread is 65
+Threading_done
+5 5 9
+85
+84 / 1259
+5 5 9
+7.333333333333333
+thread is 65
+Threading_done
+5 5 5
+86
+85 / 1259
+5 5 5
+6.333333333333333
+thread is 65
+Threading_done
+7 5 5
+87
+86 / 1259
+7 5 5
+7.0
+thread is 65
+Threading_done
+6 7 5
+88
+87 / 1259
+6 7 5
+6.666666666666667
+thread is 65
+Threading_done
+3 6 7
+89
+88 / 1259
+3 6 7
+5.666666666666667
+thread is 65
+Threading_done
+3 3 6
+90
+89 / 1259
+3 3 6
+5.0
+thread is 65
+Threading_done
+5 3 3
+91
+90 / 1259
+5 3 3
+4.333333333333333
+thread is 65
+Threading_done
+4 5 3
+92
+91 / 1259
+4 5 3
+5.666666666666667
+thread is 65
+Threading_done
+6 4 5
+93
+92 / 1259
+6 4 5
+6.333333333333333
+thread is 65
+Threading_done
+4 6 4
+94
+93 / 1259
+4 6 4
+6.333333333333333
+thread is 65
+Threading_done
+5 4 6
+95
+94 / 1259
+5 4 6
+6.333333333333333
+thread is 65
+Threading_done
+4 5 4
+96
+95 / 1259
+4 5 4
+5.0
+thread is 65
+Threading_done
+3 4 5
+97
+96 / 1259
+3 4 5
+4.666666666666667
+thread is 65
+Threading_done
+4 3 4
+98
+97 / 1259
+4 3 4
+5.0
+thread is 65
+Threading_done
+6 4 3
+99
+98 / 1259
+6 4 3
+5.333333333333333
+thread is 65
+Threading_done
+5 6 4
+100
+99 / 1259
+5 6 4
+6.0
+thread is 65
+Threading_done
+4 5 6
+101
+100 / 1259
+4 5 6
+5.666666666666667
+thread is 65
+Threading_done
+4 4 5
+102
+101 / 1259
+4 4 5
+4.0
+thread is 65
+Threading_done
+4 4 4
+103
+102 / 1259
+4 4 4
+3.3333333333333335
+thread is 65
+Threading_done
+3 4 4
+104
+103 / 1259
+3 4 4
+3.6666666666666665
+thread is 65
+Threading_done
+5 3 4
+105
+104 / 1259
+5 3 4
+6.333333333333333
+thread is 65
+Threading_done
+11 5 3
+106
+105 / 1259
+11 5 3
+7.666666666666667
+thread is 65
+Threading_done
+7 11 5
+107
+106 / 1259
+7 11 5
+9.666666666666666
+thread is 65
+Threading_done
+20 7 11
+108
+107 / 1259
+20 7 11
+10.666666666666666
+thread is 65
+Threading_done
+7 20 7
+109
+108 / 1259
+7 20 7
+9.666666666666666
+thread is 65
+Threading_done
+7 7 20
+110
+109 / 1259
+7 7 20
+9.666666666666666
+thread is 65
+Threading_done
+8 7 7
+111
+110 / 1259
+8 7 7
+9.666666666666666
+thread is 65
+Threading_done
+7 8 7
+112
+111 / 1259
+7 8 7
+9.666666666666666
+thread is 65
+Threading_done
+7 7 8
+113
+112 / 1259
+7 7 8
+7.333333333333333
+thread is 65
+Threading_done
+7 7 7
+114
+113 / 1259
+7 7 7
+5.333333333333333
+thread is 65
+Threading_done
+5 7 7
+115
+114 / 1259
+5 7 7
+6.333333333333333
+thread is 65
+Threading_done
+7 5 7
+116
+115 / 1259
+7 5 7
+10.0
+thread is 65
+Threading_done
+13 7 5
+117
+116 / 1259
+13 7 5
+10.333333333333334
+thread is 65
+Threading_done
+8 13 7
+118
+117 / 1259
+8 13 7
+8.666666666666666
+thread is 65
+Threading_done
+6 8 13
+119
+118 / 1259
+6 8 13
+8.333333333333334
+thread is 65
+Threading_done
+5 6 8
+120
+119 / 1259
+5 6 8
+7.333333333333333
+thread is 65
+Threading_done
+7 5 6
+121
+120 / 1259
+7 5 6
+6.333333333333333
+thread is 65
+Threading_done
+6 7 5
+122
+121 / 1259
+6 7 5
+6.0
+thread is 65
+Threading_done
+6 6 7
+123
+122 / 1259
+6 6 7
+6.666666666666667
+thread is 65
+Threading_done
+6 6 6
+124
+123 / 1259
+6 6 6
+7.333333333333333
+thread is 65
+Threading_done
+9 6 6
+125
+124 / 1259
+9 6 6
+8.666666666666666
+thread is 65
+Threading_done
+6 9 6
+126
+125 / 1259
+6 9 6
+9.666666666666666
+thread is 65
+Threading_done
+8 6 9
+127
+126 / 1259
+8 6 9
+10.666666666666666
+thread is 65
+Threading_done
+9 8 6
+128
+127 / 1259
+9 8 6
+10.666666666666666
+thread is 65
+Threading_done
+13 9 8
+129
+128 / 1259
+13 9 8
+11.333333333333334
+thread is 65
+Threading_done
+8 13 9
+130
+129 / 1259
+8 13 9
+11.0
+thread is 65
+Threading_done
+11 8 13
+131
+130 / 1259
+11 8 13
+10.333333333333334
+thread is 65
+Threading_done
+7 11 8
+132
+131 / 1259
+7 11 8
+9.666666666666666
+thread is 65
+Threading_done
+7 7 11
+133
+132 / 1259
+7 7 11
+9.666666666666666
+thread is 65
+Threading_done
+8 7 7
+134
+133 / 1259
+8 7 7
+9.666666666666666
+thread is 65
+Threading_done
+7 8 7
+135
+134 / 1259
+7 8 7
+10.333333333333334
+thread is 65
+Threading_done
+14 7 8
+136
+135 / 1259
+14 7 8
+15.333333333333334
+thread is 65
+Threading_done
+23 14 7
+137
+136 / 1259
+23 14 7
+19.333333333333332
+thread is 65
+Threading_done
+15 23 14
+138
+137 / 1259
+15 23 14
+17.666666666666668
+thread is 65
+Threading_done
+14 15 23
+139
+138 / 1259
+14 15 23
+16.333333333333332
+thread is 65
+Threading_done
+11 14 15
+140
+139 / 1259
+11 14 15
+16.0
+thread is 65
+Threading_done
+13 11 14
+141
+140 / 1259
+13 11 14
+17.666666666666668
+thread is 65
+Threading_done
+18 13 11
+142
+141 / 1259
+18 13 11
+17.333333333333332
+thread is 65
+Threading_done
+15 18 13
+143
+142 / 1259
+15 18 13
+20.0
+thread is 65
+Threading_done
+23 15 18
+144
+143 / 1259
+23 15 18
+21.333333333333332
+thread is 65
+Threading_done
+17 23 15
+145
+144 / 1259
+17 23 15
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+16 17 23
+146
+145 / 1259
+16 17 23
+25.666666666666668
+thread is 65
+Threading_done
+OK_max: 77
+21 16 17
+147
+146 / 1259
+21 16 17
+24.333333333333332
+thread is 65
+Threading_done
+OK_max: 73
+19 21 16
+148
+147 / 1259
+19 21 16
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+25 19 21
+149
+148 / 1259
+25 19 21
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+25 25 19
+150
+149 / 1259
+25 25 19
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+17 25 25
+151
+150 / 1259
+17 25 25
+28.0
+thread is 65
+Threading_done
+OK_max: 84
+17 17 25
+152
+151 / 1259
+17 17 25
+25.666666666666668
+thread is 65
+Threading_done
+OK_max: 77
+18 17 17
+153
+152 / 1259
+18 17 17
+22.0
+thread is 65
+Threading_done
+14 18 17
+154
+153 / 1259
+14 18 17
+25.666666666666668
+thread is 65
+Threading_done
+OK_max: 77
+28 14 18
+155
+154 / 1259
+28 14 18
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+31 28 14
+156
+155 / 1259
+31 28 14
+32.0
+thread is 65
+Threading_done
+OK_max: 96
+24 31 28
+157
+156 / 1259
+24 31 28
+38.666666666666664
+thread is 65
+Threading_done
+OK_max: 116
+35 24 31
+158
+157 / 1259
+35 24 31
+42.0
+thread is 65
+Threading_done
+OK_max: 126
+36 35 24
+159
+158 / 1259
+36 35 24
+46.333333333333336
+thread is 65
+Threading_done
+OK_max: 139
+44 36 35
+160
+159 / 1259
+44 36 35
+50.666666666666664
+thread is 65
+Threading_done
+OK_max: 152
+37 44 36
+161
+160 / 1259
+37 44 36
+51.0
+thread is 65
+Threading_done
+OK_max: 153
+36 37 44
+162
+161 / 1259
+36 37 44
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+46 36 37
+163
+162 / 1259
+46 36 37
+54.333333333333336
+thread is 65
+Threading_done
+OK_max: 163
+44 46 36
+164
+163 / 1259
+44 46 36
+58.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+50 44 46
+165
+164 / 1259
+50 44 46
+65.66666666666667
+thread is 65.66666666666667
+Threading_done
+OK_max: 197
+57 50 44
+166
+165 / 1259
+57 50 44
+68.66666666666667
+thread is 68.66666666666667
+Threading_done
+OK_max: 206
+55 57 50
+167
+166 / 1259
+55 57 50
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+47 55 57
+168
+167 / 1259
+47 55 57
+70.33333333333333
+thread is 70.33333333333333
+Threading_done
+OK_max: 211
+52 47 55
+169
+168 / 1259
+52 47 55
+66.66666666666667
+thread is 66.66666666666667
+Threading_done
+OK_max: 200
+46 52 47
+170
+169 / 1259
+46 52 47
+65.0
+thread is 65.0
+Threading_done
+OK_max: 195
+52 46 52
+171
+170 / 1259
+52 46 52
+71.66666666666667
+thread is 71.66666666666667
+Threading_done
+OK_max: 215
+65 52 46
+172
+171 / 1259
+65 52 46
+72.0
+thread is 72.0
+Threading_done
+OK_max: 216
+53 65 52
+173
+172 / 1259
+53 65 52
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+47 53 65
+174
+173 / 1259
+47 53 65
+75.0
+thread is 75.0
+Threading_done
+OK_max: 225
+64 47 53
+175
+174 / 1259
+64 47 53
+70.33333333333333
+thread is 70.33333333333333
+Threading_done
+OK_max: 211
+50 64 47
+176
+175 / 1259
+50 64 47
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+59 50 64
+177
+176 / 1259
+59 50 64
+74.33333333333333
+thread is 74.33333333333333
+Threading_done
+OK_max: 223
+53 59 50
+178
+177 / 1259
+53 59 50
+73.33333333333333
+thread is 73.33333333333333
+Threading_done
+OK_max: 220
+62 53 59
+179
+178 / 1259
+62 53 59
+76.66666666666667
+thread is 76.66666666666667
+Threading_done
+OK_max: 230
+60 62 53
+180
+179 / 1259
+60 62 53
+76.33333333333333
+thread is 76.33333333333333
+Threading_done
+OK_max: 229
+58 60 62
+181
+180 / 1259
+58 60 62
+76.33333333333333
+thread is 76.33333333333333
+Threading_done
+OK_max: 229
+56 58 60
+182
+181 / 1259
+56 58 60
+72.0
+thread is 72.0
+Threading_done
+OK_max: 216
+45 56 58
+183
+182 / 1259
+45 56 58
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+51 45 56
+184
+183 / 1259
+51 45 56
+68.66666666666667
+thread is 68.66666666666667
+Threading_done
+OK_max: 206
+56 51 45
+185
+184 / 1259
+56 51 45
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+OK_max: 69
+55 56 51
+186
+185 / 1259
+55 56 51
+68.0
+thread is 68.0
+Threading_done
+OK_max: 204
+44 55 56
+187
+186 / 1259
+44 55 56
+68.66666666666667
+thread is 68.66666666666667
+Threading_done
+OK_max: 206
+52 44 55
+188
+187 / 1259
+52 44 55
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 203
+OK_max: 75
+54 52 44
+189
+188 / 1259
+54 52 44
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+OK_max: 83
+57 54 52
+190
+189 / 1259
+57 54 52
+70.66666666666667
+thread is 70.66666666666667
+Threading_done
+OK_max: 212
+OK_max: 89
+50 57 54
+191
+190 / 1259
+50 57 54
+71.0
+thread is 71.0
+Threading_done
+OK_max: 213
+OK_max: 93
+55 50 57
+192
+191 / 1259
+55 50 57
+70.66666666666667
+thread is 70.66666666666667
+Threading_done
+OK_max: 212
+OK_max: 90
+55 55 50
+193
+192 / 1259
+55 55 50
+69.33333333333333
+thread is 69.33333333333333
+Threading_done
+OK_max: 208
+OK_max: 88
+53 55 55
+194
+193 / 1259
+53 55 55
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 79
+47 53 55
+195
+194 / 1259
+47 53 55
+68.66666666666667
+thread is 68.66666666666667
+Threading_done
+OK_max: 206
+52 47 53
+196
+195 / 1259
+52 47 53
+67.0
+thread is 67.0
+Threading_done
+OK_max: 201
+51 52 47
+197
+196 / 1259
+51 52 47
+67.33333333333333
+thread is 67.33333333333333
+Threading_done
+OK_max: 202
+53 51 52
+198
+197 / 1259
+53 51 52
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+50 53 51
+199
+198 / 1259
+50 53 51
+70.33333333333333
+thread is 70.33333333333333
+Threading_done
+OK_max: 211
+58 50 53
+200
+199 / 1259
+58 50 53
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+47 58 50
+201
+200 / 1259
+47 58 50
+69.33333333333333
+thread is 69.33333333333333
+Threading_done
+OK_max: 208
+54 47 58
+202
+201 / 1259
+54 47 58
+69.0
+thread is 69.0
+Threading_done
+OK_max: 207
+55 54 47
+203
+202 / 1259
+55 54 47
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 203
+55 55 54
+204
+203 / 1259
+55 55 54
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+62 55 55
+205
+204 / 1259
+62 55 55
+78.0
+thread is 78.0
+Threading_done
+OK_max: 234
+63 62 55
+206
+205 / 1259
+63 62 55
+78.0
+thread is 78.0
+Threading_done
+OK_max: 234
+62 63 62
+207
+206 / 1259
+62 63 62
+81.66666666666667
+thread is 81.66666666666667
+Threading_done
+OK_max: 245
+62 62 63
+208
+207 / 1259
+62 62 63
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 235
+53 62 62
+209
+208 / 1259
+53 62 62
+74.0
+thread is 74.0
+Threading_done
+OK_max: 222
+50 53 62
+210
+209 / 1259
+50 53 62
+69.0
+thread is 69.0
+Threading_done
+OK_max: 207
+47 50 53
+211
+210 / 1259
+47 50 53
+66.66666666666667
+thread is 66.66666666666667
+Threading_done
+OK_max: 200
+54 47 50
+212
+211 / 1259
+54 47 50
+66.33333333333333
+thread is 66.33333333333333
+Threading_done
+OK_max: 199
+56 54 47
+213
+212 / 1259
+56 54 47
+73.33333333333333
+thread is 73.33333333333333
+Threading_done
+OK_max: 220
+66 56 54
+214
+213 / 1259
+66 56 54
+75.33333333333333
+thread is 75.33333333333333
+Threading_done
+OK_max: 226
+55 66 56
+215
+214 / 1259
+55 66 56
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+48 55 66
+216
+215 / 1259
+48 55 66
+72.0
+thread is 72.0
+Threading_done
+OK_max: 216
+50 48 55
+217
+216 / 1259
+50 48 55
+67.33333333333333
+thread is 67.33333333333333
+Threading_done
+OK_max: 202
+49 50 48
+218
+217 / 1259
+49 50 48
+64.33333333333333
+thread is 65
+Threading_done
+OK_max: 193
+46 49 50
+219
+218 / 1259
+46 49 50
+64.66666666666667
+thread is 65
+Threading_done
+OK_max: 194
+52 46 49
+220
+219 / 1259
+52 46 49
+62.666666666666664
+thread is 65
+Threading_done
+OK_max: 188
+46 52 46
+221
+220 / 1259
+46 52 46
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+45 46 52
+222
+221 / 1259
+45 46 52
+59.0
+thread is 65
+Threading_done
+OK_max: 177
+44 45 46
+223
+222 / 1259
+44 45 46
+59.0
+thread is 65
+Threading_done
+OK_max: 177
+48 44 45
+224
+223 / 1259
+48 44 45
+60.666666666666664
+thread is 65
+Threading_done
+OK_max: 182
+48 48 44
+225
+224 / 1259
+48 48 44
+64.0
+thread is 65
+Threading_done
+OK_max: 192
+55 48 48
+226
+225 / 1259
+55 48 48
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 203
+55 55 48
+227
+226 / 1259
+55 55 48
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+53 55 55
+228
+227 / 1259
+53 55 55
+67.33333333333333
+thread is 67.33333333333333
+Threading_done
+OK_max: 202
+42 53 55
+229
+228 / 1259
+42 53 55
+66.0
+thread is 66.0
+Threading_done
+OK_max: 198
+54 42 53
+230
+229 / 1259
+54 42 53
+64.66666666666667
+thread is 65
+Threading_done
+OK_max: 194
+50 54 42
+231
+230 / 1259
+50 54 42
+63.333333333333336
+thread is 65
+Threading_done
+OK_max: 190
+50 50 54
+232
+231 / 1259
+50 50 54
+70.33333333333333
+thread is 70.33333333333333
+Threading_done
+OK_max: 211
+58 50 50
+233
+232 / 1259
+58 50 50
+68.66666666666667
+thread is 68.66666666666667
+Threading_done
+OK_max: 206
+48 58 50
+234
+233 / 1259
+48 58 50
+63.333333333333336
+thread is 65
+Threading_done
+OK_max: 190
+34 48 58
+235
+234 / 1259
+34 48 58
+61.666666666666664
+thread is 65
+Threading_done
+OK_max: 185
+45 34 48
+236
+235 / 1259
+45 34 48
+54.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+39 45 34
+237
+236 / 1259
+39 45 34
+53.0
+thread is 65
+Threading_done
+OK_max: 159
+45 39 45
+238
+237 / 1259
+45 39 45
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+48 45 39
+239
+238 / 1259
+48 45 39
+58.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+46 48 45
+240
+239 / 1259
+46 48 45
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+43 46 48
+241
+240 / 1259
+43 46 48
+64.0
+thread is 65
+Threading_done
+OK_max: 192
+58 43 46
+242
+241 / 1259
+58 43 46
+60.666666666666664
+thread is 65
+Threading_done
+OK_max: 182
+41 58 43
+243
+242 / 1259
+41 58 43
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+48 41 58
+244
+243 / 1259
+48 41 58
+62.666666666666664
+thread is 65
+Threading_done
+OK_max: 188
+47 48 41
+245
+244 / 1259
+47 48 41
+61.666666666666664
+thread is 65
+Threading_done
+OK_max: 185
+50 47 48
+246
+245 / 1259
+50 47 48
+64.66666666666667
+thread is 65
+Threading_done
+OK_max: 194
+OK_max: 72
+49 50 47
+247
+246 / 1259
+49 50 47
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+OK_max: 77
+37 49 50
+248
+247 / 1259
+37 49 50
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+OK_max: 72
+OK_max: 68
+51 37 49
+249
+248 / 1259
+51 37 49
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+51 51 37
+250
+249 / 1259
+51 51 37
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+52 51 51
+251
+250 / 1259
+52 51 51
+66.66666666666667
+thread is 66.66666666666667
+Threading_done
+OK_max: 200
+52 52 51
+252
+251 / 1259
+52 52 51
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+55 52 52
+253
+252 / 1259
+55 52 52
+67.33333333333333
+thread is 67.33333333333333
+Threading_done
+OK_max: 202
+46 55 52
+254
+253 / 1259
+46 55 52
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 203
+51 46 55
+255
+254 / 1259
+51 46 55
+69.0
+thread is 69.0
+Threading_done
+OK_max: 207
+58 51 46
+256
+255 / 1259
+58 51 46
+67.0
+thread is 67.0
+Threading_done
+OK_max: 201
+53 58 51
+257
+256 / 1259
+53 58 51
+64.66666666666667
+thread is 65
+Threading_done
+OK_max: 194
+46 53 58
+258
+257 / 1259
+46 53 58
+64.0
+thread is 65
+Threading_done
+OK_max: 192
+53 46 53
+259
+258 / 1259
+53 46 53
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+46 53 46
+260
+259 / 1259
+46 53 46
+64.0
+thread is 65
+Threading_done
+OK_max: 192
+51 46 53
+261
+260 / 1259
+51 46 53
+65.0
+thread is 65.0
+Threading_done
+OK_max: 195
+47 51 46
+262
+261 / 1259
+47 51 46
+64.0
+thread is 65
+Threading_done
+OK_max: 192
+49 47 51
+263
+262 / 1259
+49 47 51
+63.333333333333336
+thread is 65
+Threading_done
+OK_max: 190
+46 49 47
+264
+263 / 1259
+46 49 47
+63.0
+thread is 65
+Threading_done
+OK_max: 189
+50 46 49
+265
+264 / 1259
+50 46 49
+64.33333333333333
+thread is 65
+Threading_done
+OK_max: 193
+54 50 46
+266
+265 / 1259
+54 50 46
+60.666666666666664
+thread is 65
+Threading_done
+OK_max: 182
+40 54 50
+267
+266 / 1259
+40 54 50
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+40 40 54
+268
+267 / 1259
+40 40 54
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+53 40 40
+269
+268 / 1259
+53 40 40
+57.0
+thread is 65
+Threading_done
+OK_max: 171
+43 53 40
+270
+269 / 1259
+43 53 40
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+47 43 53
+271
+270 / 1259
+47 43 53
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+46 47 43
+272
+271 / 1259
+46 47 43
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+46 46 47
+273
+272 / 1259
+46 46 47
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+46 46 46
+274
+273 / 1259
+46 46 46
+58.333333333333336
+thread is 65
+Threading_done
+OK_max: 175
+42 46 46
+275
+274 / 1259
+42 46 46
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+53 42 46
+276
+275 / 1259
+53 42 46
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+53 53 42
+277
+276 / 1259
+53 53 42
+67.0
+thread is 67.0
+Threading_done
+OK_max: 201
+67 53 53
+278
+277 / 1259
+67 53 53
+73.66666666666667
+thread is 73.66666666666667
+Threading_done
+OK_max: 221
+51 67 53
+279
+278 / 1259
+51 67 53
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+43 51 67
+280
+279 / 1259
+43 51 67
+67.0
+thread is 67.0
+Threading_done
+OK_max: 201
+46 43 51
+281
+280 / 1259
+46 43 51
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+43 46 43
+282
+281 / 1259
+43 46 43
+57.666666666666664
+thread is 65
+Threading_done
+OK_max: 173
+43 43 46
+283
+282 / 1259
+43 43 46
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+50 43 43
+284
+283 / 1259
+50 43 43
+61.0
+thread is 65
+Threading_done
+OK_max: 183
+50 50 43
+285
+284 / 1259
+50 50 43
+65.0
+thread is 65.0
+Threading_done
+OK_max: 195
+55 50 50
+286
+285 / 1259
+55 50 50
+69.33333333333333
+thread is 69.33333333333333
+Threading_done
+OK_max: 208
+54 55 50
+287
+286 / 1259
+54 55 50
+70.66666666666667
+thread is 70.66666666666667
+Threading_done
+OK_max: 212
+54 54 55
+288
+287 / 1259
+54 54 55
+70.33333333333333
+thread is 70.33333333333333
+Threading_done
+OK_max: 211
+49 54 54
+289
+288 / 1259
+49 54 54
+65.66666666666667
+thread is 65.66666666666667
+Threading_done
+OK_max: 197
+42 49 54
+290
+289 / 1259
+42 49 54
+61.0
+thread is 65
+Threading_done
+OK_max: 183
+41 42 49
+291
+290 / 1259
+41 42 49
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+41 41 42
+292
+291 / 1259
+41 41 42
+57.0
+thread is 65
+Threading_done
+OK_max: 171
+51 41 41
+293
+292 / 1259
+51 41 41
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+50 51 41
+294
+293 / 1259
+50 51 41
+61.666666666666664
+thread is 65
+Threading_done
+OK_max: 185
+44 50 51
+295
+294 / 1259
+44 50 51
+63.666666666666664
+thread is 65
+Threading_done
+OK_max: 191
+49 44 50
+296
+295 / 1259
+49 44 50
+62.333333333333336
+thread is 65
+Threading_done
+OK_max: 187
+47 49 44
+297
+296 / 1259
+47 49 44
+61.333333333333336
+thread is 65
+Threading_done
+OK_max: 184
+46 47 49
+298
+297 / 1259
+46 47 49
+63.0
+thread is 65
+Threading_done
+OK_max: 189
+53 46 47
+299
+298 / 1259
+53 46 47
+64.33333333333333
+thread is 65
+Threading_done
+OK_max: 193
+51 53 46
+300
+299 / 1259
+51 53 46
+65.66666666666667
+thread is 65.66666666666667
+Threading_done
+OK_max: 197
+52 51 53
+301
+300 / 1259
+52 51 53
+66.0
+thread is 66.0
+Threading_done
+OK_max: 198
+49 52 51
+302
+301 / 1259
+49 52 51
+62.333333333333336
+thread is 65
+Threading_done
+OK_max: 187
+44 49 52
+303
+302 / 1259
+44 49 52
+61.0
+thread is 65
+Threading_done
+OK_max: 183
+45 44 49
+304
+303 / 1259
+45 44 49
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+47 45 44
+305
+304 / 1259
+47 45 44
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 172
+38 47 45
+306
+305 / 1259
+38 47 45
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+47 38 47
+307
+306 / 1259
+47 38 47
+58.333333333333336
+thread is 65
+Threading_done
+OK_max: 175
+44 47 38
+308
+307 / 1259
+44 47 38
+56.333333333333336
+thread is 65
+Threading_done
+OK_max: 169
+41 44 47
+309
+308 / 1259
+41 44 47
+60.0
+thread is 65
+Threading_done
+OK_max: 180
+OK_max: 67
+49 41 44
+310
+309 / 1259
+49 41 44
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+OK_max: 70
+47 49 41
+311
+310 / 1259
+47 49 41
+59.0
+thread is 65
+Threading_done
+OK_max: 177
+44 47 49
+312
+311 / 1259
+44 47 49
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+42 44 47
+313
+312 / 1259
+42 44 47
+56.666666666666664
+thread is 65
+Threading_done
+OK_max: 170
+38 42 44
+314
+313 / 1259
+38 42 44
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+40 38 42
+315
+314 / 1259
+40 38 42
+54.333333333333336
+thread is 65
+Threading_done
+OK_max: 163
+45 40 38
+316
+315 / 1259
+45 40 38
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+43 45 40
+317
+316 / 1259
+43 45 40
+57.666666666666664
+thread is 65
+Threading_done
+OK_max: 173
+45 43 45
+318
+317 / 1259
+45 43 45
+59.0
+thread is 65
+Threading_done
+OK_max: 177
+45 45 43
+319
+318 / 1259
+45 45 43
+56.0
+thread is 65
+Threading_done
+OK_max: 168
+40 45 45
+320
+319 / 1259
+40 45 45
+56.0
+thread is 65
+Threading_done
+OK_max: 168
+41 40 45
+321
+320 / 1259
+41 40 45
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 172
+48 41 40
+322
+321 / 1259
+48 41 40
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 172
+44 48 41
+323
+322 / 1259
+44 48 41
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 172
+41 44 48
+324
+323 / 1259
+41 44 48
+56.666666666666664
+thread is 65
+Threading_done
+OK_max: 170
+39 41 44
+325
+324 / 1259
+39 41 44
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+41 39 41
+326
+325 / 1259
+41 39 41
+54.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+44 41 39
+327
+326 / 1259
+44 41 39
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+40 44 41
+328
+327 / 1259
+40 44 41
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+41 40 44
+329
+328 / 1259
+41 40 44
+53.666666666666664
+thread is 65
+Threading_done
+OK_max: 161
+38 41 40
+330
+329 / 1259
+38 41 40
+55.333333333333336
+thread is 65
+Threading_done
+OK_max: 166
+48 38 41
+331
+330 / 1259
+48 38 41
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+52 48 38
+332
+331 / 1259
+52 48 38
+61.0
+thread is 65
+Threading_done
+OK_max: 183
+46 52 48
+333
+332 / 1259
+46 52 48
+65.66666666666667
+thread is 65.66666666666667
+Threading_done
+OK_max: 197
+53 46 52
+334
+333 / 1259
+53 46 52
+66.33333333333333
+thread is 66.33333333333333
+Threading_done
+OK_max: 199
+51 53 46
+335
+334 / 1259
+51 53 46
+64.0
+thread is 65
+Threading_done
+OK_max: 192
+44 51 53
+336
+335 / 1259
+44 51 53
+63.333333333333336
+thread is 65
+Threading_done
+OK_max: 190
+45 44 51
+337
+336 / 1259
+45 44 51
+62.0
+thread is 65
+Threading_done
+OK_max: 186
+47 45 44
+338
+337 / 1259
+47 45 44
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+43 47 45
+339
+338 / 1259
+43 47 45
+60.666666666666664
+thread is 65
+Threading_done
+OK_max: 182
+47 43 47
+340
+339 / 1259
+47 43 47
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+42 47 43
+341
+340 / 1259
+42 47 43
+56.333333333333336
+thread is 65
+Threading_done
+OK_max: 169
+39 42 47
+342
+341 / 1259
+39 42 47
+55.333333333333336
+thread is 65
+Threading_done
+OK_max: 166
+41 39 42
+343
+342 / 1259
+41 39 42
+53.0
+thread is 65
+Threading_done
+OK_max: 159
+40 41 39
+344
+343 / 1259
+40 41 39
+54.333333333333336
+thread is 65
+Threading_done
+OK_max: 163
+44 40 41
+345
+344 / 1259
+44 40 41
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+42 44 40
+346
+345 / 1259
+42 44 40
+52.666666666666664
+thread is 65
+Threading_done
+OK_max: 158
+36 42 44
+347
+346 / 1259
+36 42 44
+54.333333333333336
+thread is 65
+Threading_done
+OK_max: 163
+44 36 42
+348
+347 / 1259
+44 36 42
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+42 44 36
+349
+348 / 1259
+42 44 36
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+48 42 44
+350
+349 / 1259
+48 42 44
+59.0
+thread is 65
+Threading_done
+OK_max: 177
+48 48 42
+351
+350 / 1259
+48 48 42
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+46 48 48
+352
+351 / 1259
+46 48 48
+60.0
+thread is 65
+Threading_done
+OK_max: 180
+39 46 48
+353
+352 / 1259
+39 46 48
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+47 39 46
+354
+353 / 1259
+47 39 46
+59.666666666666664
+thread is 65
+Threading_done
+OK_max: 179
+48 47 39
+355
+354 / 1259
+48 47 39
+61.0
+thread is 65
+Threading_done
+OK_max: 183
+50 48 47
+356
+355 / 1259
+50 48 47
+62.333333333333336
+thread is 65
+Threading_done
+OK_max: 187
+42 50 48
+357
+356 / 1259
+42 50 48
+61.666666666666664
+thread is 65
+Threading_done
+OK_max: 185
+46 42 50
+358
+357 / 1259
+46 42 50
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+41 46 42
+359
+358 / 1259
+41 46 42
+57.0
+thread is 65
+Threading_done
+OK_max: 171
+45 41 46
+360
+359 / 1259
+45 41 46
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+49 45 41
+361
+360 / 1259
+49 45 41
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+46 49 45
+362
+361 / 1259
+46 49 45
+60.666666666666664
+thread is 65
+Threading_done
+OK_max: 182
+45 46 49
+363
+362 / 1259
+45 46 49
+58.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+37 45 46
+364
+363 / 1259
+37 45 46
+57.666666666666664
+thread is 65
+Threading_done
+OK_max: 173
+45 37 45
+365
+364 / 1259
+45 37 45
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 172
+47 45 37
+366
+365 / 1259
+47 45 37
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 172
+44 47 45
+367
+366 / 1259
+44 47 45
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+47 44 47
+368
+367 / 1259
+47 44 47
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+42 47 44
+369
+368 / 1259
+42 47 44
+58.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+45 42 47
+370
+369 / 1259
+45 42 47
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+43 45 42
+371
+370 / 1259
+43 45 42
+56.333333333333336
+thread is 65
+Threading_done
+OK_max: 169
+OK_max: 69
+43 43 45
+372
+371 / 1259
+43 43 45
+57.666666666666664
+thread is 65
+Threading_done
+OK_max: 70
+OK_max: 173
+45 43 43
+373
+372 / 1259
+45 43 43
+55.333333333333336
+thread is 65
+Threading_done
+OK_max: 73
+OK_max: 166
+38 45 43
+374
+373 / 1259
+38 45 43
+56.333333333333336
+thread is 65
+Threading_done
+OK_max: 169
+44 38 45
+375
+374 / 1259
+44 38 45
+55.666666666666664
+thread is 65
+Threading_done
+OK_max: 167
+44 44 38
+376
+375 / 1259
+44 44 38
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+38 44 44
+377
+376 / 1259
+38 44 44
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+40 38 44
+378
+377 / 1259
+40 38 44
+51.666666666666664
+thread is 65
+Threading_done
+OK_max: 155
+38 40 38
+379
+378 / 1259
+38 40 38
+51.0
+thread is 65
+Threading_done
+OK_max: 153
+45 38 40
+380
+379 / 1259
+45 38 40
+54.333333333333336
+thread is 65
+Threading_done
+OK_max: 163
+45 45 38
+381
+380 / 1259
+45 45 38
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+47 45 45
+382
+381 / 1259
+47 45 45
+60.333333333333336
+thread is 65
+Threading_done
+OK_max: 181
+45 47 45
+383
+382 / 1259
+45 47 45
+59.333333333333336
+thread is 65
+Threading_done
+OK_max: 178
+43 45 47
+384
+383 / 1259
+43 45 47
+58.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+44 43 45
+385
+384 / 1259
+44 43 45
+57.666666666666664
+thread is 65
+Threading_done
+OK_max: 173
+41 44 43
+386
+385 / 1259
+41 44 43
+54.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+36 41 44
+387
+386 / 1259
+36 41 44
+53.333333333333336
+thread is 65
+Threading_done
+OK_max: 160
+39 36 41
+388
+387 / 1259
+39 36 41
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+46 39 36
+389
+388 / 1259
+46 39 36
+54.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+44 46 39
+390
+389 / 1259
+44 46 39
+55.666666666666664
+thread is 65
+Threading_done
+OK_max: 167
+39 44 46
+391
+390 / 1259
+39 44 46
+57.0
+thread is 65
+Threading_done
+OK_max: 171
+42 39 44
+392
+391 / 1259
+42 39 44
+58.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+51 42 39
+393
+392 / 1259
+51 42 39
+56.333333333333336
+thread is 65
+Threading_done
+OK_max: 169
+39 51 42
+394
+393 / 1259
+39 51 42
+58.0
+thread is 65
+Threading_done
+OK_max: 174
+44 39 51
+395
+394 / 1259
+44 39 51
+59.0
+thread is 65
+Threading_done
+OK_max: 177
+45 44 39
+396
+395 / 1259
+45 44 39
+53.666666666666664
+thread is 65
+Threading_done
+OK_max: 161
+35 45 44
+397
+396 / 1259
+35 45 44
+53.666666666666664
+thread is 65
+Threading_done
+OK_max: 161
+39 35 45
+398
+397 / 1259
+39 35 45
+54.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+47 39 35
+399
+398 / 1259
+47 39 35
+53.666666666666664
+thread is 65
+Threading_done
+OK_max: 161
+41 47 39
+400
+399 / 1259
+41 47 39
+54.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+38 41 47
+401
+400 / 1259
+38 41 47
+52.666666666666664
+thread is 65
+Threading_done
+OK_max: 158
+32 38 41
+402
+401 / 1259
+32 38 41
+49.666666666666664
+thread is 65
+Threading_done
+OK_max: 149
+39 32 38
+403
+402 / 1259
+39 32 38
+47.0
+thread is 65
+Threading_done
+OK_max: 141
+34 39 32
+404
+403 / 1259
+34 39 32
+48.333333333333336
+thread is 65
+Threading_done
+OK_max: 145
+41 34 39
+405
+404 / 1259
+41 34 39
+52.666666666666664
+thread is 65
+Threading_done
+OK_max: 158
+46 41 34
+406
+405 / 1259
+46 41 34
+51.333333333333336
+thread is 65
+Threading_done
+OK_max: 154
+35 46 41
+407
+406 / 1259
+35 46 41
+50.333333333333336
+thread is 65
+Threading_done
+OK_max: 151
+31 35 46
+408
+407 / 1259
+31 35 46
+45.666666666666664
+thread is 65
+Threading_done
+OK_max: 137
+27 31 35
+409
+408 / 1259
+27 31 35
+40.0
+thread is 65
+Threading_done
+OK_max: 120
+28 27 31
+410
+409 / 1259
+28 27 31
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+25 28 27
+411
+410 / 1259
+25 28 27
+35.0
+thread is 65
+Threading_done
+OK_max: 105
+27 25 28
+412
+411 / 1259
+27 25 28
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+30 27 25
+413
+412 / 1259
+30 27 25
+39.0
+thread is 65
+Threading_done
+OK_max: 117
+36 30 27
+414
+413 / 1259
+36 30 27
+41.666666666666664
+thread is 65
+Threading_done
+OK_max: 125
+33 36 30
+415
+414 / 1259
+33 36 30
+40.666666666666664
+thread is 65
+Threading_done
+OK_max: 122
+25 33 36
+416
+415 / 1259
+25 33 36
+39.0
+thread is 65
+Threading_done
+OK_max: 117
+25 25 33
+417
+416 / 1259
+25 25 33
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+28 25 25
+418
+417 / 1259
+28 25 25
+35.0
+thread is 65
+Threading_done
+OK_max: 105
+29 28 25
+419
+418 / 1259
+29 28 25
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+28 29 28
+420
+419 / 1259
+28 29 28
+35.666666666666664
+thread is 65
+Threading_done
+OK_max: 107
+22 28 29
+421
+420 / 1259
+22 28 29
+33.0
+thread is 65
+Threading_done
+OK_max: 99
+20 22 28
+422
+421 / 1259
+20 22 28
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+29 20 22
+423
+422 / 1259
+29 20 22
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+OK_max: 76
+25 29 20
+424
+423 / 1259
+25 29 20
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 78
+24 25 29
+425
+424 / 1259
+24 25 29
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 77
+19 24 25
+426
+425 / 1259
+19 24 25
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+23 19 24
+427
+426 / 1259
+23 19 24
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+26 23 19
+428
+427 / 1259
+26 23 19
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+19 26 23
+429
+428 / 1259
+19 26 23
+29.333333333333332
+thread is 65
+Threading_done
+OK_max: 88
+21 19 26
+430
+429 / 1259
+21 19 26
+29.333333333333332
+thread is 65
+Threading_done
+OK_max: 88
+24 21 19
+431
+430 / 1259
+24 21 19
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+20 24 21
+432
+431 / 1259
+20 24 21
+29.0
+thread is 65
+Threading_done
+OK_max: 87
+24 20 24
+433
+432 / 1259
+24 20 24
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+19 24 20
+434
+433 / 1259
+19 24 20
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+20 19 24
+435
+434 / 1259
+20 19 24
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+17 20 19
+436
+435 / 1259
+17 20 19
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+18 17 20
+437
+436 / 1259
+18 17 20
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+20 18 17
+438
+437 / 1259
+20 18 17
+25.333333333333332
+thread is 65
+Threading_done
+OK_max: 76
+22 20 18
+439
+438 / 1259
+22 20 18
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+21 22 20
+440
+439 / 1259
+21 22 20
+29.333333333333332
+thread is 65
+Threading_done
+OK_max: 88
+26 21 22
+441
+440 / 1259
+26 21 22
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+21 26 21
+442
+441 / 1259
+21 26 21
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+26 21 26
+443
+442 / 1259
+26 21 26
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+24 26 21
+444
+443 / 1259
+24 26 21
+32.666666666666664
+thread is 65
+Threading_done
+OK_max: 98
+29 24 26
+445
+444 / 1259
+29 24 26
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+24 29 24
+446
+445 / 1259
+24 29 24
+32.666666666666664
+thread is 65
+Threading_done
+OK_max: 98
+24 24 29
+447
+446 / 1259
+24 24 29
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+20 24 24
+448
+447 / 1259
+20 24 24
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+23 20 24
+449
+448 / 1259
+23 20 24
+29.0
+thread is 65
+Threading_done
+OK_max: 87
+21 23 20
+450
+449 / 1259
+21 23 20
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+17 21 23
+451
+450 / 1259
+17 21 23
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+21 17 21
+452
+451 / 1259
+21 17 21
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+23 21 17
+453
+452 / 1259
+23 21 17
+28.0
+thread is 65
+Threading_done
+OK_max: 84
+27 23 21
+454
+453 / 1259
+27 23 21
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+26 27 23
+455
+454 / 1259
+26 27 23
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+OK_max: 67
+28 26 27
+456
+455 / 1259
+28 26 27
+35.333333333333336
+thread is 65
+Threading_done
+OK_max: 106
+25 28 26
+457
+456 / 1259
+25 28 26
+40.333333333333336
+thread is 65
+Threading_done
+OK_max: 121
+43 25 28
+458
+457 / 1259
+43 25 28
+39.0
+thread is 65
+Threading_done
+OK_max: 117
+22 43 25
+459
+458 / 1259
+22 43 25
+38.666666666666664
+thread is 65
+Threading_done
+OK_max: 116
+28 22 43
+460
+459 / 1259
+28 22 43
+41.333333333333336
+thread is 65
+Threading_done
+OK_max: 124
+33 28 22
+461
+460 / 1259
+33 28 22
+37.333333333333336
+thread is 65
+Threading_done
+OK_max: 112
+29 33 28
+462
+461 / 1259
+29 33 28
+37.666666666666664
+thread is 65
+Threading_done
+OK_max: 113
+23 29 33
+463
+462 / 1259
+23 29 33
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+25 23 29
+464
+463 / 1259
+25 23 29
+35.333333333333336
+thread is 65
+Threading_done
+OK_max: 106
+30 25 23
+465
+464 / 1259
+30 25 23
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+33 30 25
+466
+465 / 1259
+33 30 25
+39.333333333333336
+thread is 65
+Threading_done
+OK_max: 118
+31 33 30
+467
+466 / 1259
+31 33 30
+42.666666666666664
+thread is 65
+Threading_done
+OK_max: 128
+34 31 33
+468
+467 / 1259
+34 31 33
+47.0
+thread is 65
+Threading_done
+OK_max: 141
+43 34 31
+469
+468 / 1259
+43 34 31
+48.333333333333336
+thread is 65
+Threading_done
+OK_max: 145
+37 43 34
+470
+469 / 1259
+37 43 34
+49.666666666666664
+thread is 65
+Threading_done
+OK_max: 149
+35 37 43
+471
+470 / 1259
+35 37 43
+49.666666666666664
+thread is 65
+Threading_done
+OK_max: 149
+34 35 37
+472
+471 / 1259
+34 35 37
+45.666666666666664
+thread is 65
+Threading_done
+OK_max: 137
+31 34 35
+473
+472 / 1259
+31 34 35
+44.666666666666664
+thread is 65
+Threading_done
+OK_max: 134
+34 31 34
+474
+473 / 1259
+34 31 34
+41.666666666666664
+thread is 65
+Threading_done
+OK_max: 125
+26 34 31
+475
+474 / 1259
+26 34 31
+38.0
+thread is 65
+Threading_done
+OK_max: 114
+23 26 34
+476
+475 / 1259
+23 26 34
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+18 23 26
+477
+476 / 1259
+18 23 26
+28.333333333333332
+thread is 65
+Threading_done
+OK_max: 85
+18 18 23
+478
+477 / 1259
+18 18 23
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+17 18 18
+479
+478 / 1259
+17 18 18
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+22 17 18
+480
+479 / 1259
+22 17 18
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+26 22 17
+481
+480 / 1259
+26 22 17
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+28 26 22
+482
+481 / 1259
+28 26 22
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+21 28 26
+483
+482 / 1259
+21 28 26
+33.0
+thread is 65
+Threading_done
+OK_max: 99
+26 21 28
+484
+483 / 1259
+26 21 28
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+27 26 21
+485
+484 / 1259
+27 26 21
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+23 27 26
+486
+485 / 1259
+23 27 26
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+17 23 27
+487
+486 / 1259
+17 23 27
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+25 17 23
+488
+487 / 1259
+25 17 23
+26.333333333333332
+thread is 65
+Threading_done
+OK_max: 79
+OK_max: 79
+27 25 17
+489
+488 / 1259
+27 25 17
+28.0
+thread is 65
+Threading_done
+OK_max: 84
+OK_max: 77
+22 27 25
+490
+489 / 1259
+22 27 25
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+OK_max: 79
+18 22 27
+491
+490 / 1259
+18 22 27
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+OK_max: 74
+21 18 22
+492
+491 / 1259
+21 18 22
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+OK_max: 69
+16 21 18
+493
+492 / 1259
+16 21 18
+22.333333333333332
+thread is 65
+Threading_done
+OK_max: 67
+18 16 21
+494
+493 / 1259
+18 16 21
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+21 18 16
+495
+494 / 1259
+21 18 16
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+20 21 18
+496
+495 / 1259
+20 21 18
+25.333333333333332
+thread is 65
+Threading_done
+OK_max: 76
+17 20 21
+497
+496 / 1259
+17 20 21
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+16 17 20
+498
+497 / 1259
+16 17 20
+23.666666666666668
+thread is 65
+Threading_done
+OK_max: 71
+18 16 17
+499
+498 / 1259
+18 16 17
+22.0
+thread is 65
+Threading_done
+16 18 16
+500
+499 / 1259
+16 18 16
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+21 16 18
+501
+500 / 1259
+21 16 18
+24.333333333333332
+thread is 65
+Threading_done
+OK_max: 73
+21 21 16
+502
+501 / 1259
+21 21 16
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+18 21 21
+503
+502 / 1259
+18 21 21
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+26 18 21
+504
+503 / 1259
+26 18 21
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+24 26 18
+505
+504 / 1259
+24 26 18
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+24 24 26
+506
+505 / 1259
+24 24 26
+33.0
+thread is 65
+Threading_done
+OK_max: 99
+26 24 24
+507
+506 / 1259
+26 24 24
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+16 26 24
+508
+507 / 1259
+16 26 24
+29.333333333333332
+thread is 65
+Threading_done
+OK_max: 88
+23 16 26
+509
+508 / 1259
+23 16 26
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+26 23 16
+510
+509 / 1259
+26 23 16
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+26 26 23
+511
+510 / 1259
+26 26 23
+34.333333333333336
+thread is 65
+Threading_done
+OK_max: 103
+28 26 26
+512
+511 / 1259
+28 26 26
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+20 28 26
+513
+512 / 1259
+20 28 26
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+21 20 28
+514
+513 / 1259
+21 20 28
+28.0
+thread is 65
+Threading_done
+OK_max: 84
+16 21 20
+515
+514 / 1259
+16 21 20
+26.0
+thread is 65
+Threading_done
+OK_max: 78
+22 16 21
+516
+515 / 1259
+22 16 21
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+22 22 16
+517
+516 / 1259
+22 22 16
+26.333333333333332
+thread is 65
+Threading_done
+OK_max: 79
+19 22 22
+518
+517 / 1259
+19 22 22
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+20 19 22
+519
+518 / 1259
+20 19 22
+26.0
+thread is 65
+Threading_done
+OK_max: 78
+17 20 19
+520
+519 / 1259
+17 20 19
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+18 17 20
+521
+520 / 1259
+18 17 20
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+19 18 17
+522
+521 / 1259
+19 18 17
+24.0
+thread is 65
+Threading_done
+18 19 18
+523
+522 / 1259
+18 19 18
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+20 18 19
+524
+523 / 1259
+20 18 19
+24.0
+thread is 65
+Threading_done
+16 20 18
+525
+524 / 1259
+16 20 18
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+17 16 20
+526
+525 / 1259
+17 16 20
+24.0
+thread is 65
+Threading_done
+OK_max: 72
+19 17 16
+527
+526 / 1259
+19 17 16
+24.333333333333332
+thread is 65
+Threading_done
+OK_max: 73
+21 19 17
+528
+527 / 1259
+21 19 17
+25.666666666666668
+thread is 65
+Threading_done
+OK_max: 77
+20 21 19
+529
+528 / 1259
+20 21 19
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+24 20 21
+530
+529 / 1259
+24 20 21
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+20 24 20
+531
+530 / 1259
+20 24 20
+26.0
+thread is 65
+Threading_done
+OK_max: 78
+18 20 24
+532
+531 / 1259
+18 20 24
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+29 18 20
+533
+532 / 1259
+29 18 20
+25.0
+thread is 65
+Threading_done
+OK_max: 72
+OK_max: 75
+22 29 18
+534
+533 / 1259
+22 29 18
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 78
+OK_max: 80
+23 22 29
+535
+534 / 1259
+23 22 29
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 84
+29 23 22
+536
+535 / 1259
+29 23 22
+34.0
+thread is 65
+Threading_done
+OK_max: 102
+OK_max: 66
+28 29 23
+537
+536 / 1259
+28 29 23
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+28 28 29
+538
+537 / 1259
+28 28 29
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+24 28 28
+539
+538 / 1259
+24 28 28
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+24 24 28
+540
+539 / 1259
+24 24 28
+34.333333333333336
+thread is 65
+Threading_done
+OK_max: 103
+27 24 24
+541
+540 / 1259
+27 24 24
+33.0
+thread is 65
+Threading_done
+OK_max: 99
+24 27 24
+542
+541 / 1259
+24 27 24
+33.0
+thread is 65
+Threading_done
+OK_max: 99
+25 24 27
+543
+542 / 1259
+25 24 27
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+OK_max: 68
+OK_max: 70
+34 25 24
+544
+543 / 1259
+34 25 24
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+28 34 25
+545
+544 / 1259
+28 34 25
+37.333333333333336
+thread is 65
+Threading_done
+OK_max: 112
+OK_max: 81
+31 28 34
+546
+545 / 1259
+31 28 34
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+OK_max: 86
+24 31 28
+547
+546 / 1259
+24 31 28
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+OK_max: 93
+27 24 31
+548
+547 / 1259
+27 24 31
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 88
+OK_max: 104
+22 27 24
+549
+548 / 1259
+22 27 24
+31.0
+thread is 65
+Threading_done
+OK_max: 86
+OK_max: 93
+23 22 27
+550
+549 / 1259
+23 22 27
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+OK_max: 89
+30 23 22
+551
+550 / 1259
+30 23 22
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+OK_max: 85
+27 30 23
+552
+551 / 1259
+27 30 23
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+28 27 30
+553
+552 / 1259
+28 27 30
+38.666666666666664
+thread is 65
+Threading_done
+OK_max: 116
+31 28 27
+554
+553 / 1259
+31 28 27
+39.666666666666664
+thread is 65
+Threading_done
+OK_max: 119
+33 31 28
+555
+554 / 1259
+33 31 28
+41.0
+thread is 65
+Threading_done
+OK_max: 123
+31 33 31
+556
+555 / 1259
+31 33 31
+42.0
+thread is 65
+Threading_done
+OK_max: 126
+31 31 33
+557
+556 / 1259
+31 31 33
+41.333333333333336
+thread is 65
+Threading_done
+OK_max: 124
+29 31 31
+558
+557 / 1259
+29 31 31
+41.0
+thread is 65
+Threading_done
+OK_max: 123
+32 29 31
+559
+558 / 1259
+32 29 31
+39.666666666666664
+thread is 65
+Threading_done
+OK_max: 119
+27 32 29
+560
+559 / 1259
+27 32 29
+37.333333333333336
+thread is 65
+Threading_done
+OK_max: 112
+24 27 32
+561
+560 / 1259
+24 27 32
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+24 24 27
+562
+561 / 1259
+24 24 27
+30.666666666666668
+thread is 65
+Threading_done
+OK_max: 92
+25 24 24
+563
+562 / 1259
+25 24 24
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+26 25 24
+564
+563 / 1259
+26 25 24
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+25 26 25
+565
+564 / 1259
+25 26 25
+34.0
+thread is 65
+Threading_done
+OK_max: 102
+30 25 26
+566
+565 / 1259
+30 25 26
+34.0
+thread is 65
+Threading_done
+OK_max: 102
+OK_max: 71
+25 30 25
+567
+566 / 1259
+25 30 25
+34.333333333333336
+thread is 65
+Threading_done
+OK_max: 82
+OK_max: 103
+26 25 30
+568
+567 / 1259
+26 25 30
+33.0
+thread is 65
+Threading_done
+OK_max: 70
+OK_max: 99
+20 26 25
+569
+568 / 1259
+20 26 25
+28.333333333333332
+thread is 65
+Threading_done
+OK_max: 85
+OK_max: 65
+16 20 26
+570
+569 / 1259
+16 20 26
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+27 16 20
+571
+570 / 1259
+27 16 20
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+25 27 16
+572
+571 / 1259
+25 27 16
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 74
+OK_max: 94
+26 25 27
+573
+572 / 1259
+26 25 27
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 79
+OK_max: 104
+26 26 25
+574
+573 / 1259
+26 26 25
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 78
+OK_max: 104
+27 26 26
+575
+574 / 1259
+27 26 26
+35.333333333333336
+thread is 65
+Threading_done
+OK_max: 106
+OK_max: 73
+27 27 26
+576
+575 / 1259
+27 27 26
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 75
+OK_max: 101
+25 27 27
+577
+576 / 1259
+25 27 27
+32.333333333333336
+thread is 65
+Threading_done
+OK_max: 78
+OK_max: 97
+22 25 27
+578
+577 / 1259
+22 25 27
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 77
+OK_max: 101
+31 22 25
+579
+578 / 1259
+31 22 25
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 75
+OK_max: 104
+30 31 22
+580
+579 / 1259
+30 31 22
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+26 30 31
+581
+580 / 1259
+26 30 31
+37.0
+thread is 65
+Threading_done
+OK_max: 111
+24 26 30
+582
+581 / 1259
+24 26 30
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+21 24 26
+583
+582 / 1259
+21 24 26
+32.0
+thread is 65
+Threading_done
+OK_max: 75
+OK_max: 96
+25 21 24
+584
+583 / 1259
+25 21 24
+31.0
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 93
+28 25 21
+585
+584 / 1259
+28 25 21
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 92
+OK_max: 94
+25 28 25
+586
+585 / 1259
+25 28 25
+33.0
+thread is 65
+Threading_done
+OK_max: 98
+OK_max: 99
+26 25 28
+587
+586 / 1259
+26 25 28
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+OK_max: 97
+25 26 25
+588
+587 / 1259
+25 26 25
+32.666666666666664
+thread is 65
+Threading_done
+OK_max: 98
+OK_max: 93
+30 25 26
+589
+588 / 1259
+30 25 26
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+OK_max: 89
+27 30 25
+590
+589 / 1259
+27 30 25
+32.333333333333336
+thread is 65
+Threading_done
+OK_max: 97
+OK_max: 85
+22 27 30
+591
+590 / 1259
+22 27 30
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 87
+OK_max: 89
+27 22 27
+592
+591 / 1259
+27 22 27
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 84
+OK_max: 95
+25 27 22
+593
+592 / 1259
+25 27 22
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 82
+OK_max: 100
+30 25 27
+594
+593 / 1259
+30 25 27
+32.333333333333336
+thread is 65
+Threading_done
+OK_max: 84
+OK_max: 97
+24 30 25
+595
+594 / 1259
+24 30 25
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 94
+25 24 30
+596
+595 / 1259
+25 24 30
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 93
+OK_max: 94
+25 25 24
+597
+596 / 1259
+25 25 24
+32.0
+thread is 65
+Threading_done
+OK_max: 87
+OK_max: 96
+30 25 25
+598
+597 / 1259
+30 25 25
+35.0
+thread is 65
+Threading_done
+OK_max: 88
+OK_max: 105
+28 30 25
+599
+598 / 1259
+28 30 25
+36.0
+thread is 65
+Threading_done
+OK_max: 103
+OK_max: 108
+32 28 30
+600
+599 / 1259
+32 28 30
+39.666666666666664
+thread is 65
+Threading_done
+OK_max: 100
+OK_max: 119
+36 32 28
+601
+600 / 1259
+36 32 28
+41.333333333333336
+thread is 65
+Threading_done
+OK_max: 89
+OK_max: 124
+33 36 32
+602
+601 / 1259
+33 36 32
+43.333333333333336
+thread is 65
+Threading_done
+OK_max: 95
+OK_max: 130
+34 33 36
+603
+602 / 1259
+34 33 36
+44.333333333333336
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 133
+30 34 33
+604
+603 / 1259
+30 34 33
+40.666666666666664
+thread is 65
+Threading_done
+OK_max: 105
+OK_max: 122
+38 30 34
+605
+604 / 1259
+38 30 34
+39.333333333333336
+thread is 65
+Threading_done
+OK_max: 102
+OK_max: 118
+29 38 30
+606
+605 / 1259
+29 38 30
+39.0
+thread is 65
+Threading_done
+OK_max: 117
+OK_max: 102
+36 29 38
+607
+606 / 1259
+36 29 38
+40.0
+thread is 65
+Threading_done
+OK_max: 120
+OK_max: 97
+34 36 29
+608
+607 / 1259
+34 36 29
+38.0
+thread is 65
+Threading_done
+OK_max: 114
+OK_max: 91
+33 34 36
+609
+608 / 1259
+33 34 36
+42.666666666666664
+thread is 65
+Threading_done
+OK_max: 128
+OK_max: 82
+29 33 34
+610
+609 / 1259
+29 33 34
+39.333333333333336
+thread is 65
+Threading_done
+OK_max: 118
+OK_max: 84
+22 29 33
+611
+610 / 1259
+22 29 33
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+OK_max: 81
+24 22 29
+612
+611 / 1259
+24 22 29
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+OK_max: 80
+18 24 22
+613
+612 / 1259
+18 24 22
+28.0
+thread is 65
+Threading_done
+OK_max: 76
+OK_max: 84
+24 18 24
+614
+613 / 1259
+24 18 24
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+OK_max: 70
+26 24 18
+615
+614 / 1259
+26 24 18
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+26 26 24
+616
+615 / 1259
+26 26 24
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+24 26 26
+617
+616 / 1259
+24 26 26
+34.333333333333336
+thread is 65
+Threading_done
+OK_max: 103
+27 24 26
+618
+617 / 1259
+27 24 26
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+17 27 24
+619
+618 / 1259
+17 27 24
+28.333333333333332
+thread is 65
+Threading_done
+OK_max: 85
+17 17 27
+620
+619 / 1259
+17 17 27
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+20 17 17
+621
+620 / 1259
+20 17 17
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+23 20 17
+622
+621 / 1259
+23 20 17
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+19 23 20
+623
+622 / 1259
+19 23 20
+26.0
+thread is 65
+Threading_done
+OK_max: 78
+20 19 23
+624
+623 / 1259
+20 19 23
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+17 20 19
+625
+624 / 1259
+17 20 19
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+19 17 20
+626
+625 / 1259
+19 17 20
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+18 19 17
+627
+626 / 1259
+18 19 17
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+26 18 19
+628
+627 / 1259
+26 18 19
+28.333333333333332
+thread is 65
+Threading_done
+OK_max: 85
+22 26 18
+629
+628 / 1259
+22 26 18
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+17 22 26
+630
+629 / 1259
+17 22 26
+26.333333333333332
+thread is 65
+Threading_done
+OK_max: 79
+14 17 22
+631
+630 / 1259
+14 17 22
+21.666666666666668
+thread is 65
+Threading_done
+OK_max: 65
+12 14 17
+632
+631 / 1259
+12 14 17
+18.333333333333332
+thread is 65
+Threading_done
+12 12 14
+633
+632 / 1259
+12 12 14
+15.333333333333334
+thread is 65
+Threading_done
+9 12 12
+634
+633 / 1259
+9 12 12
+15.0
+thread is 65
+Threading_done
+14 9 12
+635
+634 / 1259
+14 9 12
+16.666666666666668
+thread is 65
+Threading_done
+17 14 9
+636
+635 / 1259
+17 14 9
+18.666666666666668
+thread is 65
+Threading_done
+18 17 14
+637
+636 / 1259
+18 17 14
+22.666666666666668
+thread is 65
+Threading_done
+OK_max: 68
+20 18 17
+638
+637 / 1259
+20 18 17
+24.333333333333332
+thread is 65
+Threading_done
+OK_max: 73
+18 20 18
+639
+638 / 1259
+18 20 18
+25.333333333333332
+thread is 65
+Threading_done
+OK_max: 76
+20 18 20
+640
+639 / 1259
+20 18 20
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+16 20 18
+641
+640 / 1259
+16 20 18
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+16 16 20
+642
+641 / 1259
+16 16 20
+22.0
+thread is 65
+Threading_done
+OK_max: 66
+16 16 16
+643
+642 / 1259
+16 16 16
+18.666666666666668
+thread is 65
+Threading_done
+10 16 16
+644
+643 / 1259
+10 16 16
+18.0
+thread is 65
+Threading_done
+14 10 16
+645
+644 / 1259
+14 10 16
+16.666666666666668
+thread is 65
+Threading_done
+12 14 10
+646
+645 / 1259
+12 14 10
+18.0
+thread is 65
+Threading_done
+18 12 14
+647
+646 / 1259
+18 12 14
+20.0
+thread is 65
+Threading_done
+17 18 12
+648
+647 / 1259
+17 18 12
+22.333333333333332
+thread is 65
+Threading_done
+OK_max: 67
+21 17 18
+649
+648 / 1259
+21 17 18
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+14 21 17
+650
+649 / 1259
+14 21 17
+22.0
+thread is 65
+Threading_done
+OK_max: 66
+14 14 21
+651
+650 / 1259
+14 14 21
+21.666666666666668
+thread is 65
+Threading_done
+OK_max: 65
+16 14 14
+652
+651 / 1259
+16 14 14
+19.666666666666668
+thread is 65
+Threading_done
+15 16 14
+653
+652 / 1259
+15 16 14
+18.666666666666668
+thread is 65
+Threading_done
+11 15 16
+654
+653 / 1259
+11 15 16
+17.333333333333332
+thread is 65
+Threading_done
+10 11 15
+655
+654 / 1259
+10 11 15
+15.0
+thread is 65
+Threading_done
+9 10 11
+656
+655 / 1259
+9 10 11
+13.333333333333334
+thread is 65
+Threading_done
+10 9 10
+657
+656 / 1259
+10 9 10
+12.666666666666666
+thread is 65
+Threading_done
+9 10 9
+658
+657 / 1259
+9 10 9
+13.333333333333334
+thread is 65
+Threading_done
+12 9 10
+659
+658 / 1259
+12 9 10
+15.0
+thread is 65
+Threading_done
+14 12 9
+660
+659 / 1259
+14 12 9
+15.0
+thread is 65
+Threading_done
+10 14 12
+661
+660 / 1259
+10 14 12
+15.0
+thread is 65
+Threading_done
+9 10 14
+662
+661 / 1259
+9 10 14
+16.666666666666668
+thread is 65
+Threading_done
+17 9 10
+663
+662 / 1259
+17 9 10
+18.0
+thread is 65
+Threading_done
+18 17 9
+664
+663 / 1259
+18 17 9
+20.333333333333332
+thread is 65
+Threading_done
+17 18 17
+665
+664 / 1259
+17 18 17
+23.666666666666668
+thread is 65
+Threading_done
+OK_max: 71
+19 17 18
+666
+665 / 1259
+19 17 18
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+16 19 17
+667
+666 / 1259
+16 19 17
+22.333333333333332
+thread is 65
+Threading_done
+OK_max: 67
+15 16 19
+668
+667 / 1259
+15 16 19
+22.666666666666668
+thread is 65
+Threading_done
+OK_max: 68
+18 15 16
+669
+668 / 1259
+18 15 16
+19.666666666666668
+thread is 65
+Threading_done
+11 18 15
+670
+669 / 1259
+11 18 15
+19.0
+thread is 65
+Threading_done
+14 11 18
+671
+670 / 1259
+14 11 18
+19.333333333333332
+thread is 65
+Threading_done
+16 14 11
+672
+671 / 1259
+16 14 11
+18.333333333333332
+thread is 65
+Threading_done
+14 16 14
+673
+672 / 1259
+14 16 14
+20.0
+thread is 65
+Threading_done
+16 14 16
+674
+673 / 1259
+16 14 16
+22.0
+thread is 65
+Threading_done
+OK_max: 66
+20 16 14
+675
+674 / 1259
+20 16 14
+22.0
+thread is 65
+Threading_done
+OK_max: 66
+16 20 16
+676
+675 / 1259
+16 20 16
+22.333333333333332
+thread is 65
+Threading_done
+OK_max: 67
+15 16 20
+677
+676 / 1259
+15 16 20
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+19 15 16
+678
+677 / 1259
+19 15 16
+21.0
+thread is 65
+Threading_done
+13 19 15
+679
+678 / 1259
+13 19 15
+21.666666666666668
+thread is 65
+Threading_done
+OK_max: 65
+18 13 19
+680
+679 / 1259
+18 13 19
+21.333333333333332
+thread is 65
+Threading_done
+14 18 13
+681
+680 / 1259
+14 18 13
+18.666666666666668
+thread is 65
+Threading_done
+11 14 18
+682
+681 / 1259
+11 14 18
+20.0
+thread is 65
+Threading_done
+17 11 14
+683
+682 / 1259
+17 11 14
+21.666666666666668
+thread is 65
+Threading_done
+23 17 11
+684
+683 / 1259
+23 17 11
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+19 23 17
+685
+684 / 1259
+19 23 17
+25.333333333333332
+thread is 65
+Threading_done
+OK_max: 76
+17 19 23
+686
+685 / 1259
+17 19 23
+27.0
+thread is 65
+Threading_done
+OK_max: 81
+22 17 19
+687
+686 / 1259
+22 17 19
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+17 22 17
+688
+687 / 1259
+17 22 17
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+18 17 22
+689
+688 / 1259
+18 17 22
+26.333333333333332
+thread is 65
+Threading_done
+OK_max: 79
+22 18 17
+690
+689 / 1259
+22 18 17
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+17 22 18
+691
+690 / 1259
+17 22 18
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+18 17 22
+692
+691 / 1259
+18 17 22
+24.0
+thread is 65
+Threading_done
+OK_max: 72
+OK_max: 67
+17 18 17
+693
+692 / 1259
+17 18 17
+23.0
+thread is 65
+Threading_done
+OK_max: 65
+OK_max: 69
+20 17 18
+694
+693 / 1259
+20 17 18
+26.0
+thread is 65
+Threading_done
+OK_max: 65
+OK_max: 78
+23 20 17
+695
+694 / 1259
+23 20 17
+22.333333333333332
+thread is 65
+Threading_done
+OK_max: 67
+13 23 20
+696
+695 / 1259
+13 23 20
+21.333333333333332
+thread is 65
+Threading_done
+16 13 23
+697
+696 / 1259
+16 13 23
+19.666666666666668
+thread is 65
+Threading_done
+15 16 13
+698
+697 / 1259
+15 16 13
+17.666666666666668
+thread is 65
+Threading_done
+11 15 16
+699
+698 / 1259
+11 15 16
+19.0
+thread is 65
+Threading_done
+20 11 15
+700
+699 / 1259
+20 11 15
+20.666666666666668
+thread is 65
+Threading_done
+20 20 11
+701
+700 / 1259
+20 20 11
+22.333333333333332
+thread is 65
+Threading_done
+20 20 20
+702
+701 / 1259
+20 20 20
+24.0
+thread is 65
+Threading_done
+OK_max: 72
+17 20 20
+703
+702 / 1259
+17 20 20
+23.0
+thread is 65
+Threading_done
+OK_max: 66
+31 17 20
+704
+703 / 1259
+31 17 20
+29.0
+thread is 65
+Threading_done
+OK_max: 87
+34 31 17
+705
+704 / 1259
+34 31 17
+40.333333333333336
+thread is 65
+Threading_done
+OK_max: 121
+44 34 31
+706
+705 / 1259
+44 34 31
+54.0
+thread is 65
+Threading_done
+OK_max: 162
+55 44 34
+707
+706 / 1259
+55 44 34
+63.333333333333336
+thread is 65
+Threading_done
+OK_max: 190
+58 55 44
+708
+707 / 1259
+58 55 44
+70.0
+thread is 70.0
+Threading_done
+OK_max: 210
+53 58 55
+709
+708 / 1259
+53 58 55
+76.0
+thread is 76.0
+Threading_done
+OK_max: 228
+62 53 58
+710
+709 / 1259
+62 53 58
+75.0
+thread is 75.0
+Threading_done
+OK_max: 225
+OK_max: 85
+52 62 53
+711
+710 / 1259
+52 62 53
+76.33333333333333
+thread is 76.33333333333333
+Threading_done
+OK_max: 229
+OK_max: 101
+62 52 62
+712
+711 / 1259
+62 52 62
+80.0
+thread is 80.0
+Threading_done
+OK_max: 240
+64 62 52
+713
+712 / 1259
+64 62 52
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 238
+60 64 62
+714
+713 / 1259
+60 64 62
+80.66666666666667
+thread is 80.66666666666667
+Threading_done
+OK_max: 242
+59 60 64
+715
+714 / 1259
+59 60 64
+80.0
+thread is 80.0
+Threading_done
+OK_max: 240
+60 59 60
+716
+715 / 1259
+60 59 60
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 238
+62 60 59
+717
+716 / 1259
+62 60 59
+82.0
+thread is 82.0
+Threading_done
+OK_max: 246
+66 62 60
+718
+717 / 1259
+66 62 60
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+68 66 62
+719
+718 / 1259
+68 66 62
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+68 68 66
+720
+719 / 1259
+68 68 66
+83.33333333333333
+thread is 83.33333333333333
+Threading_done
+OK_max: 250
+51 68 68
+721
+720 / 1259
+51 68 68
+81.0
+thread is 81.0
+Threading_done
+OK_max: 243
+58 51 68
+722
+721 / 1259
+58 51 68
+73.66666666666667
+thread is 73.66666666666667
+Threading_done
+OK_max: 221
+49 58 51
+723
+722 / 1259
+49 58 51
+69.33333333333333
+thread is 69.33333333333333
+Threading_done
+OK_max: 208
+52 49 58
+724
+723 / 1259
+52 49 58
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+51 52 49
+725
+724 / 1259
+51 52 49
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 203
+OK_max: 72
+53 51 52
+726
+725 / 1259
+53 51 52
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 203
+48 53 51
+727
+726 / 1259
+48 53 51
+66.33333333333333
+thread is 66.33333333333333
+Threading_done
+OK_max: 199
+51 48 53
+728
+727 / 1259
+51 48 53
+68.0
+thread is 68.0
+Threading_done
+OK_max: 204
+55 51 48
+729
+728 / 1259
+55 51 48
+67.0
+thread is 67.0
+Threading_done
+OK_max: 201
+53 55 51
+730
+729 / 1259
+53 55 51
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+53 53 55
+731
+730 / 1259
+53 53 55
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+50 53 53
+732
+731 / 1259
+50 53 53
+69.0
+thread is 69.0
+Threading_done
+OK_max: 207
+55 50 53
+733
+732 / 1259
+55 50 53
+71.66666666666667
+thread is 71.66666666666667
+Threading_done
+OK_max: 215
+57 55 50
+734
+733 / 1259
+57 55 50
+73.0
+thread is 73.0
+Threading_done
+OK_max: 219
+60 57 55
+735
+734 / 1259
+60 57 55
+74.33333333333333
+thread is 74.33333333333333
+Threading_done
+OK_max: 223
+55 60 57
+736
+735 / 1259
+55 60 57
+74.33333333333333
+thread is 74.33333333333333
+Threading_done
+OK_max: 223
+55 55 60
+737
+736 / 1259
+55 55 60
+74.66666666666667
+thread is 74.66666666666667
+Threading_done
+OK_max: 224
+56 55 55
+738
+737 / 1259
+56 55 55
+75.0
+thread is 75.0
+Threading_done
+OK_max: 225
+61 56 55
+739
+738 / 1259
+61 56 55
+74.66666666666667
+thread is 74.66666666666667
+Threading_done
+OK_max: 224
+62 61 56
+740
+739 / 1259
+62 61 56
+75.0
+thread is 75.0
+Threading_done
+OK_max: 225
+60 62 61
+741
+740 / 1259
+60 62 61
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 238
+62 60 62
+742
+741 / 1259
+62 60 62
+81.33333333333333
+thread is 81.33333333333333
+Threading_done
+OK_max: 244
+75 62 60
+743
+742 / 1259
+75 62 60
+83.0
+thread is 83.0
+Threading_done
+OK_max: 249
+72 75 62
+744
+743 / 1259
+72 75 62
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+67 72 75
+745
+744 / 1259
+67 72 75
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+63 67 72
+746
+745 / 1259
+63 67 72
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+65 63 67
+747
+746 / 1259
+65 63 67
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+77 65 63
+748
+747 / 1259
+77 65 63
+82.33333333333333
+thread is 82.33333333333333
+Threading_done
+OK_max: 247
+61 77 65
+749
+748 / 1259
+61 77 65
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+71 61 77
+750
+749 / 1259
+71 61 77
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+68 71 61
+751
+750 / 1259
+68 71 61
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 85
+87 68 71
+752
+751 / 1259
+87 68 71
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 85
+78 87 68
+753
+752 / 1259
+78 87 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+79 78 87
+754
+753 / 1259
+79 78 87
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+74 79 78
+755
+754 / 1259
+74 79 78
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+78 74 79
+756
+755 / 1259
+78 74 79
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+85 78 74
+757
+756 / 1259
+85 78 74
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+75 85 78
+758
+757 / 1259
+75 85 78
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 85
+76 75 85
+759
+758 / 1259
+76 75 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+76 76 75
+760
+759 / 1259
+76 76 75
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+68 76 76
+761
+760 / 1259
+68 76 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+86 68 76
+762
+761 / 1259
+86 68 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 86 68
+763
+762 / 1259
+89 86 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+77 89 86
+764
+763 / 1259
+77 89 86
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+88 77 89
+765
+764 / 1259
+88 77 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 88 77
+766
+765 / 1259
+82 88 77
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 86
+83 82 88
+767
+766 / 1259
+83 82 88
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+83 83 82
+768
+767 / 1259
+83 83 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+90 83 83
+769
+768 / 1259
+90 83 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+78 90 83
+770
+769 / 1259
+78 90 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 78 90
+771
+770 / 1259
+82 78 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+93 82 78
+772
+771 / 1259
+93 82 78
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+86 93 82
+773
+772 / 1259
+86 93 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+95 86 93
+774
+773 / 1259
+95 86 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 95 86
+775
+774 / 1259
+82 95 86
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+86 82 95
+776
+775 / 1259
+86 82 95
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+83 86 82
+777
+776 / 1259
+83 86 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+87 83 86
+778
+777 / 1259
+87 83 86
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+90 87 83
+779
+778 / 1259
+90 87 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+90 90 87
+780
+779 / 1259
+90 90 87
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+85 90 90
+781
+780 / 1259
+85 90 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+100 85 90
+782
+781 / 1259
+100 85 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 122
+106 100 85
+783
+782 / 1259
+106 100 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 122
+90 106 100
+784
+783 / 1259
+90 106 100
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 125
+89 90 106
+785
+784 / 1259
+89 90 106
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 125
+99 89 90
+786
+785 / 1259
+99 89 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 113
+92 99 89
+787
+786 / 1259
+92 99 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 128
+104 92 99
+788
+787 / 1259
+104 92 99
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 133
+95 104 92
+789
+788 / 1259
+95 104 92
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 128
+94 95 104
+790
+789 / 1259
+94 95 104
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 126
+90 94 95
+791
+790 / 1259
+90 94 95
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 116
+93 90 94
+792
+791 / 1259
+93 90 94
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 93 90
+793
+792 / 1259
+89 93 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 89 93
+794
+793 / 1259
+89 89 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+83 89 89
+795
+794 / 1259
+83 89 89
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+87 83 89
+796
+795 / 1259
+87 83 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 87 83
+797
+796 / 1259
+89 87 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 89 87
+798
+797 / 1259
+89 89 87
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+90 89 89
+799
+798 / 1259
+90 89 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+85 90 89
+800
+799 / 1259
+85 90 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 85 90
+801
+800 / 1259
+89 85 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+88 89 85
+802
+801 / 1259
+88 89 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+93 88 89
+803
+802 / 1259
+93 88 89
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 103
+92 93 88
+804
+803 / 1259
+92 93 88
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 92 93
+805
+804 / 1259
+82 92 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+88 82 92
+806
+805 / 1259
+88 82 92
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+90 88 82
+807
+806 / 1259
+90 88 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+93 90 88
+808
+807 / 1259
+93 90 88
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 93 90
+809
+808 / 1259
+82 93 90
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+85 82 93
+810
+809 / 1259
+85 82 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+87 85 82
+811
+810 / 1259
+87 85 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+80 87 85
+812
+811 / 1259
+80 87 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+88 80 87
+813
+812 / 1259
+88 80 87
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+75 88 80
+814
+813 / 1259
+75 88 80
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+85 75 88
+815
+814 / 1259
+85 75 88
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+85 85 75
+816
+815 / 1259
+85 85 75
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 85 85
+817
+816 / 1259
+82 85 85
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+79 82 85
+818
+817 / 1259
+79 82 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+86 79 82
+819
+818 / 1259
+86 79 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+81 86 79
+820
+819 / 1259
+81 86 79
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+88 81 86
+821
+820 / 1259
+88 81 86
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+77 88 81
+822
+821 / 1259
+77 88 81
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+79 77 88
+823
+822 / 1259
+79 77 88
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+80 79 77
+824
+823 / 1259
+80 79 77
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+81 80 79
+825
+824 / 1259
+81 80 79
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+95 81 80
+826
+825 / 1259
+95 81 80
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+92 95 81
+827
+826 / 1259
+92 95 81
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 109
+OK_max: 106
+102 92 95
+828
+827 / 1259
+102 92 95
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 115
+87 102 92
+829
+828 / 1259
+87 102 92
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 108
+88 87 102
+830
+829 / 1259
+88 87 102
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 104
+85 88 87
+831
+830 / 1259
+85 88 87
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+76 85 88
+832
+831 / 1259
+76 85 88
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+77 76 85
+833
+832 / 1259
+77 76 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 77 76
+834
+833 / 1259
+82 77 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+76 82 77
+835
+834 / 1259
+76 82 77
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 76 82
+836
+835 / 1259
+82 76 82
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+89 82 76
+837
+836 / 1259
+89 82 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+83 89 82
+838
+837 / 1259
+83 89 82
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+93 83 89
+839
+838 / 1259
+93 83 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+89 93 83
+840
+839 / 1259
+89 93 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+80 89 93
+841
+840 / 1259
+80 89 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+83 80 89
+842
+841 / 1259
+83 80 89
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+91 83 80
+843
+842 / 1259
+91 83 80
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+87 91 83
+844
+843 / 1259
+87 91 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+91 87 91
+845
+844 / 1259
+91 87 91
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+85 91 87
+846
+845 / 1259
+85 91 87
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+84 85 91
+847
+846 / 1259
+84 85 91
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+74 84 85
+848
+847 / 1259
+74 84 85
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+72 74 84
+849
+848 / 1259
+72 74 84
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+72 72 74
+850
+849 / 1259
+72 72 74
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+88 72 72
+851
+850 / 1259
+88 72 72
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+83 88 72
+852
+851 / 1259
+83 88 72
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+82 83 88
+853
+852 / 1259
+82 83 88
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+93 82 83
+854
+853 / 1259
+93 82 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 88
+97 93 82
+855
+854 / 1259
+97 93 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 118
+86 97 93
+856
+855 / 1259
+86 97 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 108
+OK_max: 131
+93 86 97
+857
+856 / 1259
+93 86 97
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 120
+73 93 86
+858
+857 / 1259
+73 93 86
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 73 93
+859
+858 / 1259
+82 73 93
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+84 82 73
+860
+859 / 1259
+84 82 73
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+75 84 82
+861
+860 / 1259
+75 84 82
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+79 75 84
+862
+861 / 1259
+79 75 84
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+73 79 75
+863
+862 / 1259
+73 79 75
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+76 73 79
+864
+863 / 1259
+76 73 79
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+71 76 73
+865
+864 / 1259
+71 76 73
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+71 71 76
+866
+865 / 1259
+71 71 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+82 71 71
+867
+866 / 1259
+82 71 71
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+78 82 71
+868
+867 / 1259
+78 82 71
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+68 78 82
+869
+868 / 1259
+68 78 82
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+84 68 78
+870
+869 / 1259
+84 68 78
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+76 84 68
+871
+870 / 1259
+76 84 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+68 76 84
+872
+871 / 1259
+68 76 84
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+68 68 76
+873
+872 / 1259
+68 68 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+69 68 68
+874
+873 / 1259
+69 68 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+70 69 68
+875
+874 / 1259
+70 69 68
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+66 70 69
+876
+875 / 1259
+66 70 69
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+73 66 70
+877
+876 / 1259
+73 66 70
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+71 73 66
+878
+877 / 1259
+71 73 66
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+72 71 73
+879
+878 / 1259
+72 71 73
+83.33333333333333
+thread is 83.33333333333333
+Threading_done
+OK_max: 250
+68 72 71
+880
+879 / 1259
+68 72 71
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+80 68 72
+881
+880 / 1259
+80 68 72
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+77 80 68
+882
+881 / 1259
+77 80 68
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+78 77 80
+883
+882 / 1259
+78 77 80
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+58 78 77
+884
+883 / 1259
+58 78 77
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+64 58 78
+885
+884 / 1259
+64 58 78
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+72 64 58
+886
+885 / 1259
+72 64 58
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+65 72 64
+887
+886 / 1259
+65 72 64
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+58 65 72
+888
+887 / 1259
+58 65 72
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+68 58 65
+889
+888 / 1259
+68 58 65
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+69 68 58
+890
+889 / 1259
+69 68 58
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+61 69 68
+891
+890 / 1259
+61 69 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 114
+59 61 69
+892
+891 / 1259
+59 61 69
+82.33333333333333
+thread is 82.33333333333333
+Threading_done
+OK_max: 247
+58 59 61
+893
+892 / 1259
+58 59 61
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 235
+OK_max: 119
+57 58 59
+894
+893 / 1259
+57 58 59
+79.0
+thread is 79.0
+Threading_done
+OK_max: 237
+OK_max: 108
+63 57 58
+895
+894 / 1259
+63 57 58
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+OK_max: 108
+75 63 57
+896
+895 / 1259
+75 63 57
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 102
+63 75 63
+897
+896 / 1259
+63 75 63
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 116
+62 63 75
+898
+897 / 1259
+62 63 75
+82.66666666666667
+thread is 82.66666666666667
+Threading_done
+OK_max: 248
+OK_max: 129
+50 62 63
+899
+898 / 1259
+50 62 63
+76.66666666666667
+thread is 76.66666666666667
+Threading_done
+OK_max: 230
+OK_max: 127
+56 50 62
+900
+899 / 1259
+56 50 62
+77.0
+thread is 77.0
+Threading_done
+OK_max: 231
+OK_max: 128
+64 56 50
+901
+900 / 1259
+64 56 50
+77.0
+thread is 77.0
+Threading_done
+OK_max: 231
+OK_max: 128
+62 64 56
+902
+901 / 1259
+62 64 56
+78.0
+thread is 78.0
+Threading_done
+OK_max: 234
+OK_max: 125
+52 62 64
+903
+902 / 1259
+52 62 64
+80.33333333333333
+thread is 80.33333333333333
+Threading_done
+OK_max: 241
+OK_max: 134
+63 52 62
+904
+903 / 1259
+63 52 62
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 238
+OK_max: 133
+61 63 52
+905
+904 / 1259
+61 63 52
+78.66666666666667
+thread is 78.66666666666667
+Threading_done
+OK_max: 236
+OK_max: 123
+60 61 63
+906
+905 / 1259
+60 61 63
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 251
+OK_max: 118
+67 60 61
+907
+906 / 1259
+67 60 61
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+OK_max: 117
+65 67 60
+908
+907 / 1259
+65 67 60
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 251
+OK_max: 120
+59 65 67
+909
+908 / 1259
+59 65 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 131
+71 59 65
+910
+909 / 1259
+71 59 65
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+OK_max: 147
+60 71 59
+911
+910 / 1259
+60 71 59
+84.0
+thread is 84.0
+Threading_done
+OK_max: 252
+OK_max: 145
+62 60 71
+912
+911 / 1259
+62 60 71
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 146
+66 62 60
+913
+912 / 1259
+66 62 60
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 144
+68 66 62
+914
+913 / 1259
+68 66 62
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 139
+67 68 66
+915
+914 / 1259
+67 68 66
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 153
+65 67 68
+916
+915 / 1259
+65 67 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 161
+62 65 67
+917
+916 / 1259
+62 65 67
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 170
+61 62 65
+918
+917 / 1259
+61 62 65
+81.33333333333333
+thread is 81.33333333333333
+Threading_done
+OK_max: 244
+OK_max: 170
+57 61 62
+919
+918 / 1259
+57 61 62
+81.0
+thread is 81.0
+Threading_done
+OK_max: 243
+OK_max: 165
+64 57 61
+920
+919 / 1259
+64 57 61
+80.33333333333333
+thread is 80.33333333333333
+Threading_done
+OK_max: 241
+OK_max: 163
+60 64 57
+921
+920 / 1259
+60 64 57
+80.33333333333333
+thread is 80.33333333333333
+Threading_done
+OK_max: 241
+OK_max: 163
+60 60 64
+922
+921 / 1259
+60 60 64
+82.66666666666667
+thread is 82.66666666666667
+Threading_done
+OK_max: 248
+OK_max: 165
+64 60 60
+923
+922 / 1259
+64 60 60
+81.66666666666667
+thread is 81.66666666666667
+Threading_done
+OK_max: 245
+OK_max: 172
+61 64 60
+924
+923 / 1259
+61 64 60
+79.66666666666667
+thread is 79.66666666666667
+Threading_done
+OK_max: 239
+OK_max: 177
+54 61 64
+925
+924 / 1259
+54 61 64
+80.33333333333333
+thread is 80.33333333333333
+Threading_done
+OK_max: 241
+OK_max: 182
+63 54 61
+926
+925 / 1259
+63 54 61
+80.66666666666667
+thread is 80.66666666666667
+Threading_done
+OK_max: 242
+OK_max: 184
+64 63 54
+927
+926 / 1259
+64 63 54
+81.0
+thread is 81.0
+Threading_done
+OK_max: 243
+OK_max: 182
+62 64 63
+928
+927 / 1259
+62 64 63
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 177
+69 62 64
+929
+928 / 1259
+69 62 64
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 171
+67 69 62
+930
+929 / 1259
+67 69 62
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 163
+65 67 69
+931
+930 / 1259
+65 67 69
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 155
+64 65 67
+932
+931 / 1259
+64 65 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 151
+64 64 65
+933
+932 / 1259
+64 64 65
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 251
+OK_max: 152
+58 64 64
+934
+933 / 1259
+58 64 64
+79.66666666666667
+thread is 79.66666666666667
+Threading_done
+OK_max: 239
+OK_max: 154
+53 58 64
+935
+934 / 1259
+53 58 64
+77.33333333333333
+thread is 77.33333333333333
+Threading_done
+OK_max: 232
+OK_max: 148
+57 53 58
+936
+935 / 1259
+57 53 58
+76.66666666666667
+thread is 76.66666666666667
+Threading_done
+OK_max: 230
+OK_max: 144
+62 57 53
+937
+936 / 1259
+62 57 53
+78.66666666666667
+thread is 78.66666666666667
+Threading_done
+OK_max: 236
+OK_max: 146
+64 62 57
+938
+937 / 1259
+64 62 57
+82.0
+thread is 82.0
+Threading_done
+OK_max: 246
+OK_max: 151
+63 64 62
+939
+938 / 1259
+63 64 62
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 165
+66 63 64
+940
+939 / 1259
+66 63 64
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+OK_max: 169
+64 66 63
+941
+940 / 1259
+64 66 63
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 174
+62 64 66
+942
+941 / 1259
+62 64 66
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 172
+64 62 64
+943
+942 / 1259
+64 62 64
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 165
+65 64 62
+944
+943 / 1259
+65 64 62
+82.0
+thread is 82.0
+Threading_done
+OK_max: 246
+OK_max: 165
+56 65 64
+945
+944 / 1259
+56 65 64
+81.0
+thread is 81.0
+Threading_done
+OK_max: 243
+OK_max: 157
+60 56 65
+946
+945 / 1259
+60 56 65
+80.0
+thread is 80.0
+Threading_done
+OK_max: 240
+OK_max: 156
+60 60 56
+947
+946 / 1259
+60 60 56
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 235
+OK_max: 151
+60 60 60
+948
+947 / 1259
+60 60 60
+79.0
+thread is 79.0
+Threading_done
+OK_max: 237
+OK_max: 145
+58 60 60
+949
+948 / 1259
+58 60 60
+77.33333333333333
+thread is 77.33333333333333
+Threading_done
+OK_max: 232
+OK_max: 147
+54 58 60
+950
+949 / 1259
+54 58 60
+74.66666666666667
+thread is 74.66666666666667
+Threading_done
+OK_max: 224
+OK_max: 150
+52 54 58
+951
+950 / 1259
+52 54 58
+74.0
+thread is 74.0
+Threading_done
+OK_max: 222
+OK_max: 147
+58 52 54
+952
+951 / 1259
+58 52 54
+73.66666666666667
+thread is 73.66666666666667
+Threading_done
+OK_max: 221
+OK_max: 156
+57 58 52
+953
+952 / 1259
+57 58 52
+75.0
+thread is 75.0
+Threading_done
+OK_max: 225
+OK_max: 152
+58 57 58
+954
+953 / 1259
+58 57 58
+76.66666666666667
+thread is 76.66666666666667
+Threading_done
+OK_max: 230
+OK_max: 148
+57 58 57
+955
+954 / 1259
+57 58 57
+78.0
+thread is 78.0
+Threading_done
+OK_max: 234
+OK_max: 152
+62 57 58
+956
+955 / 1259
+62 57 58
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 235
+OK_max: 142
+58 62 57
+957
+956 / 1259
+58 62 57
+78.0
+thread is 78.0
+Threading_done
+OK_max: 234
+OK_max: 148
+57 58 62
+958
+957 / 1259
+57 58 62
+75.66666666666667
+thread is 75.66666666666667
+Threading_done
+OK_max: 227
+OK_max: 147
+50 57 58
+959
+958 / 1259
+50 57 58
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+OK_max: 146
+52 50 57
+960
+959 / 1259
+52 50 57
+72.66666666666667
+thread is 72.66666666666667
+Threading_done
+OK_max: 218
+OK_max: 158
+59 52 50
+961
+960 / 1259
+59 52 50
+71.33333333333333
+thread is 71.33333333333333
+Threading_done
+OK_max: 214
+OK_max: 151
+53 59 52
+962
+961 / 1259
+53 59 52
+74.0
+thread is 74.0
+Threading_done
+OK_max: 222
+OK_max: 150
+58 53 59
+963
+962 / 1259
+58 53 59
+74.0
+thread is 74.0
+Threading_done
+OK_max: 222
+OK_max: 142
+52 58 53
+964
+963 / 1259
+52 58 53
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+OK_max: 142
+54 52 58
+965
+964 / 1259
+54 52 58
+74.0
+thread is 74.0
+Threading_done
+OK_max: 222
+OK_max: 159
+58 54 52
+966
+965 / 1259
+58 54 52
+74.0
+thread is 74.0
+Threading_done
+OK_max: 222
+OK_max: 165
+58 58 54
+967
+966 / 1259
+58 58 54
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 217
+OK_max: 173
+47 58 58
+968
+967 / 1259
+47 58 58
+73.66666666666667
+thread is 73.66666666666667
+Threading_done
+OK_max: 221
+OK_max: 167
+58 47 58
+969
+968 / 1259
+58 47 58
+70.66666666666667
+thread is 70.66666666666667
+Threading_done
+OK_max: 212
+OK_max: 163
+49 58 47
+970
+969 / 1259
+49 58 47
+69.0
+thread is 69.0
+Threading_done
+OK_max: 207
+OK_max: 163
+53 49 58
+971
+970 / 1259
+53 49 58
+72.0
+thread is 72.0
+Threading_done
+OK_max: 216
+OK_max: 159
+56 53 49
+972
+971 / 1259
+56 53 49
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 153
+51 56 53
+973
+972 / 1259
+51 56 53
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 144
+OK_max: 84
+49 51 56
+974
+973 / 1259
+49 51 56
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 144
+OK_max: 87
+53 49 51
+975
+974 / 1259
+53 49 51
+67.0
+thread is 67.0
+Threading_done
+OK_max: 201
+OK_max: 141
+OK_max: 93
+48 53 49
+976
+975 / 1259
+48 53 49
+66.0
+thread is 66.0
+Threading_done
+OK_max: 198
+OK_max: 148
+49 48 53
+977
+976 / 1259
+49 48 53
+68.66666666666667
+thread is 68.66666666666667
+Threading_done
+OK_max: 206
+OK_max: 153
+57 49 48
+978
+977 / 1259
+57 49 48
+70.0
+thread is 70.0
+Threading_done
+OK_max: 210
+OK_max: 162
+57 57 49
+979
+978 / 1259
+57 57 49
+74.33333333333333
+thread is 74.33333333333333
+Threading_done
+OK_max: 223
+OK_max: 161
+60 57 57
+980
+979 / 1259
+60 57 57
+76.0
+thread is 76.0
+Threading_done
+OK_max: 228
+OK_max: 151
+54 60 57
+981
+980 / 1259
+54 60 57
+76.33333333333333
+thread is 76.33333333333333
+Threading_done
+OK_max: 229
+OK_max: 152
+58 54 60
+982
+981 / 1259
+58 54 60
+75.33333333333333
+thread is 75.33333333333333
+Threading_done
+OK_max: 226
+OK_max: 150
+54 58 54
+983
+982 / 1259
+54 58 54
+71.0
+thread is 71.0
+Threading_done
+OK_max: 213
+OK_max: 163
+47 54 58
+984
+983 / 1259
+47 54 58
+69.66666666666667
+thread is 69.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 168
+50 47 54
+985
+984 / 1259
+50 47 54
+68.33333333333333
+thread is 68.33333333333333
+Threading_done
+OK_max: 205
+OK_max: 164
+55 50 47
+986
+985 / 1259
+55 50 47
+71.0
+thread is 71.0
+Threading_done
+OK_max: 213
+OK_max: 162
+62 55 50
+987
+986 / 1259
+62 55 50
+75.0
+thread is 75.0
+Threading_done
+OK_max: 225
+OK_max: 167
+59 62 55
+988
+987 / 1259
+59 62 55
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 238
+OK_max: 172
+62 59 62
+989
+988 / 1259
+62 59 62
+77.66666666666667
+thread is 77.66666666666667
+Threading_done
+OK_max: 233
+OK_max: 175
+50 62 59
+990
+989 / 1259
+50 62 59
+75.66666666666667
+thread is 75.66666666666667
+Threading_done
+OK_max: 227
+OK_max: 168
+56 50 62
+991
+990 / 1259
+56 50 62
+77.66666666666667
+thread is 77.66666666666667
+Threading_done
+OK_max: 233
+OK_max: 170
+65 56 50
+992
+991 / 1259
+65 56 50
+81.0
+thread is 81.0
+Threading_done
+OK_max: 243
+OK_max: 165
+72 65 56
+993
+992 / 1259
+72 65 56
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 168
+67 72 65
+994
+993 / 1259
+67 72 65
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 177
+65 67 72
+995
+994 / 1259
+65 67 72
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 176
+66 65 67
+996
+995 / 1259
+66 65 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 184
+63 66 65
+997
+996 / 1259
+63 66 65
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 179
+75 63 66
+998
+997 / 1259
+75 63 66
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 178
+72 75 63
+999
+998 / 1259
+72 75 63
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 178
+66 72 75
+1000
+999 / 1259
+66 72 75
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 177
+67 66 72
+1001
+1000 / 1259
+67 66 72
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 179
+74 67 66
+1002
+1001 / 1259
+74 67 66
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 183
+62 74 67
+1003
+1002 / 1259
+62 74 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 193
+67 62 74
+1004
+1003 / 1259
+67 62 74
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 198
+68 67 62
+1005
+1004 / 1259
+68 67 62
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 253
+OK_max: 211
+67 68 67
+1006
+1005 / 1259
+67 68 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 212
+60 67 68
+1007
+1006 / 1259
+60 67 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 204
+71 60 67
+1008
+1007 / 1259
+71 60 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 205
+67 71 60
+1009
+1008 / 1259
+67 71 60
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 196
+69 67 71
+1010
+1009 / 1259
+69 67 71
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 206
+64 69 67
+1011
+1010 / 1259
+64 69 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 206
+74 64 69
+1012
+1011 / 1259
+74 64 69
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 206
+62 74 64
+1013
+1012 / 1259
+62 74 64
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 215
+58 62 74
+1014
+1013 / 1259
+58 62 74
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 254
+OK_max: 214
+60 58 62
+1015
+1014 / 1259
+60 58 62
+80.66666666666667
+thread is 80.66666666666667
+Threading_done
+OK_max: 242
+OK_max: 206
+62 60 58
+1016
+1015 / 1259
+62 60 58
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 238
+OK_max: 205
+58 62 60
+1017
+1016 / 1259
+58 62 60
+81.0
+thread is 81.0
+Threading_done
+OK_max: 243
+OK_max: 197
+63 58 62
+1018
+1017 / 1259
+63 58 62
+79.0
+thread is 79.0
+Threading_done
+OK_max: 237
+OK_max: 197
+54 63 58
+1019
+1018 / 1259
+54 63 58
+77.66666666666667
+thread is 77.66666666666667
+Threading_done
+OK_max: 233
+OK_max: 209
+60 54 63
+1020
+1019 / 1259
+60 54 63
+80.33333333333333
+thread is 80.33333333333333
+Threading_done
+OK_max: 241
+OK_max: 208
+66 60 54
+1021
+1020 / 1259
+66 60 54
+77.33333333333333
+thread is 77.33333333333333
+Threading_done
+OK_max: 232
+OK_max: 222
+61 66 60
+1022
+1021 / 1259
+61 66 60
+78.66666666666667
+thread is 78.66666666666667
+Threading_done
+OK_max: 231
+OK_max: 236
+70 61 66
+1023
+1022 / 1259
+70 61 66
+81.33333333333333
+thread is 81.33333333333333
+Threading_done
+OK_max: 235
+OK_max: 244
+67 70 61
+1024
+1023 / 1259
+67 70 61
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 223
+OK_max: 254
+70 67 70
+1025
+1024 / 1259
+70 67 70
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 222
+OK_max: 254
+61 70 67
+1026
+1025 / 1259
+61 70 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 219
+OK_max: 255
+65 61 70
+1027
+1026 / 1259
+65 61 70
+85.0
+thread is 85.0
+Threading_done
+OK_max: 213
+OK_max: 255
+75 65 61
+1028
+1027 / 1259
+75 65 61
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 204
+OK_max: 254
+80 75 65
+1029
+1028 / 1259
+80 75 65
+85.0
+thread is 85.0
+Threading_done
+OK_max: 197
+OK_max: 255
+68 80 75
+1030
+1029 / 1259
+68 80 75
+85.0
+thread is 85.0
+Threading_done
+OK_max: 199
+OK_max: 255
+69 68 80
+1031
+1030 / 1259
+69 68 80
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 187
+OK_max: 254
+71 69 68
+1032
+1031 / 1259
+71 69 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 196
+OK_max: 255
+58 71 69
+1033
+1032 / 1259
+58 71 69
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 195
+OK_max: 253
+73 58 71
+1034
+1033 / 1259
+73 58 71
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 190
+OK_max: 253
+67 73 58
+1035
+1034 / 1259
+67 73 58
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 183
+OK_max: 253
+61 67 73
+1036
+1035 / 1259
+61 67 73
+85.0
+thread is 85.0
+Threading_done
+OK_max: 172
+OK_max: 255
+61 61 67
+1037
+1036 / 1259
+61 61 67
+81.0
+thread is 81.0
+Threading_done
+OK_max: 171
+OK_max: 243
+54 61 61
+1038
+1037 / 1259
+54 61 61
+79.0
+thread is 79.0
+Threading_done
+OK_max: 171
+OK_max: 237
+61 54 61
+1039
+1038 / 1259
+61 54 61
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 186
+OK_max: 251
+75 61 54
+1040
+1039 / 1259
+75 61 54
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 196
+OK_max: 251
+61 75 61
+1041
+1040 / 1259
+61 75 61
+82.33333333333333
+thread is 82.33333333333333
+Threading_done
+OK_max: 206
+OK_max: 247
+60 61 75
+1042
+1041 / 1259
+60 61 75
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 221
+OK_max: 251
+62 60 61
+1043
+1042 / 1259
+62 60 61
+77.33333333333333
+thread is 77.33333333333333
+Threading_done
+OK_max: 213
+OK_max: 232
+OK_max: 107
+58 62 60
+1044
+1043 / 1259
+58 62 60
+78.66666666666667
+thread is 78.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 236
+OK_max: 136
+66 58 62
+1045
+1044 / 1259
+66 58 62
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 211
+OK_max: 235
+OK_max: 142
+59 66 58
+1046
+1045 / 1259
+59 66 58
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 209
+OK_max: 235
+OK_max: 116
+55 59 66
+1047
+1046 / 1259
+55 59 66
+79.66666666666667
+thread is 79.66666666666667
+Threading_done
+OK_max: 206
+OK_max: 239
+OK_max: 96
+OK_max: 88
+60 55 59
+1048
+1047 / 1259
+60 55 59
+79.66666666666667
+thread is 79.66666666666667
+Threading_done
+OK_max: 209
+OK_max: 239
+65 60 55
+1049
+1048 / 1259
+65 60 55
+81.66666666666667
+thread is 81.66666666666667
+Threading_done
+OK_max: 194
+OK_max: 245
+67 65 60
+1050
+1049 / 1259
+67 65 60
+81.0
+thread is 81.0
+Threading_done
+OK_max: 188
+OK_max: 243
+53 67 65
+1051
+1050 / 1259
+53 67 65
+75.66666666666667
+thread is 75.66666666666667
+Threading_done
+OK_max: 187
+OK_max: 227
+44 53 67
+1052
+1051 / 1259
+44 53 67
+72.33333333333333
+thread is 72.33333333333333
+Threading_done
+OK_max: 174
+OK_max: 217
+55 44 53
+1053
+1052 / 1259
+55 44 53
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 172
+OK_max: 203
+52 55 44
+1054
+1053 / 1259
+52 55 44
+67.66666666666667
+thread is 67.66666666666667
+Threading_done
+OK_max: 162
+OK_max: 203
+53 52 55
+1055
+1054 / 1259
+53 52 55
+68.0
+thread is 68.0
+Threading_done
+OK_max: 158
+OK_max: 204
+46 53 52
+1056
+1055 / 1259
+46 53 52
+66.33333333333333
+thread is 66.33333333333333
+Threading_done
+OK_max: 154
+OK_max: 199
+53 46 53
+1057
+1056 / 1259
+53 46 53
+68.0
+thread is 68.0
+Threading_done
+OK_max: 167
+OK_max: 204
+56 53 46
+1058
+1057 / 1259
+56 53 46
+74.33333333333333
+thread is 74.33333333333333
+Threading_done
+OK_max: 184
+OK_max: 223
+68 56 53
+1059
+1058 / 1259
+68 56 53
+80.0
+thread is 80.0
+Threading_done
+OK_max: 201
+OK_max: 240
+63 68 56
+1060
+1059 / 1259
+63 68 56
+80.0
+thread is 80.0
+Threading_done
+OK_max: 217
+OK_max: 240
+54 63 68
+1061
+1060 / 1259
+54 63 68
+78.33333333333333
+thread is 78.33333333333333
+Threading_done
+OK_max: 223
+OK_max: 235
+56 54 63
+1062
+1061 / 1259
+56 54 63
+73.66666666666667
+thread is 73.66666666666667
+Threading_done
+OK_max: 221
+OK_max: 219
+53 56 54
+1063
+1062 / 1259
+53 56 54
+70.66666666666667
+thread is 70.66666666666667
+Threading_done
+OK_max: 210
+OK_max: 212
+54 53 56
+1064
+1063 / 1259
+54 53 56
+71.66666666666667
+thread is 71.66666666666667
+Threading_done
+OK_max: 214
+OK_max: 215
+58 54 53
+1065
+1064 / 1259
+58 54 53
+73.66666666666667
+thread is 73.66666666666667
+Threading_done
+OK_max: 206
+OK_max: 221
+60 58 54
+1066
+1065 / 1259
+60 58 54
+77.0
+thread is 77.0
+Threading_done
+OK_max: 207
+OK_max: 231
+63 60 58
+1067
+1066 / 1259
+63 60 58
+81.33333333333333
+thread is 81.33333333333333
+Threading_done
+OK_max: 210
+OK_max: 244
+67 63 60
+1068
+1067 / 1259
+67 63 60
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 208
+OK_max: 254
+72 67 63
+1069
+1068 / 1259
+72 67 63
+85.0
+thread is 85.0
+Threading_done
+OK_max: 210
+OK_max: 255
+73 72 67
+1070
+1069 / 1259
+73 72 67
+85.0
+thread is 85.0
+Threading_done
+OK_max: 206
+OK_max: 255
+69 73 72
+1071
+1070 / 1259
+69 73 72
+85.0
+thread is 85.0
+Threading_done
+OK_max: 202
+OK_max: 255
+64 69 73
+1072
+1071 / 1259
+64 69 73
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 197
+OK_max: 254
+61 64 69
+1073
+1072 / 1259
+61 64 69
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 193
+OK_max: 254
+65 61 64
+1074
+1073 / 1259
+65 61 64
+82.33333333333333
+thread is 82.33333333333333
+Threading_done
+OK_max: 202
+OK_max: 247
+59 65 61
+1075
+1074 / 1259
+59 65 61
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 210
+OK_max: 251
+68 59 65
+1076
+1075 / 1259
+68 59 65
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 208
+OK_max: 251
+62 68 59
+1077
+1076 / 1259
+62 68 59
+83.0
+thread is 83.0
+Threading_done
+OK_max: 200
+OK_max: 249
+62 62 68
+1078
+1077 / 1259
+62 62 68
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 188
+64 62 62
+1079
+1078 / 1259
+64 62 62
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 191
+OK_max: 253
+66 64 62
+1080
+1079 / 1259
+66 64 62
+85.0
+thread is 85.0
+Threading_done
+OK_max: 255
+OK_max: 183
+94 66 64
+1081
+1080 / 1259
+94 66 64
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 199
+OK_max: 253
+87 94 66
+1082
+1081 / 1259
+87 94 66
+85.0
+thread is 85.0
+Threading_done
+OK_max: 199
+OK_max: 255
+72 87 94
+1083
+1082 / 1259
+72 87 94
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 191
+OK_max: 254
+75 72 87
+1084
+1083 / 1259
+75 72 87
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 195
+OK_max: 254
+76 75 72
+1085
+1084 / 1259
+76 75 72
+85.0
+thread is 85.0
+Threading_done
+OK_max: 187
+OK_max: 255
+83 76 75
+1086
+1085 / 1259
+83 76 75
+85.0
+thread is 85.0
+Threading_done
+OK_max: 181
+OK_max: 255
+83 83 76
+1087
+1086 / 1259
+83 83 76
+85.0
+thread is 85.0
+Threading_done
+OK_max: 176
+OK_max: 255
+80 83 83
+1088
+1087 / 1259
+80 83 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 175
+OK_max: 255
+77 80 83
+1089
+1088 / 1259
+77 80 83
+85.0
+thread is 85.0
+Threading_done
+OK_max: 172
+OK_max: 255
+80 77 80
+1090
+1089 / 1259
+80 77 80
+85.0
+thread is 85.0
+Threading_done
+OK_max: 176
+OK_max: 255
+71 80 77
+1091
+1090 / 1259
+71 80 77
+85.0
+thread is 85.0
+Threading_done
+OK_max: 182
+OK_max: 255
+68 71 80
+1092
+1091 / 1259
+68 71 80
+85.0
+thread is 85.0
+Threading_done
+OK_max: 183
+OK_max: 255
+76 68 71
+1093
+1092 / 1259
+76 68 71
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 180
+OK_max: 253
+62 76 68
+1094
+1093 / 1259
+62 76 68
+84.33333333333333
+thread is 84.33333333333333
+Threading_done
+OK_max: 186
+OK_max: 253
+56 62 76
+1095
+1094 / 1259
+56 62 76
+84.0
+thread is 84.0
+Threading_done
+OK_max: 173
+OK_max: 252
+58 56 62
+1096
+1095 / 1259
+58 56 62
+79.0
+thread is 79.0
+Threading_done
+OK_max: 171
+OK_max: 237
+62 58 56
+1097
+1096 / 1259
+62 58 56
+77.66666666666667
+thread is 77.66666666666667
+Threading_done
+OK_max: 165
+OK_max: 233
+58 62 58
+1098
+1097 / 1259
+58 62 58
+81.66666666666667
+thread is 81.66666666666667
+Threading_done
+OK_max: 160
+OK_max: 245
+68 58 62
+1099
+1098 / 1259
+68 58 62
+83.66666666666667
+thread is 83.66666666666667
+Threading_done
+OK_max: 167
+OK_max: 251
+63 68 58
+1100
+1099 / 1259
+63 68 58
+85.0
+thread is 85.0
+Threading_done
+OK_max: 176
+OK_max: 255
+72 63 68
+1101
+1100 / 1259
+72 63 68
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 188
+OK_max: 254
+68 72 63
+1102
+1101 / 1259
+68 72 63
+85.0
+thread is 85.0
+Threading_done
+OK_max: 188
+OK_max: 255
+74 68 72
+1103
+1102 / 1259
+74 68 72
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 190
+OK_max: 254
+76 74 68
+1104
+1103 / 1259
+76 74 68
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 184
+OK_max: 254
+74 76 74
+1105
+1104 / 1259
+74 76 74
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 183
+OK_max: 254
+65 74 76
+1106
+1105 / 1259
+65 74 76
+84.0
+thread is 84.0
+Threading_done
+OK_max: 178
+OK_max: 252
+54 65 74
+1107
+1106 / 1259
+54 65 74
+84.0
+thread is 84.0
+Threading_done
+OK_max: 175
+OK_max: 252
+63 54 65
+1108
+1107 / 1259
+63 54 65
+82.66666666666667
+thread is 82.66666666666667
+Threading_done
+OK_max: 175
+OK_max: 248
+66 63 54
+1109
+1108 / 1259
+66 63 54
+82.66666666666667
+thread is 82.66666666666667
+Threading_done
+OK_max: 174
+OK_max: 248
+65 66 63
+1110
+1109 / 1259
+65 66 63
+85.0
+thread is 85.0
+Threading_done
+OK_max: 188
+OK_max: 255
+65 65 66
+1111
+1110 / 1259
+65 65 66
+84.66666666666667
+thread is 84.66666666666667
+Threading_done
+OK_max: 180
+OK_max: 254
+60 65 65
+1112
+1111 / 1259
+60 65 65
+82.0
+thread is 82.0
+Threading_done
+OK_max: 177
+OK_max: 246
+57 60 65
+1113
+1112 / 1259
+57 60 65
+81.0
+thread is 81.0
+Threading_done
+OK_max: 168
+OK_max: 243
+61 57 60
+1114
+1113 / 1259
+61 57 60
+79.33333333333333
+thread is 79.33333333333333
+Threading_done
+OK_max: 159
+OK_max: 238
+60 61 57
+1115
+1114 / 1259
+60 61 57
+76.66666666666667
+thread is 76.66666666666667
+Threading_done
+OK_max: 91
+OK_max: 169
+OK_max: 230
+52 60 61
+1116
+1115 / 1259
+52 60 61
+76.33333333333333
+thread is 76.33333333333333
+Threading_done
+OK_max: 90
+OK_max: 154
+OK_max: 229
+57 52 60
+1117
+1116 / 1259
+57 52 60
+75.66666666666667
+thread is 75.66666666666667
+Threading_done
+OK_max: 89
+OK_max: 147
+OK_max: 227
+59 57 52
+1118
+1117 / 1259
+59 57 52
+74.66666666666667
+thread is 74.66666666666667
+Threading_done
+OK_max: 88
+OK_max: 138
+OK_max: 224
+57 59 57
+1119
+1118 / 1259
+57 59 57
+77.33333333333333
+thread is 77.33333333333333
+Threading_done
+OK_max: 141
+OK_max: 232
+60 57 59
+1120
+1119 / 1259
+60 57 59
+77.33333333333333
+thread is 77.33333333333333
+Threading_done
+OK_max: 156
+OK_max: 232
+56 60 57
+1121
+1120 / 1259
+56 60 57
+76.0
+thread is 76.0
+Threading_done
+OK_max: 162
+OK_max: 228
+55 56 60
+1122
+1121 / 1259
+55 56 60
+75.66666666666667
+thread is 75.66666666666667
+Threading_done
+OK_max: 168
+OK_max: 227
+57 55 56
+1123
+1122 / 1259
+57 55 56
+76.0
+thread is 76.0
+Threading_done
+OK_max: 165
+OK_max: 228
+61 57 55
+1124
+1123 / 1259
+61 57 55
+75.66666666666667
+thread is 75.66666666666667
+Threading_done
+OK_max: 170
+OK_max: 227
+55 61 57
+1125
+1124 / 1259
+55 61 57
+77.0
+thread is 77.0
+Threading_done
+OK_max: 177
+OK_max: 231
+59 55 61
+1126
+1125 / 1259
+59 55 61
+78.0
+thread is 78.0
+Threading_done
+OK_max: 178
+OK_max: 234
+59 59 55
+1127
+1126 / 1259
+59 59 55
+78.66666666666667
+thread is 78.66666666666667
+Threading_done
+OK_max: 178
+OK_max: 236
+63 59 59
+1128
+1127 / 1259
+63 59 59
+79.66666666666667
+thread is 79.66666666666667
+Threading_done
+OK_max: 167
+OK_max: 239
+58 63 59
+1129
+1128 / 1259
+58 63 59
+75.0
+thread is 75.0
+Threading_done
+OK_max: 167
+OK_max: 225
+45 58 63
+1130
+1129 / 1259
+45 58 63
+72.66666666666667
+thread is 72.66666666666667
+Threading_done
+OK_max: 167
+OK_max: 218
+52 45 58
+1131
+1130 / 1259
+52 45 58
+67.33333333333333
+thread is 67.33333333333333
+Threading_done
+OK_max: 169
+OK_max: 202
+47 52 45
+1132
+1131 / 1259
+47 52 45
+64.66666666666667
+thread is 65
+Threading_done
+OK_max: 181
+OK_max: 194
+50 47 52
+1133
+1132 / 1259
+50 47 52
+65.0
+thread is 65.0
+Threading_done
+OK_max: 179
+OK_max: 195
+46 50 47
+1134
+1133 / 1259
+46 50 47
+63.666666666666664
+thread is 65
+Threading_done
+OK_max: 181
+OK_max: 191
+49 46 50
+1135
+1134 / 1259
+49 46 50
+63.666666666666664
+thread is 65
+Threading_done
+OK_max: 176
+OK_max: 191
+47 49 46
+1136
+1135 / 1259
+47 49 46
+62.666666666666664
+thread is 65
+Threading_done
+OK_max: 169
+OK_max: 188
+46 47 49
+1137
+1136 / 1259
+46 47 49
+63.333333333333336
+thread is 65
+Threading_done
+OK_max: 169
+OK_max: 190
+48 46 47
+1138
+1137 / 1259
+48 46 47
+62.333333333333336
+thread is 65
+Threading_done
+OK_max: 164
+OK_max: 187
+46 48 46
+1139
+1138 / 1259
+46 48 46
+61.666666666666664
+thread is 65
+Threading_done
+OK_max: 161
+OK_max: 185
+45 46 48
+1140
+1139 / 1259
+45 46 48
+60.666666666666664
+thread is 65
+Threading_done
+OK_max: 164
+OK_max: 182
+44 45 46
+1141
+1140 / 1259
+44 45 46
+57.333333333333336
+thread is 65
+Threading_done
+OK_max: 167
+OK_max: 172
+44 44 45
+1142
+1141 / 1259
+44 44 45
+56.666666666666664
+thread is 65
+Threading_done
+OK_max: 170
+OK_max: 154
+42 44 44
+1143
+1142 / 1259
+42 44 44
+57.0
+thread is 65
+Threading_done
+OK_max: 171
+OK_max: 138
+41 42 44
+1144
+1143 / 1259
+41 42 44
+55.0
+thread is 65
+Threading_done
+OK_max: 165
+OK_max: 132
+38 41 42
+1145
+1144 / 1259
+38 41 42
+52.0
+thread is 65
+Threading_done
+OK_max: 156
+OK_max: 125
+35 38 41
+1146
+1145 / 1259
+35 38 41
+51.333333333333336
+thread is 65
+Threading_done
+OK_max: 154
+OK_max: 122
+40 35 38
+1147
+1146 / 1259
+40 35 38
+51.0
+thread is 65
+Threading_done
+OK_max: 153
+OK_max: 131
+40 40 35
+1148
+1147 / 1259
+40 40 35
+49.333333333333336
+thread is 65
+Threading_done
+OK_max: 148
+OK_max: 124
+33 40 40
+1149
+1148 / 1259
+33 40 40
+48.333333333333336
+thread is 65
+Threading_done
+OK_max: 145
+OK_max: 117
+32 33 40
+1150
+1149 / 1259
+32 33 40
+46.666666666666664
+thread is 65
+Threading_done
+OK_max: 140
+OK_max: 120
+35 32 33
+1151
+1150 / 1259
+35 32 33
+44.0
+thread is 65
+Threading_done
+OK_max: 132
+OK_max: 68
+OK_max: 112
+32 35 32
+1152
+1151 / 1259
+32 35 32
+42.333333333333336
+thread is 65
+Threading_done
+OK_max: 127
+OK_max: 107
+28 32 35
+1153
+1152 / 1259
+28 32 35
+45.0
+thread is 65
+Threading_done
+OK_max: 135
+OK_max: 117
+40 28 32
+1154
+1153 / 1259
+40 28 32
+42.333333333333336
+thread is 65
+Threading_done
+OK_max: 127
+OK_max: 118
+29 40 28
+1155
+1154 / 1259
+29 40 28
+41.333333333333336
+thread is 65
+Threading_done
+OK_max: 124
+OK_max: 119
+31 29 40
+1156
+1155 / 1259
+31 29 40
+40.0
+thread is 65
+Threading_done
+OK_max: 120
+OK_max: 119
+26 31 29
+1157
+1156 / 1259
+26 31 29
+38.0
+thread is 65
+Threading_done
+OK_max: 108
+OK_max: 114
+28 26 31
+1158
+1157 / 1259
+28 26 31
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 108
+OK_max: 110
+27 28 26
+1159
+1158 / 1259
+27 28 26
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 108
+OK_max: 110
+31 27 28
+1160
+1159 / 1259
+31 27 28
+37.666666666666664
+thread is 65
+Threading_done
+OK_max: 113
+OK_max: 109
+30 31 27
+1161
+1160 / 1259
+30 31 27
+37.333333333333336
+thread is 65
+Threading_done
+OK_max: 112
+OK_max: 106
+27 30 31
+1162
+1161 / 1259
+27 30 31
+39.666666666666664
+thread is 65
+Threading_done
+OK_max: 119
+OK_max: 101
+34 27 30
+1163
+1162 / 1259
+34 27 30
+40.0
+thread is 65
+Threading_done
+OK_max: 120
+OK_max: 95
+30 34 27
+1164
+1163 / 1259
+30 34 27
+39.0
+thread is 65
+Threading_done
+OK_max: 117
+OK_max: 93
+27 30 34
+1165
+1164 / 1259
+27 30 34
+41.333333333333336
+thread is 65
+Threading_done
+OK_max: 124
+OK_max: 90
+33 27 30
+1166
+1165 / 1259
+33 27 30
+37.0
+thread is 65
+Threading_done
+OK_max: 111
+OK_max: 87
+21 33 27
+1167
+1166 / 1259
+21 33 27
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+OK_max: 78
+23 21 33
+1168
+1167 / 1259
+23 21 33
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+24 23 21
+1169
+1168 / 1259
+24 23 21
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+27 24 23
+1170
+1169 / 1259
+27 24 23
+33.0
+thread is 65
+Threading_done
+OK_max: 99
+25 27 24/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:150: skimage_deprecation: Default value of `block_norm`==`L1` is deprecated and will be changed to `L2-Hys` in v0.15. To supress this message specify explicitly the normalization method.
+  skimage_deprecation)
+/usr/local/lib/python3.5/dist-packages/skimage/feature/_hog.py:248: skimage_deprecation: Argument `visualise` is deprecated and will be changed to `visualize` in v0.16
+  'be changed to `visualize` in v0.16', skimage_deprecation)
+/home/hitoshi_yoshida_1984/Udacity_CarND_P5_Vehicle_Detection/functionset.py:509: RuntimeWarning: divide by zero encountered in long_scalars
+  if box_height/box_width >= 3 or box_width/box_height >= 3 or box_height*box_width <= 150:
+/home/hitoshi_yoshida_1984/Udacity_CarND_P5_Vehicle_Detection/functionset.py:509: RuntimeWarning: invalid value encountered in long_scalars
+  if box_height/box_width >= 3 or box_width/box_height >= 3 or box_height*box_width <= 150:
+/home/hitoshi_yoshida_1984/Udacity_CarND_P5_Vehicle_Detection/functionset.py:60: RuntimeWarning: invalid value encountered in true_divide
+  features = features/features.max()
+
+1171
+1170 / 1259
+25 27 24
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+29 25 27
+1172
+1171 / 1259
+29 25 27
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+30 29 25
+1173
+1172 / 1259
+30 29 25
+38.333333333333336
+thread is 65
+Threading_done
+OK_max: 115
+33 30 29
+1174
+1173 / 1259
+33 30 29
+38.333333333333336
+thread is 65
+Threading_done
+OK_max: 115
+26 33 30
+1175
+1174 / 1259
+26 33 30
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+23 26 33
+1176
+1175 / 1259
+23 26 33
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+24 23 26
+1177
+1176 / 1259
+24 23 26
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+29 24 23
+1178
+1177 / 1259
+29 24 23
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+33 29 24
+1179
+1178 / 1259
+33 29 24
+37.333333333333336
+thread is 65
+Threading_done
+OK_max: 112
+26 33 29
+1180
+1179 / 1259
+26 33 29
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+22 26 33
+1181
+1180 / 1259
+22 26 33
+36.333333333333336
+thread is 65
+Threading_done
+OK_max: 109
+28 22 26
+1182
+1181 / 1259
+28 22 26
+34.0
+thread is 65
+Threading_done
+OK_max: 102
+26 28 22
+1183
+1182 / 1259
+26 28 22
+37.666666666666664
+thread is 65
+Threading_done
+OK_max: 113
+37 26 28
+1184
+1183 / 1259
+37 26 28
+38.666666666666664
+thread is 65
+Threading_done
+OK_max: 116
+25 37 26
+1185
+1184 / 1259
+25 37 26
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+23 25 37
+1186
+1185 / 1259
+23 25 37
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+21 23 25
+1187
+1186 / 1259
+21 23 25
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+27 21 23
+1188
+1187 / 1259
+27 21 23
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+31 27 21
+1189
+1188 / 1259
+31 27 21
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+28 31 27
+1190
+1189 / 1259
+28 31 27
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+23 28 31
+1191
+1190 / 1259
+23 28 31
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+29 23 28
+1192
+1191 / 1259
+29 23 28
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+30 29 23
+1193
+1192 / 1259
+30 29 23
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+28 30 29
+1194
+1193 / 1259
+28 30 29
+39.0
+thread is 65
+Threading_done
+OK_max: 117
+30 28 30
+1195
+1194 / 1259
+30 28 30
+37.0
+thread is 65
+Threading_done
+OK_max: 111
+23 30 28
+1196
+1195 / 1259
+23 30 28
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+23 23 30
+1197
+1196 / 1259
+23 23 30
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+25 23 23
+1198
+1197 / 1259
+25 23 23
+32.0
+thread is 65
+Threading_done
+OK_max: 96
+25 25 23
+1199
+1198 / 1259
+25 25 23
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+23 25 25
+1200
+1199 / 1259
+23 25 25
+31.0
+thread is 65
+Threading_done
+OK_max: 93
+21 23 25
+1201
+1200 / 1259
+21 23 25
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+23 21 23
+1202
+1201 / 1259
+23 21 23
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+22 23 21
+1203
+1202 / 1259
+22 23 21
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+26 22 23
+1204
+1203 / 1259
+26 22 23
+32.0
+thread is 65
+Threading_done
+OK_max: 96
+27 26 22
+1205
+1204 / 1259
+27 26 22
+34.0
+thread is 65
+Threading_done
+OK_max: 102
+27 27 26
+1206
+1205 / 1259
+27 27 26
+34.666666666666664
+thread is 65
+Threading_done
+OK_max: 104
+24 27 27
+1207
+1206 / 1259
+24 27 27
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+23 24 27
+1208
+1207 / 1259
+23 24 27
+30.666666666666668
+thread is 65
+Threading_done
+OK_max: 92
+18 23 24
+1209
+1208 / 1259
+18 23 24
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+26 18 23
+1210
+1209 / 1259
+26 18 23
+31.0
+thread is 65
+Threading_done
+OK_max: 93
+26 26 18
+1211
+1210 / 1259
+26 26 18
+32.333333333333336
+thread is 65
+Threading_done
+OK_max: 97
+27 26 26
+1212
+1211 / 1259
+27 26 26
+34.0
+thread is 65
+Threading_done
+OK_max: 102
+23 27 26
+1213
+1212 / 1259
+23 27 26
+33.333333333333336
+thread is 65
+Threading_done
+OK_max: 100
+24 23 27
+1214
+1213 / 1259
+24 23 27
+36.666666666666664
+thread is 65
+Threading_done
+OK_max: 110
+36 24 23
+1215
+1214 / 1259
+36 24 23
+39.666666666666664
+thread is 65
+Threading_done
+OK_max: 119
+36 36 24
+1216
+1215 / 1259
+36 36 24
+40.333333333333336
+thread is 65
+Threading_done
+OK_max: 121
+25 36 36
+1217
+1216 / 1259
+25 36 36
+39.666666666666664
+thread is 65
+Threading_done
+OK_max: 119
+22 25 36
+1218
+1217 / 1259
+22 25 36
+35.666666666666664
+thread is 65
+Threading_done
+OK_max: 107
+24 22 25
+1219
+1218 / 1259
+24 22 25
+32.0
+thread is 65
+Threading_done
+OK_max: 96
+25 24 22
+1220
+1219 / 1259
+25 24 22
+31.666666666666668
+thread is 65
+Threading_done
+OK_max: 95
+24 25 24
+1221
+1220 / 1259
+24 25 24
+32.333333333333336
+thread is 65
+Threading_done
+OK_max: 97
+24 24 25
+1222
+1221 / 1259
+24 24 25
+31.0
+thread is 65
+Threading_done
+OK_max: 93
+20 24 24
+1223
+1222 / 1259
+20 24 24
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+22 20 24
+1224
+1223 / 1259
+22 20 24
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+28 22 20
+1225
+1224 / 1259
+28 22 20
+31.333333333333332
+thread is 65
+Threading_done
+OK_max: 94
+24 28 22
+1226
+1225 / 1259
+24 28 22
+34.333333333333336
+thread is 65
+Threading_done
+OK_max: 103
+29 24 28
+1227
+1226 / 1259
+29 24 28
+38.666666666666664
+thread is 65
+Threading_done
+OK_max: 116
+35 29 24
+1228
+1227 / 1259
+35 29 24
+36.0
+thread is 65
+Threading_done
+OK_max: 108
+20 35 29
+1229
+1228 / 1259
+20 35 29
+35.666666666666664
+thread is 65
+Threading_done
+OK_max: 107
+23 20 35
+1230
+1229 / 1259
+23 20 35
+33.666666666666664
+thread is 65
+Threading_done
+OK_max: 101
+23 23 20
+1231
+1230 / 1259
+23 23 20
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+23 23 23
+1232
+1231 / 1259
+23 23 23
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+22 23 23
+1233
+1232 / 1259
+22 23 23
+29.0
+thread is 65
+Threading_done
+OK_max: 87
+20 22 23
+1234
+1233 / 1259
+20 22 23
+28.0
+thread is 65
+Threading_done
+OK_max: 84
+20 20 22
+1235
+1234 / 1259
+20 20 22
+28.333333333333332
+thread is 65
+Threading_done
+OK_max: 85
+24 20 20
+1236
+1235 / 1259
+24 20 20
+29.0
+thread is 65
+Threading_done
+OK_max: 87
+23 24 20
+1237
+1236 / 1259
+23 24 20
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+16 23 24
+1238
+1237 / 1259
+16 23 24
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+23 16 23
+1239
+1238 / 1259
+23 16 23
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+21 23 16
+1240
+1239 / 1259
+21 23 16
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+15 21 23
+1241
+1240 / 1259
+15 21 23
+27.666666666666668
+thread is 65
+Threading_done
+OK_max: 83
+24 15 21
+1242
+1241 / 1259
+24 15 21
+25.666666666666668
+thread is 65
+Threading_done
+OK_max: 77
+30 24 15
+1243
+1242 / 1259
+30 24 15
+23.666666666666668
+thread is 65
+Threading_done
+OK_max: 71
+OK_max: 70
+25 30 24
+1244
+1243 / 1259
+25 30 24
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 73
+OK_max: 74
+34 25 30
+1245
+1244 / 1259
+34 25 30
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+44 34 25
+1246
+1245 / 1259
+44 34 25
+27.333333333333332
+thread is 65
+Threading_done
+OK_max: 82
+OK_max: 69
+25 44 34
+1247
+1246 / 1259
+25 44 34
+30.333333333333332
+thread is 65
+Threading_done
+OK_max: 91
+OK_max: 69
+24 25 44
+1248
+1247 / 1259
+24 25 44
+32.0
+thread is 65
+Threading_done
+OK_max: 96
+22 24 25
+1249
+1248 / 1259
+22 24 25
+29.666666666666668
+thread is 65
+Threading_done
+OK_max: 89
+18 22 24
+1250
+1249 / 1259
+18 22 24
+28.0
+thread is 65
+Threading_done
+OK_max: 84
+20 18 22
+1251
+1250 / 1259
+20 18 22
+26.666666666666668
+thread is 65
+Threading_done
+OK_max: 80
+20 20 18
+1252
+1251 / 1259
+20 20 18
+24.333333333333332
+thread is 65
+Threading_done
+OK_max: 73
+17 20 20
+1253
+1252 / 1259
+17 20 20
+25.0
+thread is 65
+Threading_done
+OK_max: 75
+20 17 20
+1254
+1253 / 1259
+20 17 20
+24.333333333333332
+thread is 65
+Threading_done
+OK_max: 73
+18 20 17
+1255
+1254 / 1259
+18 20 17
+23.333333333333332
+thread is 65
+Threading_done
+OK_max: 70
+17 18 20
+1256
+1255 / 1259
+17 18 20
+24.666666666666668
+thread is 65
+Threading_done
+OK_max: 74
+20 17 18
+1257
+1256 / 1259
+20 17 18
+28.666666666666668
+thread is 65
+Threading_done
+OK_max: 86
+32 20 17
+1258
+1257 / 1259
+32 20 17
+30.0
+thread is 65
+Threading_done
+OK_max: 90
+21 32 20
+1259
+1258 / 1259
