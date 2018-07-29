@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ddc8a0-4e07-47cf-831f-da198206db99" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/for_report/Fig1_1_1-Vehicle_and_non_vehicle.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/for_report/Fig1_1_2-rm.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/for_report/Fig1_1_3-ag.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/for_report/Fig1_2_1_HOG_example_1.png" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Code_test.ipynb" afterPath="$PROJECT_DIR$/Code_test.ipynb" />
       <change beforePath="$PROJECT_DIR$/writeup_report.md" afterPath="$PROJECT_DIR$/writeup_report.md" />
     </list>
@@ -84,8 +79,8 @@
         <entry file="file://$PROJECT_DIR$/writeup_report.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="456">
-                <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+              <first_editor relative-caret-position="17">
+                <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -842,8 +837,8 @@
     <entry file="file://$PROJECT_DIR$/writeup_report.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="456">
-            <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
+          <first_editor relative-caret-position="17">
+            <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
             <folding />
           </first_editor>
           <second_editor />

@@ -14,8 +14,8 @@ The goals / steps of this project are the following:
 [image2]: ./for_report/Fig1_1_2-rm.png
 [image3]: ./for_report/Fig1_1_3-ag.png
 [image4]: ./for_report/Fig1_2_1_HOG_example_1.png
-[image5]: ./for_report/Fig1_2_1_HOG_example_2.png
-
+[image5]: ./for_report/Fig1_2_2_HOG_example.png
+[image6]: ./for_report/Fig1_2_3_Spatial_img.png
 
 [video1]: ./project_video.mp4
 
@@ -26,13 +26,13 @@ The goals / steps of this project are the following:
  * Step2: Remove a part of images files from "Non-vehicle" data set
  * Step3: Argument some Non-Vehicle data
  
-__Fig1.1.1 Example of data set__
+__Fig1.1.1 Example of data set__  
 ![alt text][image1]
 
-__Fig1.1.2 Example of removed image__
+__Fig1.1.2 Example of removed image__  
 ![alt text][image2]
 
-__Fig1.1.3 Example of argumentation__
+__Fig1.1.3 Example of argumentation__  
 ![alt text][image3]
 
 
@@ -46,16 +46,20 @@ HOG paramter was decided as below.
 This is to clarify the object shape by myself.
 
 
-__Fig1.2.1 HOG image example__
+__Fig1.2.1 HOG image example__  
 ![alt text][image4]
 
 Grayscale was selected to compute HOG features.
 Beacuse  
 
-__Fig1.2.1 HOG image example__
+__Fig1.2.1 HOG image example__  
 ![alt text][image5]
 
 ### Description for Spatial
+
+__Fig1.2.1 HOG image example__  
+![alt text][image6]
+
 
 ### Description for Histogram
 
