@@ -10,10 +10,11 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./for_report/Fig1_1-Vehicle_and_non_vehicle.png
-[image2]: ./for_report/Fig1_2-rm.png
-[image3]: ./for_report/Fig1_3-ag.png
-[image4]: ./for_report/Fig1_3-ag.png
+[image1]: ./for_report/Fig1_1_1-Vehicle_and_non_vehicle.png
+[image2]: ./for_report/Fig1_1_2-rm.png
+[image3]: ./for_report/Fig1_1_3-ag.png
+[image4]: ./for_report/Fig1_2_1_HOG_example_1.png
+[image5]: ./for_report/Fig1_2_1_HOG_example_2.png
 
 
 [video1]: ./project_video.mp4
@@ -32,7 +33,7 @@ __Fig1.1.2 Example of removed image__
 ![alt text][image2]
 
 __Fig1.1.3 Example of argumentation__
-![alt text][image2]
+![alt text][image3]
 
 
  These process was done with "enviroment_setup.py"
@@ -41,15 +42,18 @@ __Fig1.1.3 Example of argumentation__
 ## 1.2 Feture extraction
 ### Description for HOG
 
+HOG paramter was decided as below.
+This is to clarify the object shape by myself.
+
 
 __Fig1.2.1 HOG image example__
-
+![alt text][image4]
 
 Grayscale was selected to compute HOG features.
-Beacuse
+Beacuse  
 
 __Fig1.2.1 HOG image example__
-
+![alt text][image5]
 
 ### Description for Spatial
 
