@@ -10,31 +10,29 @@ The goals / steps of this project are the following:
 * Estimate a bounding box for vehicles detected.
 
 [//]: # (Image References)
-[image1]: ./examples/car_not_car.png
+[image1]: ./for_report/Fig1_1-Vehicle_and_non_vehicle.png
+[image2]: ./for_report/Fig1_2-rm.png
+[image3]: ./for_report/Fig1_3-ag.png
+[image4]: ./for_report/Fig1_3-ag.png
 
-[image2]: ./examples/HOG_example.jpg
-[image3]: ./examples/sliding_windows.jpg
-[image4]: ./examples/sliding_window.jpg
-[image5]: ./examples/bboxes_and_heat.png
-[image6]: ./examples/labels_map.png
-[image7]: ./examples/output_bboxes.png
+
 [video1]: ./project_video.mp4
 
 # 1. Training
 ## 1.1 Data preparation
  The process of data preparation is:
  * Step1: Download the data from the followin link
- * Step2:
- *
+ * Step2: Remove a part of images files from "Non-vehicle" data set
+ * Step3: Argument some Non-Vehicle data
  
-__Fig1.1 Example of data set__
+__Fig1.1.1 Example of data set__
 ![alt text][image1]
 
+__Fig1.1.2 Example of removed image__
+![alt text][image2]
 
-__Fig1.2 Example of removed image__
-
-
-__Fig1.3 Example of argumentation__
+__Fig1.1.3 Example of argumentation__
+![alt text][image2]
 
 
  These process was done with "enviroment_setup.py"
@@ -42,6 +40,16 @@ __Fig1.3 Example of argumentation__
 
 ## 1.2 Feture extraction
 ### Description for HOG
+
+
+__Fig1.2.1 HOG image example__
+
+
+Grayscale was selected to compute HOG features.
+Beacuse
+
+__Fig1.2.1 HOG image example__
+
 
 ### Description for Spatial
 
