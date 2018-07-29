@@ -1,8 +1,3 @@
-## Writeup Template
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
----
-
 **Vehicle Detection Project**
 
 The goals / steps of this project are the following:
@@ -16,6 +11,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 [image1]: ./examples/car_not_car.png
+
 [image2]: ./examples/HOG_example.jpg
 [image3]: ./examples/sliding_windows.jpg
 [image4]: ./examples/sliding_window.jpg
@@ -23,6 +19,54 @@ The goals / steps of this project are the following:
 [image6]: ./examples/labels_map.png
 [image7]: ./examples/output_bboxes.png
 [video1]: ./project_video.mp4
+
+# 1. Training
+## 1.1 Data preparation
+ The process of data preparation is:
+ * Step1: Download the data from the followin link
+ * Step2:
+ *
+ 
+__Fig1.1 Example of data set__
+![alt text][image1]
+
+
+__Fig1.2 Example of removed image__
+
+
+__Fig1.3 Example of argumentation__
+
+
+ These process was done with "enviroment_setup.py"
+
+
+## 1.2 Feture extraction
+### Description for HOG
+
+### Description for Spatial
+
+### Description for Histogram
+
+### Description the selection of feature
+
+
+# 2. Pipeline for single image
+## Basic flow
+ Flow
+ HOG image on the whole image
+ Apply feature extraction for each subimage
+
+## False positive
+ Base threshold and dynamic threshould
+
+
+# 3. Pipeline for video
+## Adding previour image
+
+
+# 4. Discussion
+ Still
+
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
 ### Here I will consider the rubric points individually and describe how I addressed each point in my implementation.  
