@@ -63,7 +63,29 @@ __Fig1.2.1 HOG image example__
 
 ### Description for Histogram
 
+__Fig1.2.1 HOG image example__  
+![alt text][image7]
+
+
 ### Description the selection of feature
+
+HOG Color space spatial Hist accuracy
+
+| Output file name        | Layer type           | Output size  |
+|:-------------:|:-------------:| :-----:|
+| 1      | Normalize (Lambda)  | (160, 320, 3) |
+| 2      | Cropping (Cropping2D)  | (90, 320, 3) |
+
+Case1: 0.9831 
+Case2: 0.9774 
+Case3:0.9661 
+Case4:0.9661 
+Case5:0.9831 
+Case6:0.9718 
+Case7:0.9435 
+
+
+
 
 
 # 2. Pipeline for single image
