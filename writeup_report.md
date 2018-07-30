@@ -38,11 +38,11 @@ __Fig1.1.1 Example of data set__
 ![alt text][image1]
 
 __Fig1.1.2 Example of removed image__  
-[](./for_report/Fig1_1_2-rm.png =256x256)  
+![](./for_report/Fig1_1_2-rm.png =128x128)  
 
 
 __Fig1.1.3 Example of argumentation__  
-[](./for_report/Fig1_1_3-ag.png =256x256)  
+![](./for_report/Fig1_1_3-ag.png =128x128)  
 
 
  These process was done with "enviroment_setup.py"
