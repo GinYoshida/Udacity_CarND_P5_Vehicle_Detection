@@ -38,11 +38,10 @@ __Fig1.1.1 Example of data set__
 ![alt text][image1]
 
 __Fig1.1.2 Example of removed image__  
-![](./for_report/Fig1_1_2-rm.png =128x128)  
-
+<img src="./for_report/Fig1_1_2-rm.png" alt="image" width="128px"/>
 
 __Fig1.1.3 Example of argumentation__  
-![](./for_report/Fig1_1_3-ag.png =128x128)  
+<img src="./for_report/Fig1_1_3-ag.png" alt="image" width="128px"/>
 
 
  These process was done with "enviroment_setup.py"
@@ -78,23 +77,19 @@ __Fig1.2.1 HOG image example__
 
 ### Description the selection of feature
 
-HOG Color space spatial Hist accuracy
+ The followin 7 cases were computed as SVM model.  
+ Then, the performance was checked in all cases with the test image of "test1".  
+ The best performance was confirmed with the condition4.pickle and it was selected.  
 
-| Output file name        | Layer type           | Output size  |
-|:-------------:|:-------------:| :-----:|
-| 1      | Normalize (Lambda)  | (160, 320, 3) |
-| 2      | Cropping (Cropping2D)  | (90, 320, 3) |
-
-Case1: 0.9831 
-Case2: 0.9774 
-Case3:0.9661 
-Case4:0.9661 
-Case5:0.9831 
-Case6:0.9718 
-Case7:0.9435 
-
-
-
+| Output file name | Color space | HOG | Spatial | Histogram | Validation score |
+|:----------------:|:-----------:|:---:|:-------:|:---------:|:----------------:|
+|condition1.pickle | RGB         | With| With    | with      |            0.9831|
+|condition2.pickle | RGB         | With| With    | without   |            0.9774|
+|condition3.pickle | RGB         | With| Without | with      |            0.9661|
+|condition4.pickle | HLS         | With| With    | with      |            0.9661|
+|condition5.pickle | HLS         | With| With    | without   |            0.9831|
+|condition6.pickle | HLS         | With| Without | with      |            0.9718|
+|condition7.pickle | No          | With| Without | without   |            0.9435|
 
 
 # 2. Pipeline for single image
