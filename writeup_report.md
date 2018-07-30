@@ -16,6 +16,7 @@ The goals / steps of this project are the following:
 [image4]: ./for_report/Fig1_2_1_HOG_example_1.png
 [image5]: ./for_report/Fig1_2_2_HOG_example.png
 [image6]: ./for_report/Fig1_2_3_Spatial_img.png
+[image6]: ./for_report/Fig1_2_4_xxxx.png
 
 [video1]: ./project_video.mp4
 
@@ -25,6 +26,15 @@ The goals / steps of this project are the following:
  * Step1: Download the data from the followin link
  * Step2: Remove a part of images files from "Non-vehicle" data set
  * Step3: Argument some Non-Vehicle data
+ 
+These 3 processes were done with "".
+
+The traiing data was provided by Udacity.
+These images were selected because these type of images are difficult to be classified.
+These images were selected because these type of images are difficult to be classified.
+These images were selected because these type of images are difficult to be classified.
+
+These images were selected because these type of images are difficult to be classified. 
  
 __Fig1.1.1 Example of data set__  
 ![alt text][image1]
@@ -50,7 +60,7 @@ __Fig1.2.1 HOG image example__
 ![alt text][image4]
 
 Grayscale was selected to compute HOG features.
-Beacuse  
+Beacuse 
 
 __Fig1.2.1 HOG image example__  
 ![alt text][image5]
