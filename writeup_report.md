@@ -11,8 +11,6 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 [image1]: ./for_report/Fig1_1_1-Vehicle_and_non_vehicle.png
-[image2]: ./for_report/Fig1_1_2-rm.png
-[image3]: ./for_report/Fig1_1_3-ag.png
 [image4]: ./for_report/Fig1_2_1_HOG_example_1.png
 [image5]: ./for_report/Fig1_2_2_HOG_example.png
 [image6]: ./for_report/Fig1_2_3_Spatial_img.png
@@ -40,10 +38,11 @@ __Fig1.1.1 Example of data set__
 ![alt text][image1]
 
 __Fig1.1.2 Example of removed image__  
-![alt text][image2]
+[](./for_report/Fig1_1_2-rm.png =256x256)  
+
 
 __Fig1.1.3 Example of argumentation__  
-![alt text][image3]
+[](./for_report/Fig1_1_3-ag.png =256x256)  
 
 
  These process was done with "enviroment_setup.py"
