@@ -51,21 +51,31 @@ __Fig1.1.3 Example of argumentation__
 ### Description for HOG
 
 HOG paramter was decided as below.
-This is to clarify the object shape by myself.
+Parameter turning was done with the checking by my self.
+Default parameters are:
 
+But it is hard to recognize the difference between vehicle and non-vehicle images.
+Then, I increase the number of XXXX step by step.
+Once I recognize the difference of HOG image between vehicle and non-vehicle image, I stop to tune it.
+The purpose of HOG feature should be to shape of the object. Therefor, I tuned the parameters which allow me to recognize the shape difference.
 
 __Fig1.2.1 HOG image example__  
 ![alt text][image4]
 
-Grayscale was selected to compute HOG features.
-Beacuse 
+ About HOG features, the grayscale was applied.
+ Becuase, Grayscale represents the shape of the object same as a single channel of a color image. 
+ Fig1.2.2 shows the comparsion between HOG images with Grayscale and L channel of HLS.
+ I assumed that it is equivalant and Grayscale is enough.
+
 
 __Fig1.2.1 HOG image example__  
 ![alt text][image5]
 
 ### Description for Spatial
 
-__Fig1.2.1 HOG image example__  
+ Spatial feature was 
+
+__Fig1.2.3 Binned feature example__  
 ![alt text][image6]
 
 
