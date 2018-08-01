@@ -21,11 +21,13 @@ The goals / steps of this project are the following:
 # 1. Training
 ## 1.1 Data preparation
  The process of data preparation is:
- * Step1: Download the data from the followin link
+ * Step1: Download the data from the followin link.
+ - 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip'
+ - 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip'
  * Step2: Remove a part of images files from "Non-vehicle" data set
- * Step3: Argument some Non-Vehicle data
+ * Step3: Augment some Non-Vehicle data
  
-These 3 processes were done with "".
+These 3 processes were done with "enviroment_setup.py".
 
 The traiing data was provided by Udacity.
 These images were selected because these type of images are difficult to be classified.
