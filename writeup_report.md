@@ -22,20 +22,17 @@ The goals / steps of this project are the following:
 ## 1.1 Data preparation
  The process of data preparation is:
  * Step1: Download the data from the followin link.
- - 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip'
- - 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip'
+ Link: 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/vehicles.zip'
+ Link: 'https://s3.amazonaws.com/udacity-sdc/Vehicle_Tracking/non-vehicles.zip'
  * Step2: Remove a part of images files from "Non-vehicle" data set
  * Step3: Augment some Non-Vehicle data
  
 These 3 processes were done with "enviroment_setup.py".
 
-The traiing data was provided by Udacity.
-These images were selected because these type of images are difficult to be classified.
-These images were selected because these type of images are difficult to be classified.
-These images were selected because these type of images are difficult to be classified.
+The training data was provided by Udacity.  
+About step3, the images aurgued were selected because these type of images are difficult to be classified.
+The example of each step is shown in the following figures.
 
-These images were selected because these type of images are difficult to be classified. 
- 
 __Fig1.1.1 Example of data set__  
 ![alt text][image1]
 
@@ -46,26 +43,32 @@ __Fig1.1.3 Example of argumentation__
 <img src="./for_report/Fig1_1_3-ag.png" alt="image" width="128px"/>
 
 
- These process was done with "enviroment_setup.py"
+ These processes were done with "enviroment_setup.py"
 
 
 ## 1.2 Feture extraction
 ### Description for HOG
 
-The parameter turning was done with the checking by my eyes.
+The parameter turning was done to detect the difference of the object with my eyes.
 Default parameters are:
+ - Orient:9
+ - pix_per_cell:2
+ - cell_per_block:2
 
 But it is hard to recognize the difference between vehicle and non-vehicle images.
-Then, I increase the number of XXXX step by step.
+Then, I increase the number of the pix_per_cell and cell_per_block step by step.
 Once I recognize the difference of HOG image between vehicle and non-vehicle image, I stop to tune it.
-The purpose of HOG feature should be to shape of the object. Therefor, I tuned the parameters which allow me to recognize the shape difference.
+Updated parameters are:
+- Orient: 9
+- pix_per_cell: 5
+- cell_per_block: 3
 
 __Fig1.2.1 HOG image example__  
 ![alt text][image4]
 
  Note: Need update the image with low resonance.  
 
- The grayscale was used to compute the HOG features.
+ About the color space, the grayscale was used to compute the HOG features.
  Becuase, Grayscale represents the shape of the object same as a single channel of a color image. 
  Fig1.2.2 shows the comparsion between HOG images with Grayscale and L channel of HLS.
  I assumed that it is equivalant and Grayscale is enough.
