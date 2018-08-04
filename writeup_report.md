@@ -16,7 +16,9 @@ The goals / steps of this project are the following:
 [image4_2]: ./for_report/Fig1_2_1_HOG_example_1_def.png
 [image5]: ./for_report/Fig1_2_2_HOG_example.png
 [image6]: ./for_report/Fig1_2_3_Spatial_img.png
-[image6]: ./for_report/Fig1_2_4_xxxx.png
+[image7]: ./for_report/Fig1_2_4_Histgram.png
+[image8]: ./for_report/test1.png
+
 
 [video1]: ./project_video.mp4
 
@@ -117,6 +119,7 @@ __Fig1.2.4 Histgram difference__
 |condition7.pickle | No          | With| Without | without   |            0.9435|
 
 __Fig1.2.5 Outcomes of test image__  
+![alt text][image8]
 
 
 
