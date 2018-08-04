@@ -119,18 +119,29 @@ __Fig1.2.4 Histgram difference__
 |condition7.pickle | No          | With| Without | without   |            0.9435|
 
 __Fig1.2.5 Outcomes of test image__  
-![alt text][image8]
-
-
+![alt text][image8]  
 
 # 2. Pipeline for single image
 ## Basic flow
- Flow
- HOG image on the whole image
- Apply feature extraction for each subimage
+ The process is below.
+ Step1: Apply HOG conversion to whole image (functionset.py: Line 252)  
+ Step2: Apply feature extraction for each subimage (functionset.py: Line 269 - 288)  
+ Step3: Judge whether sub image is vehicle or not (functionset.py: Line 291)  
+ Step4: Compute how may times the pixcel was judged as "Vehicle" (functionset.py: Line 291 - 298)  
+ Step5: Remove false positive based on threshould (functionset.py: Line 363 - 380)  
+ Step6: Draw rectangle on the image based on each positive area (functionset.py: Line 382 - 409)
 
-## False positive
- Base threshold and dynamic threshould
+Note for Step4:  
+If the max score in the image is lower than 10. the threshold of 10 was applied.  
+Other cases, one-third of the max score in the image was applied as the threshold.  
+
+Note for step6:  
+If the rectangle aspect ratio is less than 3 or the area is less than 150 pixels, the rectangle is not applied to draw the rectangle.
+(functionset.py: Line 403)
+
+__Fig2.1 Ouput image example__  
+![alt text][image8]  
+
 
 
 # 3. Pipeline for video
