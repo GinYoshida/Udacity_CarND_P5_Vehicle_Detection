@@ -19,8 +19,7 @@ The goals / steps of this project are the following:
 [image7]: ./for_report/Fig1_2_4_Histgram.png
 [image8]: ./for_report/test1.png
 [image9]: ./for_report/test10.png
-
-[video1]: ./project_video.mp4
+[video1]: ./project_video_w_pipline.avi
 
 # 1. Training
 ## 1.1 Data preparation
@@ -105,7 +104,7 @@ __Fig1.2.4 Histgram difference__
 
 ## 1.3 Description the selection of feature and training
 
- For clasifier, SVM was applied. Used module is sklearn.svm.SVC. (main_training.py: line 109-118)
+ For clasifier, SVM was applied. Used module is sklearn.svm.SVC. (main_training.py: line 109-118)  
  The followin 7 cases were computed as SVM model.  
  Then, the performance was checked in all cases with the test image from the project video.    
  The best performance was confirmed with the condition4.pickle and it was selected, even if the varidation score is lower than others.  
@@ -134,6 +133,11 @@ __Fig1.2.5 Outcomes of test image__
  Step5: Remove false positive based on threshould (functionset.py: Line 363 - 380)  
  Step6: Draw rectangle on the image based on each positive area (functionset.py: Line 382 - 409)
 
+Note for Step2:
+ Step2's size of the sub-image, sliding window, depends on the hog parameters, which was tuned in 1.2. 
+ The window size for the image is controlled with scale. (functionset.py: Line 230 - 233)  
+ In this project, single scale works well and I didn't apply the multiscale strategy. 
+ 
 Note for Step4:  
 If the max score in the image is lower than 10. the threshold of 10 was applied.  
 Other cases, one-third of the max score in the image was applied as the threshold.  
