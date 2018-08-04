@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68ddc8a0-4e07-47cf-831f-da198206db99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Code_test.ipynb" afterPath="$PROJECT_DIR$/Code_test.ipynb" />
-      <change beforePath="$PROJECT_DIR$/for_report/Fig1-Vehicle_and_non_vehicle.png" afterPath="$PROJECT_DIR$/for_report/Fig1-Vehicle_and_non_vehicle.png" />
-      <change beforePath="$PROJECT_DIR$/for_report/Fig1_2_2_HOG_example.png" afterPath="$PROJECT_DIR$/for_report/Fig1_2_2_HOG_example.png" />
-      <change beforePath="$PROJECT_DIR$/for_report/Fig1_2_3_Spatial_img.png" afterPath="$PROJECT_DIR$/for_report/Fig1_2_3_Spatial_img.png" />
-      <change beforePath="$PROJECT_DIR$/for_report/Fig1_2_4_Histgram.png" afterPath="$PROJECT_DIR$/for_report/Fig1_2_4_Histgram.png" />
-      <change beforePath="$PROJECT_DIR$/for_report/HOG_example_1.png" afterPath="$PROJECT_DIR$/for_report/HOG_example_1.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -72,7 +66,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
               <first_editor relative-caret-position="133">
-                <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+                <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -830,7 +824,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="133">
-            <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor />
