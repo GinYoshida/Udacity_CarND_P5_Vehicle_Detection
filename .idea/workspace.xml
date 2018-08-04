@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="68ddc8a0-4e07-47cf-831f-da198206db99" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Code_test.ipynb" afterPath="$PROJECT_DIR$/Code_test.ipynb" />
-    </list>
+    <list default="true" id="68ddc8a0-4e07-47cf-831f-da198206db99" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +63,8 @@
         <entry file="file://$PROJECT_DIR$/writeup_report.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="133">
-                <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+              <first_editor relative-caret-position="201">
+                <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -823,8 +821,8 @@
     <entry file="file://$PROJECT_DIR$/writeup_report.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="133">
-            <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+          <first_editor relative-caret-position="201">
+            <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor />
