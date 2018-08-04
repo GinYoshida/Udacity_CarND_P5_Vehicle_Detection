@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 [image6]: ./for_report/Fig1_2_3_Spatial_img.png
 [image7]: ./for_report/Fig1_2_4_Histgram.png
 [image8]: ./for_report/test1.png
-
+[image9]: ./for_report/test10.png
 
 [video1]: ./project_video.mp4
 
@@ -140,13 +140,29 @@ If the rectangle aspect ratio is less than 3 or the area is less than 150 pixels
 (functionset.py: Line 403)
 
 __Fig2.1 Ouput image example__  
-![alt text][image8]  
+![alt text][image9]  
 
 
 
 # 3. Pipeline for video
-## Adding previour image
+ The basic pip line is same as the single image.
+ The difference is 
+ 1. Add the results from previous frames
+ 2. Apply new thread from single image
+ 
+ This function was added to reduce the false positive area, which randomly occurs in the image.
+
+![alt text][video1]
 
 
 # 4. Discussion
- Still
+ The most difficult part was to handle false positive on the shadow.
+ To reduce it, I applied 2 methods.
+
+ 1. Dynamic threashould
+  If I tried to set the single threshold, I need to add a bigger number to remove the false positive. But this leads false negative in other video frames. 
+  Then, to balance the value in each image, I applied the threshold which is changed by the maximum score in the image. 
+ 
+ 2. Using the previous frame
+  In the video, the score of the vehicle area is more stable, not jump to other region frame by frame, than the false positive area. 
+ I added the results over the frames to increase the score of vehicle area.
