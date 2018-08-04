@@ -11,7 +11,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 [image1]: ./for_report/Fig1_1_1-Vehicle_and_non_vehicle.png
+
 [image4]: ./for_report/Fig1_2_1_HOG_example_1.png
+[image4_2]: ./for_report/Fig1_2_1_HOG_example_1_def.png
 [image5]: ./for_report/Fig1_2_2_HOG_example.png
 [image6]: ./for_report/Fig1_2_3_Spatial_img.png
 [image6]: ./for_report/Fig1_2_4_xxxx.png
@@ -52,26 +54,31 @@ __Fig1.1.3 Example of argumentation__
 The parameter turning was done to detect the difference of the object with my eyes.
 Default parameters are:
  - Orient:9
- - pix_per_cell:2
+ - pix_per_cell:8
  - cell_per_block:2
 
-But it is hard to recognize the difference between vehicle and non-vehicle images.
-Then, I increase the number of the pix_per_cell and cell_per_block step by step.
-Once I recognize the difference of HOG image between vehicle and non-vehicle image, I stop to tune it.
+I tuned the HOG parameters with my subjective check by my eyes.
+ It is hard to recognize the difference between vehicle and non-vehicle images because of less number of features.
+Then, I increased the number of the feature by decreasing the pix_per_cell and increasing cell_per_block step by step.
+Once I recognize the difference of HOG image between the vehicle and non-vehicle image, I stop to tune it.
 Updated parameters are:
 - Orient: 9
 - pix_per_cell: 5
 - cell_per_block: 3
 
 __Fig1.2.1 HOG image example__  
+Default  
+![alt text][image4_2]  
+
+Tuned  
 ![alt text][image4]
 
  Note: Need update the image with low resonance.  
 
  About the color space, the grayscale was used to compute the HOG features.
  Becuase, Grayscale represents the shape of the object same as a single channel of a color image. 
- Fig1.2.2 shows the comparsion between HOG images with Grayscale and L channel of HLS.
- I assumed that it is equivalant and Grayscale is enough.
+ Fig1.2.2 shows the comparison between HOG images with Grayscale and L channel of HLS.
+ I assumed that it is equivalent and Grayscale is enough.
 
 
 __Fig1.2.2 HOG image comparison__  
@@ -79,24 +86,24 @@ __Fig1.2.2 HOG image comparison__
 
 ### Description for Binned color feature
 
-The default parameter to compute the binned colored features is 12.
-With this size, it is hard to recognize the difference.
-
+I selected 16 as the size of the bin of the color features.  
+Then, I can recognize the vehicle and non-vehicle with my subjective check by my eyes.
 
 __Fig1.2.3 Binned feature example__  
 ![alt text][image6]
 
-
 ### Description for Histogram
+I selected 16 as the size of the bin of the Histgram features.  
+Then, I can recognize the vehicle and non-vehicle with my subjective check by my eyes.
 
-__Fig1.2.1 HOG image example__  
+__Fig1.2.4 Histgram difference__  
 ![alt text][image7]
 
 
 ### Description the selection of feature
 
  The followin 7 cases were computed as SVM model.  
- Then, the performance was checked in all cases with the test image of "test1".  
+ Then, the performance was checked in all cases with the test image.  
  The best performance was confirmed with the condition4.pickle and it was selected.  
 
 | Output file name | Color space | HOG | Spatial | Histogram | Validation score |
@@ -108,6 +115,9 @@ __Fig1.2.1 HOG image example__
 |condition5.pickle | HLS         | With| With    | without   |            0.9831|
 |condition6.pickle | HLS         | With| Without | with      |            0.9718|
 |condition7.pickle | No          | With| Without | without   |            0.9435|
+
+__Fig1.2.5 Outcomes of test image__  
+
 
 
 # 2. Pipeline for single image
