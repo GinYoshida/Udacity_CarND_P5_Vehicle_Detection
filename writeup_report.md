@@ -133,7 +133,7 @@ __Fig1.2.5 Outcomes of test image__
  Step5: Remove false positive based on threshould (functionset.py: Line 363 - 380)  
  Step6: Draw rectangle on the image based on each positive area (functionset.py: Line 382 - 409)
 
-Note for Step2:
+Note for Step2:  
  Step2's size of the sub-image, sliding window, depends on the hog parameters, which was tuned in 1.2. 
  The window size for the image is controlled with scale. (functionset.py: Line 230 - 233)  
  In this project, single scale works well and I didn't apply the multiscale strategy. 
