@@ -102,11 +102,13 @@ __Fig1.2.4 Histgram difference__
 ![alt text][image7]
 
 
-### Description the selection of feature
 
+## 1.3 Description the selection of feature and training
+
+ For clasifier, SVM was applied. Used module is sklearn.svm.SVC. (main_training.py: line 109-118)
  The followin 7 cases were computed as SVM model.  
- Then, the performance was checked in all cases with the test image.  
- The best performance was confirmed with the condition4.pickle and it was selected.  
+ Then, the performance was checked in all cases with the test image from the project video.    
+ The best performance was confirmed with the condition4.pickle and it was selected, even if the varidation score is lower than others.  
 
 | Output file name | Color space | HOG | Spatial | Histogram | Validation score |
 |:----------------:|:-----------:|:---:|:-------:|:---------:|:----------------:|
@@ -120,6 +122,7 @@ __Fig1.2.4 Histgram difference__
 
 __Fig1.2.5 Outcomes of test image__  
 ![alt text][image8]  
+
 
 # 2. Pipeline for single image
 ## Basic flow
