@@ -503,6 +503,7 @@ def image_converter(input_file_names,svm_model_path):
         print(file_name)
         file_path = './test_images/' + file_name + '.jpg'
         target_img = cv2.imread(file_path)
+        original_img = np.copy(target_img)
 
         # Compute the images with the rectangle and the heat map
         result_img, heat_map, after_rm_false_posi = video_pipline(target_img, svm_model_path, exprt_heatmap=True)
@@ -512,7 +513,7 @@ def image_converter(input_file_names,svm_model_path):
 
         # Draw the original image
         ax0 = fig.add_subplot(2, 2, 1)
-        ax0.imshow(target_img)
+        ax0.imshow(original_img)
         ax0.set_title('Original image', fontsize=14)
 
         # Draw the original heat map
