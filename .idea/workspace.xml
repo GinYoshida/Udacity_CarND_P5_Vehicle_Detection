@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="68ddc8a0-4e07-47cf-831f-da198206db99" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/Code_test.ipynb" afterPath="$PROJECT_DIR$/Code_test.ipynb" />
+      <change beforePath="$PROJECT_DIR$/for_report/Fig1-Vehicle_and_non_vehicle.png" afterPath="$PROJECT_DIR$/for_report/Fig1-Vehicle_and_non_vehicle.png" />
+      <change beforePath="$PROJECT_DIR$/for_report/Fig1_2_2_HOG_example.png" afterPath="$PROJECT_DIR$/for_report/Fig1_2_2_HOG_example.png" />
+      <change beforePath="$PROJECT_DIR$/for_report/Fig1_2_3_Spatial_img.png" afterPath="$PROJECT_DIR$/for_report/Fig1_2_3_Spatial_img.png" />
+      <change beforePath="$PROJECT_DIR$/for_report/Fig1_2_4_Histgram.png" afterPath="$PROJECT_DIR$/for_report/Fig1_2_4_Histgram.png" />
+      <change beforePath="$PROJECT_DIR$/for_report/HOG_example_1.png" afterPath="$PROJECT_DIR$/for_report/HOG_example_1.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,7 +22,7 @@
       <file leaf-file-name="functionset.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functionset.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8857">
+            <state relative-caret-position="0">
               <caret line="527" column="38" lean-forward="false" selection-start-line="527" selection-start-column="38" selection-end-line="527" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -28,7 +34,7 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="136">
               <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -37,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main_training.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main_training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main_training.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="436">
-              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+              <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -52,7 +58,7 @@
       <file leaf-file-name="enviroment_setup.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/enviroment_setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4318">
+            <state relative-caret-position="504">
               <caret line="265" column="76" lean-forward="false" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="76" />
               <folding>
                 <element signature="e#631#641#0" expanded="true" />
@@ -61,25 +67,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1326">
-                <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="writeup_report.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="writeup_report.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/writeup_report.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="293">
-                <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="133">
+                <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -172,6 +165,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -184,7 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -784,8 +777,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functionset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8857">
+        <state relative-caret-position="0">
           <caret line="527" column="38" lean-forward="false" selection-start-line="527" selection-start-column="38" selection-end-line="527" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main_training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="176" column="0" lean-forward="false" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -795,7 +808,7 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1326">
+          <first_editor relative-caret-position="68">
             <caret line="78" column="25" lean-forward="false" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
             <folding />
           </first_editor>
@@ -805,7 +818,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/enviroment_setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
+        <state relative-caret-position="504">
           <caret line="265" column="76" lean-forward="false" selection-start-line="265" selection-start-column="28" selection-end-line="265" selection-end-column="76" />
           <folding>
             <element signature="e#631#641#0" expanded="true" />
@@ -813,34 +826,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="55" lean-forward="false" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/writeup_report.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="293">
-            <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="133">
+            <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
